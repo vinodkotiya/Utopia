@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utopia Store | Sacred Metaphysical Space & Crystal Shop | North Vancouver</title>
+  <meta name="description" content="20-year sanctuary for healing crystals, intention tools, tarot readings & local artists in North Vancouver. Shop online with click & collect or visit our sacred space at 1826 Lonsdale Ave.">
+  <meta name="keywords" content="crystals North Vancouver, metaphysical store BC, tarot readings Vancouver, healing crystals North Vancouver, sacred space, spiritual shop BC">
+  <meta property="og:title" content="Utopia Store | Sacred Space in North Vancouver">
+  <meta property="og:description" content="20 years of sacred space on Lonsdale Ave. Healing crystals, tarot readings, local artists & more.">
+  <meta property="og:url" content="https://utopiastore.ca">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #F5F0E8;
+      --warm-white: #FAF7F2;
+      --parchment: #EDE5D6;
+      --sand: #D4C4A8;
+      --stone: #9E8E7A;
+      --bark: #6B5B47;
+      --earth: #4A3728;
+      --deep: #2C1F14;
+      --gold: #C9A96E;
+      --gold-light: #E8D5A3;
+      --sage: #7A8C6E;
+      --amethyst: #7B6E8A;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Jost', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--deep);
+      color: var(--cream);
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 1.25rem 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.4s, backdrop-filter 0.4s;
+    }
+    nav.scrolled {
+      background: rgba(44, 31, 20, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(201, 169, 110, 0.15);
+    }
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 300;
+      letter-spacing: 0.35em;
+      color: var(--gold-light);
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--sand);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold-light); }
+    .nav-cta {
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--deep);
+      background: var(--gold);
+      padding: 0.6rem 1.4rem;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .nav-cta:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      nav { padding: 1rem 1.5rem; }
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+      background: var(--deep);
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 30% 40%, rgba(123, 110, 138, 0.18) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 60% at 75% 60%, rgba(201, 169, 110, 0.12) 0%, transparent 55%),
+        radial-gradient(ellipse 80% 80% at 50% 50%, rgba(74, 55, 40, 0.6) 0%, transparent 70%);
+    }
+
+    /* Floating orbs */
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.06;
+      animation: drift 18s ease-in-out infinite;
+    }
+    .orb-1 { width: 500px; height: 500px; background: var(--amethyst); top: -100px; left: -100px; animation-delay: 0s; }
+    .orb-2 { width: 300px; height: 300px; background: var(--gold); bottom: 0; right: 10%; animation-delay: -6s; animation-duration: 22s; }
+    .orb-3 { width: 200px; height: 200px; background: var(--sage); top: 30%; left: 60%; animation-delay: -12s; animation-duration: 15s; }
+
+    @keyframes drift {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(30px, -20px) scale(1.05); }
+      66% { transform: translate(-20px, 30px) scale(0.97); }
+    }
+
+    /* Grain overlay */
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 780px;
+      padding: 0 2rem;
+    }
+
+    .hero-eyebrow {
+      font-family: var(--font-body);
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 1s ease 0.3s forwards;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 8vw, 6.5rem);
+      font-weight: 300;
+      line-height: 1.05;
+      color: var(--warm-white);
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 1s ease 0.6s forwards;
+    }
+    .hero-title em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .hero-sub {
+      font-family: var(--font-display);
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--sand);
+      line-height: 1.7;
+      max-width: 560px;
+      margin: 0 auto 2.5rem;
+      opacity: 0;
+      animation: fadeUp 1s ease 0.9s forwards;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 1s ease 1.1s forwards;
+    }
+
+    .btn-primary {
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--deep);
+      background: var(--gold);
+      padding: 1rem 2.2rem;
+      text-decoration: none;
+      border: 1px solid var(--gold);
+      transition: background 0.25s, color 0.25s, transform 0.15s;
+    }
+    .btn-primary:hover {
+      background: var(--gold-light);
+      border-color: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-ghost {
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cream);
+      background: transparent;
+      padding: 1rem 2.2rem;
+      text-decoration: none;
+      border: 1px solid rgba(201, 169, 110, 0.4);
+      transition: border-color 0.25s, color 0.25s, transform 0.15s;
+    }
+    .btn-ghost:hover {
+      border-color: var(--gold);
+      color: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .hero-address {
+      margin-top: 2.5rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--stone);
+      opacity: 0;
+      animation: fadeUp 1s ease 1.3s forwards;
+    }
+    .hero-address span { color: var(--gold); margin: 0 0.5rem; }
+
+    .scroll-hint {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      opacity: 0;
+      animation: fadeUp 1s ease 1.8s forwards;
+      color: var(--stone);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+    .scroll-line {
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+      animation: scrollPulse 2s ease-in-out infinite;
+    }
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.4; transform: scaleY(1); }
+      50% { opacity: 1; transform: scaleY(1.1); }
+    }
+
+    /* ── DIVIDER ── */
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0 2rem;
+      max-width: 200px;
+      margin: 0 auto;
+    }
+    .divider-line { flex: 1; height: 1px; background: rgba(201, 169, 110, 0.3); }
+    .divider-glyph { color: var(--gold); font-size: 0.8rem; opacity: 0.6; }
+
+    /* ── SECTIONS ── */
+    section { padding: 6rem 2rem; }
+
+    .section-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-eyebrow {
+      font-size: 0.65rem;
+      font-weight: 400;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 300;
+      line-height: 1.15;
+      color: var(--warm-white);
+      margin-bottom: 1.5rem;
+    }
+    .section-title em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .section-body {
+      font-size: 0.95rem;
+      font-weight: 300;
+      line-height: 1.85;
+      color: var(--sand);
+      max-width: 600px;
+    }
+
+    /* ── THREE PILLARS ── */
+    .pillars { background: var(--earth); }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      margin-top: 4rem;
+    }
+    @media (max-width: 768px) {
+      .pillars-grid { grid-template-columns: 1fr; }
+    }
+
+    .pillar {
+      background: rgba(44, 31, 20, 0.6);
+      padding: 3rem 2.5rem;
+      border-top: 1px solid rgba(201, 169, 110, 0.2);
+      transition: background 0.3s;
+      text-decoration: none;
+      display: block;
+    }
+    .pillar:hover { background: rgba(74, 55, 40, 0.8); }
+
+    .pillar-glyph {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      font-weight: 300;
+      color: var(--gold);
+      opacity: 0.5;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+
+    .pillar-title {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: var(--warm-white);
+      margin-bottom: 0.75rem;
+    }
+
+    .pillar-text {
+      font-size: 0.85rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: var(--stone);
+    }
+
+    .pillar-link {
+      display: inline-block;
+      margin-top: 1.5rem;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-decoration: none;
+    }
+    .pillar-link::after { content: ' →'; }
+
+    /* ── STORY ── */
+    .story { background: var(--deep); }
+
+    .story-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: center;
+    }
+    @media (max-width: 900px) {
+      .story-layout { grid-template-columns: 1fr; gap: 3rem; }
+    }
+
+    .story-visual {
+      position: relative;
+    }
+
+    .story-frame {
+      width: 100%;
+      aspect-ratio: 3/4;
+      background: var(--earth);
+      border: 1px solid rgba(201, 169, 110, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .story-frame-inner {
+      position: absolute;
+      inset: 16px;
+      border: 1px solid rgba(201, 169, 110, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .story-placeholder {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .story-placeholder-glyph {
+      font-family: var(--font-display);
+      font-size: 5rem;
+      color: var(--gold);
+      opacity: 0.2;
+      line-height: 1;
+    }
+
+    .story-placeholder-text {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--stone);
+      margin-top: 1rem;
+    }
+
+    .story-badge {
+      position: absolute;
+      bottom: -1.5rem;
+      right: -1.5rem;
+      width: 100px;
+      height: 100px;
+      background: var(--gold);
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .story-badge-num {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--deep);
+      line-height: 1;
+    }
+    .story-badge-text {
+      font-size: 0.55rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--earth);
+      line-height: 1.3;
+      margin-top: 2px;
+    }
+
+    .story-quote {
+      margin: 2.5rem 0;
+      padding-left: 1.5rem;
+      border-left: 2px solid rgba(201, 169, 110, 0.4);
+    }
+
+    .story-quote p {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-style: italic;
+      font-weight: 300;
+      color: var(--gold-light);
+      line-height: 1.7;
+    }
+
+    /* ── INTENTIONS GRID ── */
+    .intentions { background: rgba(44, 31, 20, 0.5); }
+
+    .intentions-intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: end;
+      margin-bottom: 4rem;
+    }
+    @media (max-width: 768px) {
+      .intentions-intro { grid-template-columns: 1fr; gap: 2rem; }
+    }
+
+    .intentions-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(201, 169, 110, 0.1);
+    }
+    @media (max-width: 768px) {
+      .intentions-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .intentions-grid { grid-template-columns: 1fr; }
+    }
+
+    .intention-card {
+      background: var(--deep);
+      padding: 2.5rem 2rem;
+      text-decoration: none;
+      display: block;
+      transition: background 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+    .intention-card::before {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transition: transform 0.3s;
+      transform-origin: left;
+    }
+    .intention-card:hover { background: rgba(74, 55, 40, 0.6); }
+    .intention-card:hover::before { transform: scaleX(1); }
+
+    .intention-symbol {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      opacity: 0.7;
+    }
+
+    .intention-name {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: var(--warm-white);
+      margin-bottom: 0.4rem;
+    }
+
+    .intention-sub {
+      font-size: 0.75rem;
+      font-weight: 300;
+      letter-spacing: 0.08em;
+      color: var(--stone);
+    }
+
+    .chakra-strip {
+      display: flex;
+      gap: 0;
+      margin-top: 3rem;
+      overflow: hidden;
+    }
+
+    .chakra-dot {
+      flex: 1;
+      padding: 1rem 0.75rem;
+      text-align: center;
+      font-size: 0.6rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: rgba(44, 31, 20, 0.8);
+      border-top: 2px solid;
+      transition: opacity 0.2s;
+      cursor: default;
+    }
+    .chakra-dot:hover { opacity: 0.8; }
+    .ch-root   { border-color: #B22222; color: #c87070; }
+    .ch-sacral { border-color: #E07000; color: #d4944a; }
+    .ch-solar  { border-color: #DAA520; color: #cca84a; }
+    .ch-heart  { border-color: #228B22; color: #6a9e6a; }
+    .ch-throat { border-color: #4169E1; color: #7090cc; }
+    .ch-third  { border-color: #4B0082; color: #8b70aa; }
+    .ch-crown  { border-color: #9400D3; color: #b070cc; }
+
+    @media (max-width: 600px) {
+      .chakra-dot { font-size: 0.5rem; padding: 0.75rem 0.4rem; letter-spacing: 0.05em; }
+    }
+
+    /* ── ARTISTS ── */
+    .artists { background: var(--earth); }
+
+    .artists-layout {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 5rem;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .artists-layout { grid-template-columns: 1fr; gap: 3rem; }
+    }
+
+    .artist-slots {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    @media (max-width: 500px) {
+      .artist-slots { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    .artist-slot {
+      aspect-ratio: 1;
+      background: rgba(44, 31, 20, 0.6);
+      border: 1px solid rgba(201, 169, 110, 0.15);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .artist-slot-glyph {
+      font-size: 2rem;
+      opacity: 0.15;
+      color: var(--gold);
+    }
+
+    .artist-slot-label {
+      font-size: 0.6rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--stone);
+      margin-top: 0.5rem;
+    }
+
+    .artist-callout {
+      background: rgba(44, 31, 20, 0.6);
+      border: 1px solid rgba(201, 169, 110, 0.2);
+      border-left: 3px solid var(--gold);
+      padding: 1.5rem 2rem;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      font-weight: 300;
+      line-height: 1.7;
+      color: var(--sand);
+    }
+
+    /* ── SERVICES ── */
+    .services { background: var(--deep); }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      background: rgba(201, 169, 110, 0.1);
+      margin-top: 3rem;
+    }
+    @media (max-width: 600px) {
+      .services-grid { grid-template-columns: 1fr; }
+    }
+
+    .service-item {
+      background: var(--deep);
+      padding: 2.5rem 2rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .service-item:hover { background: rgba(44, 31, 20, 0.8); }
+
+    .service-num {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      font-weight: 300;
+      color: var(--gold);
+      opacity: 0.2;
+      line-height: 1;
+      min-width: 2ch;
+    }
+
+    .service-info { flex: 1; }
+
+    .service-name {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: var(--warm-white);
+      margin-bottom: 0.4rem;
+    }
+
+    .service-desc {
+      font-size: 0.82rem;
+      font-weight: 300;
+      color: var(--stone);
+      line-height: 1.7;
+    }
+
+    /* ── VISIT ── */
+    .visit { background: var(--earth); }
+
+    .visit-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .visit-layout { grid-template-columns: 1fr; gap: 3rem; }
+    }
+
+    .visit-info-block {
+      background: rgba(44, 31, 20, 0.5);
+      border: 1px solid rgba(201, 169, 110, 0.15);
+      padding: 2.5rem;
+      margin-top: 2rem;
+    }
+
+    .visit-row {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.5rem 1.5rem;
+      align-items: start;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(201, 169, 110, 0.1);
+      font-size: 0.85rem;
+    }
+    .visit-row:last-child { border-bottom: none; }
+    .visit-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      padding-top: 0.1rem;
+    }
+    .visit-value {
+      font-weight: 300;
+      color: var(--sand);
+      line-height: 1.6;
+    }
+
+    .map-placeholder {
+      width: 100%;
+      aspect-ratio: 4/3;
+      background: rgba(44, 31, 20, 0.7);
+      border: 1px solid rgba(201, 169, 110, 0.15);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .map-glyph {
+      font-size: 2.5rem;
+      opacity: 0.3;
+      color: var(--gold);
+    }
+
+    .map-placeholder p {
+      font-size: 0.8rem;
+      color: var(--stone);
+      font-weight: 300;
+    }
+
+    /* ── NEWSLETTER ── */
+    .newsletter {
+      background: var(--deep);
+      text-align: center;
+      padding: 7rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .newsletter::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(201, 169, 110, 0.06) 0%, transparent 70%);
+    }
+
+    .newsletter .section-inner { position: relative; z-index: 1; }
+
+    .newsletter-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 300;
+      color: var(--warm-white);
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+    .newsletter-title em { font-style: italic; color: var(--gold-light); }
+
+    .newsletter-sub {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--stone);
+      margin-bottom: 2.5rem;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.7;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 0;
+      max-width: 440px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      .newsletter-form { flex-direction: column; gap: 0.75rem; }
+    }
+
+    .newsletter-input {
+      flex: 1;
+      padding: 0.9rem 1.2rem;
+      background: rgba(74, 55, 40, 0.5);
+      border: 1px solid rgba(201, 169, 110, 0.25);
+      border-right: none;
+      color: var(--cream);
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 300;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .newsletter-input::placeholder { color: var(--stone); }
+    .newsletter-input:focus { border-color: rgba(201, 169, 110, 0.5); }
+    @media (max-width: 500px) {
+      .newsletter-input { border-right: 1px solid rgba(201, 169, 110, 0.25); }
+    }
+
+    .newsletter-btn {
+      padding: 0.9rem 1.5rem;
+      background: var(--gold);
+      border: 1px solid var(--gold);
+      color: var(--deep);
+      font-family: var(--font-body);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+    .newsletter-btn:hover { background: var(--gold-light); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: rgba(20, 12, 6, 0.95);
+      padding: 3rem 2.5rem;
+      border-top: 1px solid rgba(201, 169, 110, 0.1);
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+    }
+    @media (max-width: 768px) {
+      .footer-inner { grid-template-columns: 1fr 1fr; gap: 2rem; }
+    }
+    @media (max-width: 480px) {
+      .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+    }
+
+    .footer-brand p {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 300;
+      letter-spacing: 0.25em;
+      color: var(--gold-light);
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-brand small {
+      font-size: 0.75rem;
+      font-weight: 300;
+      color: var(--stone);
+      line-height: 1.7;
+      display: block;
+    }
+
+    .footer-col h4 {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .footer-col a {
+      font-size: 0.82rem;
+      font-weight: 300;
+      color: var(--stone);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-col a:hover { color: var(--gold-light); }
+
+    .footer-bottom {
+      max-width: 1100px;
+      margin: 2rem auto 0;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(201, 169, 110, 0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.72rem;
+      font-weight: 300;
+      color: var(--bark);
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.35s; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="/" class="nav-logo">U T O P I A</a>
+    <ul class="nav-links">
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#artists">Artists</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a href="https://shop.utopiastore.ca" class="nav-cta">Shop Now</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-content">
+      <span class="hero-eyebrow">North Vancouver · Since 2004 · 1826 Lonsdale Ave</span>
+      <h1 class="hero-title">Sacred <em>Space</em><br>Awaits You</h1>
+      <p class="hero-sub">For twenty years, Utopia has been a sanctuary where souls awaken, energies align, and intentions crystallize into being.</p>
+      <div class="hero-btns">
+        <a href="https://shop.utopiastore.ca" class="btn-primary">Shop the Collection</a>
+        <a href="#services" class="btn-ghost">Book a Service</a>
+      </div>
+      <p class="hero-address">
+        1826 Lonsdale Ave, North Vancouver, BC
+        <span>·</span>
+        Click &amp; Collect Available
+      </p>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Explore</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- THREE PILLARS -->
+  <section class="pillars">
+    <div class="section-inner">
+      <div class="reveal">
+        <span class="section-eyebrow">The Utopia Way</span>
+        <h2 class="section-title">Awaken<br><em>your senses</em></h2>
+      </div>
+      <div class="pillars-grid reveal reveal-delay-1">
+        <a href="https://shop.utopiastore.ca/collections/smudge" class="pillar">
+          <div class="pillar-glyph">○</div>
+          <h3 class="pillar-title">Smudge</h3>
+          <p class="pillar-text">Cleanse your energy and your space with ethically sourced sage, palo santo, incense, and ritual tools chosen with care.</p>
+          <span class="pillar-link">Explore</span>
+        </a>
+        <a href="https://shop.utopiastore.ca/collections/ignite" class="pillar">
+          <div class="pillar-glyph">△</div>
+          <h3 class="pillar-title">Ignite</h3>
+          <p class="pillar-text">Awaken passion, creativity, and inner fire with candles, singing bowls, and transformational crystals that resonate.</p>
+          <span class="pillar-link">Explore</span>
+        </a>
+        <a href="https://shop.utopiastore.ca/collections/crystallize" class="pillar">
+          <div class="pillar-glyph">◇</div>
+          <h3 class="pillar-title">Crystallize</h3>
+          <p class="pillar-text">Anchor your intentions with hand-selected healing stones, jewelry, and chakra-aligned pieces — each chosen with intention.</p>
+          <span class="pillar-link">Explore</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story" id="story">
+    <div class="section-inner">
+      <div class="story-layout">
+        <div class="story-visual reveal">
+          <div class="story-frame">
+            <!-- Replace with: <img src="images/store-interior.jpg" alt="Utopia Sacred Space interior, North Vancouver" style="width:100%;height:100%;object-fit:cover;"> -->
+            <div class="story-frame-inner">
+              <div class="story-placeholder">
+                <div class="story-placeholder-glyph">✦</div>
+                <p class="story-placeholder-text">Add your store photo here<br>store-interior.jpg</p>
+              </div>
+            </div>
+          </div>
+          <div class="story-badge">
+            <span class="story-badge-num">20</span>
+            <span class="story-badge-text">years of<br>sacred<br>space</span>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <span class="section-eyebrow">Our Story</span>
+          <h2 class="section-title">More than a store.<br><em>A living sanctuary.</em></h2>
+          <p class="section-body">Founded on a simple vision — to create a warm, judgment-free space where people can smudge, ignite their inner fire, and crystallize their deepest intentions.</p>
+          <div class="story-quote">
+            <p>"Utopia has been a cornerstone of North Vancouver's spiritual community for two decades, holding space for healing, curiosity, and authentic connection."</p>
+          </div>
+          <p class="section-body">Today, under new stewardship that deeply honours this legacy, we continue to hold space for healing crystals, intentional tools, tarot &amp; oracle, and the beautiful creations of local North Vancouver artists and makers.</p>
+          <a href="https://shop.utopiastore.ca" class="btn-primary" style="display:inline-block;margin-top:2rem;">Shop the Collection</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOP BY INTENTION -->
+  <section class="intentions" id="shop">
+    <div class="section-inner">
+      <div class="intentions-intro">
+        <div class="reveal">
+          <span class="section-eyebrow">Shop by Intention</span>
+          <h2 class="section-title">Find what your<br><em>soul is calling for</em></h2>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <p class="section-body">Every crystal, every tool, every piece in our collection carries intention. Browse by what you need most right now.</p>
+          <a href="https://shop.utopiastore.ca" class="btn-ghost" style="display:inline-block;margin-top:1.5rem;">Browse All Collections</a>
+        </div>
+      </div>
+
+      <div class="intentions-grid reveal">
+        <a href="https://shop.utopiastore.ca/collections/love" class="intention-card">
+          <div class="intention-symbol">♡</div>
+          <div class="intention-name">Love &amp; Relationships</div>
+          <div class="intention-sub">Rose quartz · rhodonite · emerald</div>
+        </a>
+        <a href="https://shop.utopiastore.ca/collections/protection" class="intention-card">
+          <div class="intention-symbol">◈</div>
+          <div class="intention-name">Protection &amp; Grounding</div>
+          <div class="intention-sub">Black tourmaline · obsidian · hematite</div>
+        </a>
+        <a href="https://shop.utopiastore.ca/collections/abundance" class="intention-card">
+          <div class="intention-symbol">✦</div>
+          <div class="intention-name">Abundance &amp; Prosperity</div>
+          <div class="intention-sub">Citrine · pyrite · green aventurine</div>
+        </a>
+        <a href="https://shop.utopiastore.ca/collections/healing" class="intention-card">
+          <div class="intention-symbol">◯</div>
+          <div class="intention-name">Healing &amp; Calm</div>
+          <div class="intention-sub">Amethyst · blue lace agate · selenite</div>
+        </a>
+        <a href="https://shop.utopiastore.ca/collections/clarity" class="intention-card">
+          <div class="intention-symbol">◇</div>
+          <div class="intention-name">Clarity &amp; Focus</div>
+          <div class="intention-sub">Clear quartz · fluorite · sodalite</div>
+        </a>
+        <a href="https://shop.utopiastore.ca/collections/spiritual" class="intention-card">
+          <div class="intention-symbol">☽</div>
+          <div class="intention-name">Spiritual Growth</div>
+          <div class="intention-sub">Labradorite · moonstone · kyanite</div>
+        </a>
+      </div>
+
+      <div class="chakra-strip reveal reveal-delay-2">
+        <div class="chakra-dot ch-root">Root</div>
+        <div class="chakra-dot ch-sacral">Sacral</div>
+        <div class="chakra-dot ch-solar">Solar Plexus</div>
+        <div class="chakra-dot ch-heart">Heart</div>
+        <div class="chakra-dot ch-throat">Throat</div>
+        <div class="chakra-dot ch-third">Third Eye</div>
+        <div class="chakra-dot ch-crown">Crown</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCAL ARTISTS -->
+  <section class="artists" id="artists">
+    <div class="section-inner">
+      <div class="artists-layout">
+        <div class="reveal">
+          <span class="section-eyebrow">Local Artists &amp; Makers</span>
+          <h2 class="section-title">Made with <em>intention</em>, by local hands</h2>
+          <p class="section-body" style="margin-top:1.5rem;">Utopia is proud to showcase and support talented creators from North Vancouver and the Lower Mainland — unique, one-of-a-kind pieces made with intention.</p>
+          <div class="artist-callout">
+            Many pieces are available on consignment. When you buy from a local artist here, you directly support our vibrant spiritual community.
+          </div>
+          <a href="https://shop.utopiastore.ca/collections/local-artists" class="btn-ghost" style="display:inline-block;margin-top:2rem;">Meet Our Local Makers</a>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <div class="artist-slots">
+            <!-- Replace each slot with an artist photo + name when ready -->
+            <div class="artist-slot">
+              <div class="artist-slot-glyph">✦</div>
+              <span class="artist-slot-label">Artist<br>coming soon</span>
+            </div>
+            <div class="artist-slot">
+              <div class="artist-slot-glyph">◇</div>
+              <span class="artist-slot-label">Artist<br>coming soon</span>
+            </div>
+            <div class="artist-slot">
+              <div class="artist-slot-glyph">○</div>
+              <span class="artist-slot-label">Artist<br>coming soon</span>
+            </div>
+            <div class="artist-slot">
+              <div class="artist-slot-glyph">△</div>
+              <span class="artist-slot-label">Artist<br>coming soon</span>
+            </div>
+            <div class="artist-slot">
+              <div class="artist-slot-glyph">◈</div>
+              <span class="artist-slot-label">Artist<br>coming soon</span>
+            </div>
+            <div class="artist-slot">
+              <div class="artist-slot-glyph">☽</div>
+              <span class="artist-slot-label">Artist<br>coming soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section-inner">
+      <div class="reveal">
+        <span class="section-eyebrow">Services &amp; Gatherings</span>
+        <h2 class="section-title">Step deeper into<br><em>the sanctuary</em></h2>
+      </div>
+      <div class="services-grid reveal reveal-delay-1">
+        <a href="https://www.utopiastore.ca/book-now" class="service-item">
+          <span class="service-num">01</span>
+          <div class="service-info">
+            <div class="service-name">Tarot &amp; Oracle Readings</div>
+            <div class="service-desc">Gain clarity and perspective with an intuitive reading from our experienced practitioners.</div>
+          </div>
+        </a>
+        <a href="https://www.utopiastore.ca/energy-work" class="service-item">
+          <span class="service-num">02</span>
+          <div class="service-info">
+            <div class="service-name">Energy Healing &amp; Reiki</div>
+            <div class="service-desc">Restore balance and flow through gentle, intentional energy work tailored to your needs.</div>
+          </div>
+        </a>
+        <a href="https://www.utopiastore.ca/meditations" class="service-item">
+          <span class="service-num">03</span>
+          <div class="service-info">
+            <div class="service-name">Sound Baths &amp; Meditation</div>
+            <div class="service-desc">Immersive sound healing experiences using singing bowls, gongs, and sacred instruments.</div>
+          </div>
+        </a>
+        <a href="https://www.utopiastore.ca/gatherings" class="service-item">
+          <span class="service-num">04</span>
+          <div class="service-info">
+            <div class="service-name">Private Space Rental</div>
+            <div class="service-desc">Host your own workshops, circles, or healing sessions in our sacred Lonsdale Ave space.</div>
+          </div>
+        </a>
+        <a href="https://www.utopiastore.ca/classes" class="service-item">
+          <span class="service-num">05</span>
+          <div class="service-info">
+            <div class="service-name">Seasonal Events &amp; Circles</div>
+            <div class="service-desc">Full moon circles, equinox gatherings, and curated workshops with visiting practitioners.</div>
+          </div>
+        </a>
+        <a href="https://www.utopiastore.ca/book-now" class="service-item">
+          <span class="service-num">06</span>
+          <div class="service-info">
+            <div class="service-name">Classes &amp; Workshops</div>
+            <div class="service-desc">Learn crystal healing, tarot foundations, and ritual practice with guided, intimate sessions.</div>
+          </div>
+        </a>
+      </div>
+      <div style="margin-top:2.5rem;" class="reveal reveal-delay-2">
+        <a href="https://www.utopiastore.ca/book-now" class="btn-primary">View Calendar &amp; Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="visit" id="visit">
+    <div class="section-inner">
+      <div class="visit-layout">
+        <div class="reveal">
+          <span class="section-eyebrow">Visit Us</span>
+          <h2 class="section-title">Come find<br><em>your sanctuary</em></h2>
+          <p class="section-body" style="margin-top:1rem;">We're on Lonsdale Avenue in the heart of North Vancouver — always a warm welcome waiting.</p>
+
+          <div class="visit-info-block">
+            <div class="visit-row">
+              <span class="visit-label">Address</span>
+              <span class="visit-value">1826 Lonsdale Ave<br>North Vancouver, BC V7M 2J9</span>
+            </div>
+            <div class="visit-row">
+              <span class="visit-label">Hours</span>
+              <span class="visit-value">Mon – Sat: 11am – 6pm<br>Sunday: 12pm – 5pm</span>
+            </div>
+            <div class="visit-row">
+              <span class="visit-label">Phone</span>
+              <span class="visit-value">1-604-984-8782</span>
+            </div>
+            <div class="visit-row">
+              <span class="visit-label">Email</span>
+              <span class="visit-value">hello@utopiastore.ca</span>
+            </div>
+            <div class="visit-row">
+              <span class="visit-label">Pickup</span>
+              <span class="visit-value">Free Click &amp; Collect on all online orders</span>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;">
+            <a href="https://maps.google.com/?q=1826+Lonsdale+Ave+North+Vancouver+BC" target="_blank" rel="noopener" class="btn-primary">Get Directions</a>
+            <a href="https://shop.utopiastore.ca" class="btn-ghost">Shop &amp; Pickup In-Store</a>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-1">
+          <!-- Replace with actual Google Maps embed iframe -->
+          <div class="map-placeholder">
+            <div class="map-glyph">⊕</div>
+            <p>Replace this with a Google Maps embed<br><br>
+            &lt;iframe src="https://maps.google.com/maps?q=1826+Lonsdale+Ave+North+Vancouver&output=embed" ...&gt;&lt;/iframe&gt;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="section-inner">
+      <div class="reveal">
+        <h2 class="newsletter-title">Join our <em>circle</em></h2>
+        <p class="newsletter-sub">Monthly intention guidance, new arrival alerts, exclusive local artist features, and ritual inspiration — straight to your inbox.</p>
+        <!-- Replace action with your Klaviyo / Formspree / ConvertKit embed URL -->
+        <form class="newsletter-form" action="https://formspree.io/f/your-form-id" method="POST" onsubmit="handleSignup(event)">
+          <input type="email" name="email" class="newsletter-input" placeholder="Your email address" required>
+          <button type="submit" class="newsletter-btn">Join the Circle</button>
+        </form>
+        <p id="signup-msg" style="margin-top:1rem;font-size:0.8rem;color:var(--gold);display:none;">Thank you — welcome to the circle ✦</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p>U T O P I A</p>
+        <small>20 years of sacred space in North Vancouver.<br>1826 Lonsdale Ave · hello@utopiastore.ca<br>© 2026 Utopia Store</small>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="https://shop.utopiastore.ca/collections/intention">By Intention</a></li>
+          <li><a href="https://shop.utopiastore.ca/collections/chakra">By Chakra</a></li>
+          <li><a href="https://shop.utopiastore.ca/collections/crystals">Crystals</a></li>
+          <li><a href="https://shop.utopiastore.ca/collections/local-artists">Local Artists</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="https://www.utopiastore.ca/book-now">Book a Reading</a></li>
+          <li><a href="https://www.utopiastore.ca/energy-work">Energy Work</a></li>
+          <li><a href="https://www.utopiastore.ca/gatherings">Space Rental</a></li>
+          <li><a href="https://www.utopiastore.ca/classes">Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.utopiastore.ca/about">Our Story</a></li>
+          <li><a href="https://www.instagram.com/utopia.sacred.space" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/utopiastore" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.utopiastore.ca/contact-us">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Utopia Store · North Vancouver · Sacred Space Since 2004</span>
+      <span>
+        <a href="#" style="color:var(--bark);text-decoration:none;margin-right:1rem;">Privacy</a>
+        <a href="#" style="color:var(--bark);text-decoration:none;">Terms</a>
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    // Nav scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Reveal on scroll
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+
+    // Newsletter
+    function handleSignup(e) {
+      e.preventDefault();
+      document.getElementById('signup-msg').style.display = 'block';
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
