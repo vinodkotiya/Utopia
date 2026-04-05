@@ -28,47 +28,43 @@
 <body style="background:var(--bg-page);color:var(--text-body)">
 
   <!-- NAV -->
-  <nav id="nav" class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-4 transition-all" style="background:var(--bg-dark)">
+  <nav id="nav" class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-4 transition-all" style="background:var(--bg-dark);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)">
     <a href="index.html" style="font-family:var(--font-display);font-size:1.3rem;letter-spacing:.35em;color:#EDE8FF;text-decoration:none">U T O P I A</a>
-    <ul class="hidden md:flex gap-8 list-none">
+    <ul class="hidden md:flex gap-8 list-none items-center">
       <li><a href="index.html#story" class="nav-link" style="font-family:var(--font-body);font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:rgba(237,232,255,.75);text-decoration:none">Our Story</a></li>
       <li><a href="index.html#shop" class="nav-link" style="font-family:var(--font-body);font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:rgba(237,232,255,.75);text-decoration:none">Shop</a></li>
-      <li><a href="index.html#services" class="nav-link" style="font-family:var(--font-body);font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:rgba(237,232,255,.75);text-decoration:none">Services</a></li>
+      <li class="relative group">
+        <span class="nav-link cursor-pointer" style="font-family:var(--font-body);font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:rgba(237,232,255,.75)">Services ▾</span>
+        <ul class="absolute top-full left-0 mt-2 py-2 px-1 list-none opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all" style="background:var(--bg-dark);border:1px solid var(--border);border-radius:6px;min-width:180px">
+          <li><a href="energy-work.html" style="display:block;padding:.5rem 1rem;font-family:var(--font-body);font-size:.72rem;color:rgba(237,232,255,.75);text-decoration:none;white-space:nowrap">Energy Work</a></li>
+          <li><a href="gatherings.html" style="display:block;padding:.5rem 1rem;font-family:var(--font-body);font-size:.72rem;color:rgba(237,232,255,.75);text-decoration:none;white-space:nowrap">Space Rental</a></li>
+          <li><a href="meditations.html" style="display:block;padding:.5rem 1rem;font-family:var(--font-body);font-size:.72rem;color:rgba(237,232,255,.75);text-decoration:none;white-space:nowrap">Meditations</a></li>
+        </ul>
+      </li>
       <li><a href="blog/index.html" class="nav-link" style="font-family:var(--font-body);font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:rgba(237,232,255,.75);text-decoration:none">Blog</a></li>
       <li><a href="index.html#visit" class="nav-link" style="font-family:var(--font-body);font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:rgba(237,232,255,.75);text-decoration:none">Visit</a></li>
     </ul>
-    <a href="https://shop.utopiastore.ca" class="hidden md:inline-block btn-shimmer" style="font-family:var(--font-body);font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;background:var(--violet);color:#fff;padding:.6rem 1.4rem;text-decoration:none;border-radius:4px">Shop Now</a>
-    <button id="navBurger" class="burger md:hidden flex flex-col gap-[5px] p-2 bg-transparent border-none cursor-pointer z-[201]" aria-label="Open menu" aria-expanded="false"><span style="background:#EDE8FF"></span><span style="background:#EDE8FF"></span><span style="background:#EDE8FF"></span></button>
+    <div class="hidden md:flex items-center gap-4">
+      <a href="https://www.instagram.com/utopia.sacred.space" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(237,232,255,.6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="rgba(237,232,255,.6)" stroke="none"/></svg></a>
+      <a href="https://www.facebook.com/utopiastore" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(237,232,255,.6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+      <a href="https://www.tiktok.com/@utopia.sacred.space" target="_blank" rel="noopener" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(237,232,255,.6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 104 4V4a5 5 0 005 5"/></svg></a>
+      <a href="https://shop.utopiastore.ca" class="btn-shimmer" style="font-family:var(--font-body);font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;background:var(--violet);color:#fff;padding:.6rem 1.4rem;text-decoration:none;border-radius:4px">Shop Now</a>
+    </div>
+    <button id="navBurger" class="burger md:hidden flex flex-col gap-[5px] p-2 bg-transparent border-none cursor-pointer z-[201]" aria-label="Open menu" aria-expanded="false"><span style="background:var(--text-heading)"></span><span style="background:var(--text-heading)"></span><span style="background:var(--text-heading)"></span></button>
   </nav>
-  <div id="navOverlay" class="fixed inset-0 z-[200] backdrop-blur-xl flex items-center justify-center opacity-0 invisible transition-all duration-350" style="background:rgba(26,15,46,.97);transition:opacity .35s,visibility .35s">
+  <div id="navOverlay" class="fixed inset-0 z-[200] flex items-center justify-center opacity-0 invisible" style="background:rgba(26,15,46,.97);backdrop-filter:blur(16px);transition:opacity .35s,visibility .35s">
     <ul class="list-none text-center flex flex-col gap-8">
-      <li><a href="index.html" class="" style="font-family:var(--font-display);font-size:1.8rem;color:#EDE8FF;text-decoration:none">Home</a></li>
-      <li><a href="index.html#shop" class="" style="font-family:var(--font-display);font-size:1.8rem;color:#EDE8FF;text-decoration:none">Shop</a></li>
-      <li><a href="index.html#services" class="" style="font-family:var(--font-display);font-size:1.8rem;color:#EDE8FF;text-decoration:none">Services</a></li>
-      <li><a href="blog/index.html" class="" style="font-family:var(--font-display);font-size:1.8rem;color:#EDE8FF;text-decoration:none">Blog</a></li>
-      <li><a href="index.html#visit" class="" style="font-family:var(--font-display);font-size:1.8rem;color:#EDE8FF;text-decoration:none">Visit</a></li>
-      <li><a href="https://www.utopiastore.ca/book-now" rel="noopener" class="" style="font-family:var(--font-body);font-size:1rem;text-transform:uppercase;letter-spacing:.18em;color:var(--violet);text-decoration:none">Book Now</a></li>
+      <li><a href="index.html" style="font-family:var(--font-display);font-size:1.8rem;color:#EDE8FF;text-decoration:none">Home</a></li>
+      <li><a href="index.html#story" style="font-family:var(--font-display);font-size:1.8rem;color:#EDE8FF;text-decoration:none">Our Story</a></li>
+      <li><a href="index.html#shop" style="font-family:var(--font-display);font-size:1.8rem;color:#EDE8FF;text-decoration:none">Shop</a></li>
+      <li><a href="energy-work.html" style="font-family:var(--font-display);font-size:1.8rem;color:#EDE8FF;text-decoration:none">Energy Work</a></li>
+      <li><a href="gatherings.html" style="font-family:var(--font-display);font-size:1.8rem;color:#EDE8FF;text-decoration:none">Space Rental</a></li>
+      <li><a href="meditations.html" style="font-family:var(--font-display);font-size:1.8rem;color:#EDE8FF;text-decoration:none">Meditations</a></li>
+      <li><a href="blog/index.html" style="font-family:var(--font-display);font-size:1.8rem;color:#EDE8FF;text-decoration:none">Blog</a></li>
+      <li><a href="index.html#visit" style="font-family:var(--font-display);font-size:1.8rem;color:#EDE8FF;text-decoration:none">Visit</a></li>
+      <li><a href="https://shop.utopiastore.ca" style="font-family:var(--font-body);font-size:1rem;text-transform:uppercase;letter-spacing:.18em;color:var(--violet-light);text-decoration:none">Shop Now</a></li>
     </ul>
   </div>
-
-  <!-- HERO -->
-  <section class="relative min-h-[70vh] flex flex-col justify-center items-center text-center overflow-hidden pt-24" style="background:var(--bg-page)">
-    <div class="absolute inset-0" style="background:radial-gradient(ellipse 60% 50% at 30% 40%,rgba(155,127,212,.15) 0%,transparent 60%),radial-gradient(ellipse 40% 60% at 75% 60%,rgba(200,160,96,.10) 0%,transparent 55%),radial-gradient(ellipse 80% 80% at 50% 50%,rgba(46,32,64,.6) 0%,transparent 70%)"></div>
-    <div class="orb absolute w-[500px] h-[500px] rounded-full bg-amethyst opacity-[.06] -top-24 -left-24"></div>
-    <div class="orb absolute w-[300px] h-[300px] rounded-full bg-gold opacity-[.06] bottom-0 right-[10%]" style="animation-delay:-6s;animation-duration:22s"></div>
-    <div class="orb absolute w-[200px] h-[200px] rounded-full bg-sage opacity-[.06] top-[30%] left-[60%]" style="animation-delay:-12s;animation-duration:15s"></div>
-    <img class="hero-mandala absolute top-1/2 left-1/2 w-[min(90vw,600px)] h-[min(90vw,600px)] -translate-x-1/2 -translate-y-1/2 opacity-[.15] z-[1] pointer-events-none" src="assets/images/mandala.svg" alt="" aria-hidden="true">
-    <div id="particleField" class="absolute inset-0 z-[1] pointer-events-none overflow-hidden" aria-hidden="true"></div>
-    <div class="absolute inset-0 opacity-30 pointer-events-none" style="background-image:url(&quot;data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E&quot;)"></div>
-    <div class="relative z-[2] max-w-3xl px-6 reveal">
-      <span class="block text-[.65rem] font-body uppercase tracking-[.32em] text-gold mb-4">Services · Space &amp; Gatherings</span>
-      <h1 class="hero-title font-display text-[clamp(2.2rem,7vw,5rem)] font-light leading-[1] tracking-[-0.02em] mb-6" style="color:var(--text-heading)"">Hold space in our <em class="italic " style="color:var(--violet)">sanctuary</em></h1>
-      <p class="font-display text-[clamp(1rem,2.5vw,1.3rem)] font-light italic text-rose leading-relaxed max-w-xl mx-auto mb-12">Utopia's Lonsdale Avenue space is available for private bookings — intimate workshops, moon circles, sound baths, healing sessions, and spiritual gatherings in North Vancouver's most beloved sacred space.</p>
-      <div class="hero-ctas flex gap-5 justify-center flex-wrap">
-        <a href="mailto:hello@utopiastore.ca" class="btn-shimmer text-xs font-medium uppercase tracking-[.18em] bg-gold text-void px-8 py-4 border border-gold hover:bg-gold-light transition-all">Enquire About Booking</a>
-        <a href="tel:16049848782" class="btn-shimmer text-xs uppercase tracking-[.18em] text-amethyst bg-transparent px-8 py-4 border border-amethyst-dim hover:border-amethyst hover:bg-amethyst/[.08] transition-all">Call Us</a>
-      </div>
-    </div>
   </section>
 
 
@@ -134,43 +130,49 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer style="background:var(--bg-dark)" class=" border-t border-[rgba(91,45,142,0.06)] px-6 md:px-10 py-12">
+  <!-- FOOTER (dark) -->
+  <footer class="px-6 md:px-10 py-12" style="background:var(--bg-dark)">
     <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1fr] gap-8">
       <div class="col-span-2 md:col-span-1">
-        <p class="font-display text-xl tracking-[.25em] text-gold-light mb-3">U T O P I A</p>
-        <small class="text-[.8rem] font-light text-[#7A6B8A]/50 leading-[1.8] block">20 years of sacred space in North Vancouver.<br>1826 Lonsdale Ave · hello@utopiastore.ca<br>© 2026 Utopia Store</small>
+        <p style="font-family:var(--font-display);font-size:1.3rem;letter-spacing:.25em;color:#EDE8FF;margin-bottom:.75rem">U T O P I A</p>
+        <small style="font-size:.8rem;font-weight:300;color:rgba(237,232,255,.4);line-height:1.8;display:block">20 years of sacred space in North Vancouver.<br>1826 Lonsdale Ave · hello@utopiastore.ca<br>© 2026 Utopia Store</small>
       </div>
       <div>
-        <h4 class="text-[.6rem] font-medium tracking-[.3em] uppercase text-gold mb-5">Shop</h4>
+        <h4 style="font-size:.6rem;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:rgba(237,232,255,.9);margin-bottom:1.25rem">Shop</h4>
         <ul class="list-none space-y-0">
-          <li><a href="https://shop.utopiastore.ca/collections/intention" class="text-[.82rem] font-light text-[#7A6B8A] hover:text-gold-light transition-colors min-h-[44px] flex items-center leading-[2.2]">By Intention</a></li>
-          <li><a href="https://shop.utopiastore.ca/collections/crystals" class="text-[.82rem] font-light text-[#7A6B8A] hover:text-gold-light transition-colors min-h-[44px] flex items-center leading-[2.2]">Crystals</a></li>
-          <li><a href="https://shop.utopiastore.ca/collections/local-artists" class="text-[.82rem] font-light text-[#7A6B8A] hover:text-gold-light transition-colors min-h-[44px] flex items-center leading-[2.2]">Local Artists</a></li>
+          <li><a href="https://shop.utopiastore.ca/collections/intention" style="font-size:.82rem;font-weight:300;color:rgba(237,232,255,.6);text-decoration:none;min-height:44px;display:flex;align-items:center;line-height:2.2">By Intention</a></li>
+          <li><a href="https://shop.utopiastore.ca/collections/crystals" style="font-size:.82rem;font-weight:300;color:rgba(237,232,255,.6);text-decoration:none;min-height:44px;display:flex;align-items:center;line-height:2.2">Crystals</a></li>
+          <li><a href="https://shop.utopiastore.ca/collections/local-artists" style="font-size:.82rem;font-weight:300;color:rgba(237,232,255,.6);text-decoration:none;min-height:44px;display:flex;align-items:center;line-height:2.2">Local Artists</a></li>
         </ul>
       </div>
       <div>
-        <h4 class="text-[.6rem] font-medium tracking-[.3em] uppercase text-gold mb-5">Services</h4>
+        <h4 style="font-size:.6rem;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:rgba(237,232,255,.9);margin-bottom:1.25rem">Services</h4>
         <ul class="list-none space-y-0">
-          <li><a href="energy-work.html" class="text-[.82rem] font-light text-[#7A6B8A] hover:text-gold-light transition-colors min-h-[44px] flex items-center leading-[2.2]">Energy Work</a></li>
-          <li><a href="meditations.html" class="text-[.82rem] font-light text-[#7A6B8A] hover:text-gold-light transition-colors min-h-[44px] flex items-center leading-[2.2]">Meditations</a></li>
-          <li><a href="gatherings.html" class="text-[.82rem] font-light text-[#7A6B8A] hover:text-gold-light transition-colors min-h-[44px] flex items-center leading-[2.2]">Space Rental</a></li>
-          <li><a href="https://www.utopiastore.ca/book-now" rel="noopener" class="text-[.82rem] font-light text-[#7A6B8A] hover:text-gold-light transition-colors min-h-[44px] flex items-center leading-[2.2]">Book Now</a></li>
+          <li><a href="energy-work.html" style="font-size:.82rem;font-weight:300;color:rgba(237,232,255,.6);text-decoration:none;min-height:44px;display:flex;align-items:center;line-height:2.2">Energy Work</a></li>
+          <li><a href="gatherings.html" style="font-size:.82rem;font-weight:300;color:rgba(237,232,255,.6);text-decoration:none;min-height:44px;display:flex;align-items:center;line-height:2.2">Space Rental</a></li>
+          <li><a href="meditations.html" style="font-size:.82rem;font-weight:300;color:rgba(237,232,255,.6);text-decoration:none;min-height:44px;display:flex;align-items:center;line-height:2.2">Meditations</a></li>
         </ul>
       </div>
       <div>
-        <h4 class="text-[.6rem] font-medium tracking-[.3em] uppercase text-gold mb-5">Connect</h4>
+        <h4 style="font-size:.6rem;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:rgba(237,232,255,.9);margin-bottom:1.25rem">Connect</h4>
         <ul class="list-none space-y-0">
-          <li><a href="index.html" class="text-[.82rem] font-light text-[#7A6B8A] hover:text-gold-light transition-colors min-h-[44px] flex items-center leading-[2.2]">Home</a></li>
-          <li><a href="https://www.instagram.com/utopia.sacred.space" target="_blank" rel="noopener" class="text-[.82rem] font-light text-[#7A6B8A] hover:text-gold-light transition-colors min-h-[44px] flex items-center leading-[2.2]">Instagram</a></li>
-          <li><a href="https://www.facebook.com/utopiastore" target="_blank" rel="noopener" class="text-[.82rem] font-light text-[#7A6B8A] hover:text-gold-light transition-colors min-h-[44px] flex items-center leading-[2.2]">Facebook</a></li>
+          <li><a href="https://www.utopiastore.ca/about" style="font-size:.82rem;font-weight:300;color:rgba(237,232,255,.6);text-decoration:none;min-height:44px;display:flex;align-items:center;line-height:2.2">Our Story</a></li>
+          <li><a href="https://www.utopiastore.ca/contact-us" style="font-size:.82rem;font-weight:300;color:rgba(237,232,255,.6);text-decoration:none;min-height:44px;display:flex;align-items:center;line-height:2.2">Contact</a></li>
+          <li class="flex items-center gap-4 min-h-[44px]">
+            <a href="https://www.instagram.com/utopia.sacred.space" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(237,232,255,.6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="rgba(237,232,255,.6)" stroke="none"/></svg></a>
+            <a href="https://www.facebook.com/utopiastore" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(237,232,255,.6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="https://www.tiktok.com/@utopia.sacred.space" target="_blank" rel="noopener" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(237,232,255,.6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 104 4V4a5 5 0 005 5"/></svg></a>
+          </li>
         </ul>
       </div>
     </div>
-    <div class="max-w-5xl mx-auto mt-8 pt-6 border-t border-amethyst/[.06] flex justify-between items-center flex-wrap gap-4 text-[.68rem] font-light text-[#7A6B8A]">
+    <p style="font-size:.72rem;color:rgba(237,232,255,.2);line-height:1.8;max-width:700px;margin:1.5rem auto 0;text-align:center">Utopia Store is North Vancouver's trusted metaphysical and crystal shop, serving the spiritual community since 2004. We carry ethically sourced healing crystals, amethyst, rose quartz, obsidian, and selenite, along with tarot and oracle decks, chakra jewelry, singing bowls, smudge tools, orgonite, and handmade pieces from local BC artists. We offer tarot readings, reiki and energy healing, sound baths, and sacred space rental at 1826 Lonsdale Avenue. Our intention kits and crystal gift sets make meaningful spiritual gifts for any occasion.</p>
+    <div class="max-w-5xl mx-auto mt-8 pt-6 flex justify-between items-center flex-wrap gap-4" style="border-top:1px solid rgba(237,232,255,.1);font-size:.68rem;font-weight:300;color:rgba(237,232,255,.35)">
       <span>Utopia Store · North Vancouver · Sacred Space Since 2004</span>
       <span class="flex items-center gap-4 flex-wrap">
-        <a href="https://ekasmin.com" target="_blank" rel="noopener" class="text-[#7A6B8A] hover:text-gold-light transition-colors no-underline min-h-[44px] inline-flex items-center">Powered by Ekasmin.com</a>
+        <a href="#" style="color:rgba(237,232,255,.35);text-decoration:none;min-height:44px;display:inline-flex;align-items:center">Privacy</a>
+        <a href="#" style="color:rgba(237,232,255,.35);text-decoration:none;min-height:44px;display:inline-flex;align-items:center">Terms</a>
+        <a href="https://ekasmin.com" target="_blank" rel="noopener" style="color:rgba(237,232,255,.35);text-decoration:none;min-height:44px;display:inline-flex;align-items:center">Powered by Ekasmin.com</a>
       </span>
     </div>
   </footer>
