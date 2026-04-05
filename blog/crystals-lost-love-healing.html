@@ -13,27 +13,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config={theme:{extend:{colors:{void:'#0E0B14',deep:'#1A1425',card:'#2E2040',surface:'#241838',gold:{DEFAULT:'#C8A060',light:'#E8D090'},amethyst:{DEFAULT:'#9B7FD4',dim:'#5548A0'},rose:'#C8A0B8',sage:'#6E8870'},fontFamily:{display:['Playfair Display','Georgia','serif'],body:['Inter','sans-serif']}}}}
-  </script>
-  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/theme-warm.css">
 </head>
-<body class="bg-void text-gray-200 overflow-x-hidden font-body">
+<body style="background:var(--bg-page);color:var(--text-body)">
 
   <!-- NAV -->
-  <nav id="nav" class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-4 transition-all duration-400">
-    <a href="../index.html" class="font-display text-xl tracking-[.35em] text-gold-light">U T O P I A</a>
+  <nav id="nav" class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-4 transition-all" style="background:var(--bg-dark)">
+    <a href="../index.html" style="font-family:var(--font-display);font-size:1.3rem;letter-spacing:.35em;color:#EDE8FF;text-decoration:none">U T O P I A</a>
     <ul class="hidden md:flex gap-8 list-none">
       <li><a href="../index.html#shop" class="nav-link text-[.72rem] font-body uppercase tracking-[.14em] text-rose hover:text-gold-light transition-colors">Shop</a></li>
       <li><a href="../index.html#services" class="nav-link text-[.72rem] font-body uppercase tracking-[.14em] text-rose hover:text-gold-light transition-colors">Services</a></li>
       <li><a href="index.html" class="nav-link text-[.72rem] font-body uppercase tracking-[.14em] text-rose hover:text-gold-light transition-colors">Blog</a></li>
       <li><a href="../index.html#visit" class="nav-link text-[.72rem] font-body uppercase tracking-[.14em] text-rose hover:text-gold-light transition-colors">Visit</a></li>
     </ul>
-    <a href="https://shop.utopiastore.ca" class="hidden md:inline-block btn-shimmer text-xs uppercase tracking-[.12em] bg-gold text-void px-5 py-2.5 hover:bg-gold-light transition-colors">Shop Now</a>
+    <a href="https://shop.utopiastore.ca" class="hidden md:inline-block btn-shimmer text-xs uppercase tracking-[.12em] bg-violet text-void px-5 py-2.5 hover:bg-gold-light transition-colors">Shop Now</a>
     <button id="navBurger" class="burger md:hidden flex flex-col gap-[5px] p-2 bg-transparent border-none cursor-pointer z-[201]" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </nav>
-  <div id="navOverlay" class="fixed inset-0 z-[200] bg-void/97 backdrop-blur-xl flex items-center justify-center opacity-0 invisible transition-all duration-350" style="transition:opacity .35s,visibility .35s">
+  <div id="navOverlay" class="fixed inset-0 z-[200] backdrop-blur-xl flex items-center justify-center opacity-0 invisible transition-all duration-350" style="background:rgba(26,15,46,.97);transition:opacity .35s,visibility .35s">
     <ul class="list-none text-center flex flex-col gap-8">
       <li><a href="../index.html" class="font-display text-3xl text-gray-100 hover:text-gold-light transition-colors">Home</a></li>
       <li><a href="../index.html#shop" class="font-display text-3xl text-gray-100 hover:text-gold-light transition-colors">Shop</a></li>
@@ -44,23 +40,23 @@
   </div>
 
   <!-- HERO -->
-  <section class="relative min-h-[60vh] flex flex-col justify-center items-center text-center overflow-hidden bg-void pt-24">
+  <section class="relative min-h-[60vh] flex flex-col justify-center items-center text-center overflow-hidden pt-24" style="background:var(--bg-page)">
     <div class="absolute inset-0" style="background:radial-gradient(ellipse 60% 50% at 30% 40%,rgba(155,127,212,.15) 0%,transparent 60%),radial-gradient(ellipse 40% 60% at 75% 60%,rgba(200,160,96,.10) 0%,transparent 55%),radial-gradient(ellipse 80% 80% at 50% 50%,rgba(46,32,64,.6) 0%,transparent 70%)"></div>
     <div class="orb absolute w-[500px] h-[500px] rounded-full bg-amethyst opacity-[.06] -top-24 -left-24"></div>
-    <div class="orb absolute w-[300px] h-[300px] rounded-full bg-gold opacity-[.06] bottom-0 right-[10%]" style="animation-delay:-6s;animation-duration:22s"></div>
+    <div class="orb absolute w-[300px] h-[300px] rounded-full bg-violet opacity-[.06] bottom-0 right-[10%]" style="animation-delay:-6s;animation-duration:22s"></div>
     <div class="orb absolute w-[200px] h-[200px] rounded-full bg-sage opacity-[.06] top-[30%] left-[60%]" style="animation-delay:-12s;animation-duration:15s"></div>
     <img class="hero-mandala absolute top-1/2 left-1/2 w-[min(90vw,600px)] h-[min(90vw,600px)] -translate-x-1/2 -translate-y-1/2 opacity-[.15] z-[1] pointer-events-none" src="../assets/images/mandala.svg" alt="" aria-hidden="true">
     <div id="particleField" class="absolute inset-0 z-[1] pointer-events-none overflow-hidden" aria-hidden="true"></div>
     <div class="absolute inset-0 opacity-30 pointer-events-none" style="background-image:url(&quot;data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E&quot;)"></div>
     <div class="relative z-[2] max-w-3xl px-6 reveal">
       <span class="block text-[.65rem] font-body uppercase tracking-[.32em] text-gold mb-4">Blog · Crystals</span>
-      <h1 class="hero-title font-display text-[clamp(2rem,6vw,4rem)] font-light leading-[1.05] tracking-[-0.02em] text-gray-100 mb-4">Breaking Free from <em class="italic text-gold-light">Lost Love</em></h1>
+      <h1 class="hero-title font-display text-[clamp(2rem,6vw,4rem)] font-light leading-[1.05] tracking-[-0.02em] text-gray-100 mb-4">Breaking Free from <em class="italic " style="color:var(--violet)">Lost Love</em></h1>
       <p class="text-[.75rem] font-light text-gray-500 tracking-wider">By Wendy Chivers · August 11, 2023</p>
     </div>
   </section>
 
   <!-- ARTICLE -->
-  <article class="py-[clamp(5rem,10vw,9rem)] px-6 bg-void">
+  <article class="py-[clamp(5rem,10vw,9rem)] px-6" style="background:var(--bg-page)">
     <div class="max-w-3xl mx-auto">
       <div class="reveal prose-content space-y-6">
         <p class="text-[clamp(0.9rem,1.8vw,1.05rem)] font-light text-rose leading-[1.9]">Heartbreak is one of the most universal human experiences, and yet it can feel profoundly isolating. Whether you're grieving the end of a relationship, processing unrequited feelings, or healing from a loss that still lingers, crystals can offer gentle, grounding support as you move through the pain and toward wholeness.</p>
@@ -95,11 +91,11 @@
   </article>
 
   <!-- CTA -->
-  <section class="py-[clamp(5rem,10vw,9rem)] px-6 bg-void border-t border-amethyst/[.08]">
+  <section class="py-[clamp(5rem,10vw,9rem)] px-6 border-t" style="background:var(--bg-section);border-color:var(--border)" border-amethyst/[.08]">
     <div class="max-w-3xl mx-auto text-center reveal">
       <p class="text-[clamp(0.9rem,1.8vw,1.05rem)] font-light text-rose leading-[1.9] mb-8">Inspired by this article? Browse our hand-selected collection of healing crystals, intention kits, and sacred tools — available online with free click &amp; collect at our Lonsdale Ave store in North Vancouver.</p>
       <div class="hero-ctas flex gap-5 justify-center flex-wrap">
-        <a href="https://shop.utopiastore.ca" class="btn-shimmer text-xs font-medium uppercase tracking-[.18em] bg-gold text-void px-8 py-4 border border-gold hover:bg-gold-light transition-all">Shop the Collection</a>
+        <a href="https://shop.utopiastore.ca" class="btn-shimmer text-xs font-medium uppercase tracking-[.18em] bg-violet text-void px-8 py-4 border border-gold hover:bg-gold-light transition-all">Shop the Collection</a>
         <a href="https://www.utopiastore.ca/book-now" rel="noopener" class="btn-shimmer text-xs uppercase tracking-[.18em] text-amethyst bg-transparent px-8 py-4 border border-amethyst-dim hover:border-amethyst hover:bg-amethyst/[.08] transition-all">Book a Reading</a>
       </div>
       <p class="mt-8"><a href="index.html" class="text-[.75rem] uppercase tracking-[.2em] text-gold hover:text-gold-light transition-colors">← Back to Blog</a></p>
@@ -107,7 +103,7 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-[rgba(10,7,16,.95)] border-t border-amethyst/[.08] px-6 md:px-10 py-12">
+  <footer style="background:var(--bg-dark)" class=" border-t border-amethyst/[.08] px-6 md:px-10 py-12">
     <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1fr] gap-8">
       <div class="col-span-2 md:col-span-1">
         <p class="font-display text-xl tracking-[.25em] text-gold-light mb-3">U T O P I A</p>

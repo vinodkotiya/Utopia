@@ -5,20 +5,31 @@
 
 /* ── Variables ── */
 :root {
-  --bg-page:      #FDFAF6;
-  --bg-section:   #F5EFE6;
+  /* Backgrounds */
+  --bg-page:      #FFFFFF;
+  --bg-section:   #F8F5FF;
   --bg-card:      #FFFFFF;
-  --bg-dark:      #1C1428;
-  --gold:         #A0722A;
-  --gold-light:   #C8962E;
-  --amethyst:     #6B4F8A;
-  --sage:         #4A6B54;
-  --rose:         #8B5E6A;
-  --text-heading: #1C1428;
-  --text-body:    #4A3D35;
-  --text-muted:   #8A7A6E;
-  --border:       rgba(160, 114, 42, 0.15);
-  --border-hover: rgba(160, 114, 42, 0.35);
+  --bg-accent:    #F0EBFF;
+  --bg-dark:      #1A0F2E;
+  /* Primary — violet */
+  --violet:       #5B2D8E;
+  --violet-light: #7B4DB8;
+  --violet-dim:   #E8DFFF;
+  /* Secondary — teal */
+  --teal:         #1A7A6E;
+  --teal-light:   #E6F5F3;
+  /* Warm accent */
+  --amber:        #C17B2A;
+  /* Text */
+  --text-heading: #0F0A1A;
+  --text-body:    #2D2035;
+  --text-muted:   #7A6B8A;
+  --text-on-dark: #EDE8FF;
+  /* Borders */
+  --border:       rgba(91, 45, 142, 0.12);
+  --border-hover: rgba(91, 45, 142, 0.30);
+  --border-card:  rgba(91, 45, 142, 0.08);
+  /* Fonts */
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body:    'Jost', sans-serif;
 }
@@ -34,16 +45,17 @@ body {
 /* ── Keyframes ── */
 @keyframes drift { 0%,100%{transform:translate(0,0) scale(1)} 33%{transform:translate(30px,-20px) scale(1.05)} 66%{transform:translate(-20px,30px) scale(.97)} }
 @keyframes mandalaRotate { to{transform:translate(-50%,-50%) rotate(360deg)} }
-@keyframes particleRise { 0%{opacity:0;transform:translateY(0)} 10%{opacity:.5} 90%{opacity:.5} 100%{opacity:0;transform:translateY(-100vh)} }
+@keyframes mandalaPulse { 0%{opacity:.15;filter:drop-shadow(0 0 0 transparent)} 30%{opacity:.1;filter:none} 50%{opacity:.1;filter:none} 80%{opacity:.15;filter:drop-shadow(0 0 10px rgba(91,45,142,.15))} 100%{opacity:.15;filter:drop-shadow(0 0 0 transparent)} }
+@keyframes particleRise { 0%{opacity:0;transform:translateY(0)} 10%{opacity:.55} 90%{opacity:.55} 100%{opacity:0;transform:translateY(-100vh)} }
 @keyframes charFade { from{opacity:0;filter:blur(4px);transform:translateY(8px)} to{opacity:1;filter:blur(0);transform:translateY(0)} }
 @keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
 @keyframes scrollPulse { 0%,100%{opacity:.4;transform:scaleY(1)} 50%{opacity:1;transform:scaleY(1.1)} }
 @keyframes marqueeScroll { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
 @keyframes btnShimmer { from{left:-100%} to{left:120%} }
 @keyframes particleImpact {
-  0%   { box-shadow:0 0 0 0 rgba(160,114,42,0) }
-  15%  { box-shadow:0 0 18px 4px rgba(160,114,42,.35), inset 0 0 12px rgba(200,150,46,.1) }
-  100% { box-shadow:0 0 0 0 rgba(160,114,42,0) }
+  0%   { box-shadow:0 0 0 0 rgba(91,45,142,0) }
+  15%  { box-shadow:0 0 18px 4px rgba(91,45,142,.35), inset 0 0 12px rgba(123,77,184,.1) }
+  100% { box-shadow:0 0 0 0 rgba(91,45,142,0) }
 }
 
 /* ── Animation classes ── */
@@ -51,8 +63,8 @@ body {
 .hero-title .char { display:inline-block;opacity:0;animation:charFade .5s ease forwards }
 .hero-title br { display:block }
 .orb { animation:drift 18s ease-in-out infinite }
-.hero-mandala { animation:mandalaRotate 120s linear infinite }
-.particle { position:absolute;border-radius:50%;background:var(--gold);opacity:0;animation:particleRise linear infinite }
+.hero-mandala { animation:mandalaRotate 120s linear infinite, mandalaPulse 14s ease-in-out infinite }
+.particle { position:absolute;border-radius:50%;background:radial-gradient(circle,#FFD54F 0%,#E8752A 50%,#D4421A 100%);box-shadow:0 0 3px 1px rgba(232,117,42,.5);opacity:0;animation:particleRise linear infinite }
 .scroll-line { animation:scrollPulse 2s ease-in-out infinite }
 .marquee-track { animation:marqueeScroll 35s linear infinite }
 .marquee-strip:hover .marquee-track { animation-play-state:paused }
@@ -65,7 +77,7 @@ body {
 
 /* ── Nav link underline ── */
 .nav-link { position:relative }
-.nav-link::after { content:'';position:absolute;bottom:-4px;left:50%;right:50%;height:1px;background:var(--gold);transition:left .3s,right .3s }
+.nav-link::after { content:'';position:absolute;bottom:-4px;left:50%;right:50%;height:1px;background:var(--violet);transition:left .3s,right .3s }
 .nav-link:hover::after { left:0;right:0 }
 
 /* ── Button shimmer ── */
@@ -75,15 +87,15 @@ body {
 
 /* ── Pillar gold line ── */
 .pillar-card { position:relative }
-.pillar-card::after { content:'';position:absolute;top:0;left:0;width:100%;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .4s ease }
+.pillar-card::after { content:'';position:absolute;top:0;left:0;width:100%;height:2px;background:var(--violet);transform:scaleX(0);transform-origin:left;transition:transform .4s ease }
 .pillar-card:hover::after { transform:scaleX(1) }
 
 /* ── Intention card ── */
 .intent-card { opacity:0;transform:translateY(16px) }
 .intent-card.visible { opacity:1;transform:translateY(0);transition:opacity .5s ease,transform .5s ease,background .3s }
-.intent-card::before { content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--gold);transform:scaleX(0);transition:transform .3s;transform-origin:left }
+.intent-card::before { content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--violet);transform:scaleX(0);transition:transform .3s;transform-origin:left }
 .intent-card:hover::before { transform:scaleX(1) }
-.intent-card:hover .intent-sym { transform:scale(1.4);text-shadow:0 0 20px rgba(160,114,42,.3) }
+.intent-card:hover .intent-sym { transform:scale(1.4);text-shadow:0 0 20px rgba(91,45,142,.3) }
 
 /* ── Proof cards ── */
 .proof-card { opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease }
@@ -108,7 +120,8 @@ body {
 /* ── Scrollable row ── */
 .scroll-row {
   display: flex;
-  overflow-x: auto;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
   gap: 1.25rem;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
@@ -116,7 +129,7 @@ body {
   padding-bottom: 1rem;
 }
 .scroll-row::-webkit-scrollbar { display:none }
-.scroll-row > * { scroll-snap-align:start; flex-shrink:0 }
+.scroll-row > * { scroll-snap-align:start; flex:0 0 220px; width:220px }
 
 /* ── Tab system ── */
 .tab-bar { display:flex;gap:0;border-bottom:2px solid var(--border) }
@@ -134,7 +147,7 @@ body {
   transition:color .2s;
   font-family:var(--font-body);
 }
-.tab-btn.active { color:var(--gold);border-bottom-color:var(--gold) }
+.tab-btn.active { color:var(--violet);border-bottom-color:var(--violet) }
 
 /* ── Pill links ── */
 .pill {
@@ -150,7 +163,7 @@ body {
   display:block;
   text-align:center;
 }
-.pill:hover { background:var(--bg-section);border-color:var(--gold) }
+.pill:hover { background:var(--bg-accent);border-color:var(--violet) }
 
 /* ── Intention tiles ── */
 .intent-tile {
@@ -181,7 +194,7 @@ body {
   box-shadow:0 2px 12px rgba(0,0,0,.06);
   transition:border-color .2s;
 }
-.svc-card:hover { border-color:var(--gold) }
+.svc-card:hover { border-color:var(--violet) }
 
 /* ── Line clamp ── */
 .line-clamp-2 {

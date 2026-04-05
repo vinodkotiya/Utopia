@@ -27,9 +27,9 @@ if (burger && overlay) {
 window.addEventListener('scroll', () => {
   if (nav) {
     const s = window.scrollY > 60;
-    nav.style.background = s ? 'rgba(253,250,246,.95)' : 'rgba(253,250,246,.85)';
-    nav.style.backdropFilter = 'blur(12px)';
-    nav.style.borderBottom = '1px solid rgba(160,114,42,' + (s ? '0.2' : '0.15') + ')';
+    nav.style.background = s ? 'rgba(26,15,46,.95)' : 'rgba(26,15,46,.85)';
+    nav.style.backdropFilter = s ? 'blur(14px)' : 'blur(8px)';
+    nav.style.borderBottom = s ? '1px solid rgba(91,45,142,.2)' : '1px solid rgba(91,45,142,.08)';
   }
   if (!prefersReduced && orbs.length) {
     const y = window.scrollY;
@@ -114,3 +114,23 @@ function initDeferred() {
 
 if ('requestIdleCallback' in window) requestIdleCallback(initDeferred);
 else setTimeout(initDeferred, 1);
+
+
+// Drag-to-scroll for .scroll-row on desktop
+document.querySelectorAll('.scroll-row').forEach(row => {
+  let isDown = false, startX, scrollLeft;
+  row.style.cursor = 'grab';
+  row.addEventListener('mousedown', e => {
+    isDown = true; row.style.cursor = 'grabbing';
+    startX = e.pageX - row.offsetLeft;
+    scrollLeft = row.scrollLeft;
+    e.preventDefault();
+  });
+  row.addEventListener('mouseleave', () => { isDown = false; row.style.cursor = 'grab'; });
+  row.addEventListener('mouseup', () => { isDown = false; row.style.cursor = 'grab'; });
+  row.addEventListener('mousemove', e => {
+    if (!isDown) return;
+    const x = e.pageX - row.offsetLeft;
+    row.scrollLeft = scrollLeft - (x - startX) * 1.5;
+  });
+});

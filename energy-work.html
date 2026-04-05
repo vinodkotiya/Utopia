@@ -19,17 +19,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config={theme:{extend:{colors:{void:'#0E0B14',deep:'#1A1425',card:'#2E2040',surface:'#241838',gold:{DEFAULT:'#C8A060',light:'#E8D090'},amethyst:{DEFAULT:'#9B7FD4',dim:'#5548A0'},rose:'#C8A0B8',sage:'#6E8870'},fontFamily:{display:['Playfair Display','Georgia','serif'],body:['Inter','sans-serif']}}}}
-  </script>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/theme-warm.css">
 </head>
-<body class="bg-void text-gray-200 overflow-x-hidden font-body">
+<body style="background:var(--bg-page);color:var(--text-body)">
 
   <!-- NAV -->
-  <nav id="nav" class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-4 transition-all duration-400">
-    <a href="index.html" class="font-display text-xl tracking-[.35em] text-gold-light">U T O P I A</a>
+  <nav id="nav" class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-4 transition-all" style="background:var(--bg-dark)">
+    <a href="index.html" style="font-family:var(--font-display);font-size:1.3rem;letter-spacing:.35em;color:#EDE8FF;text-decoration:none">U T O P I A</a>
     <ul class="hidden md:flex gap-8 list-none">
       <li><a href="index.html#story" class="nav-link text-[.72rem] font-body uppercase tracking-[.14em] text-rose hover:text-gold-light transition-colors">Our Story</a></li>
       <li><a href="index.html#shop" class="nav-link text-[.72rem] font-body uppercase tracking-[.14em] text-rose hover:text-gold-light transition-colors">Shop</a></li>
@@ -40,7 +36,7 @@
     <a href="https://shop.utopiastore.ca" class="hidden md:inline-block btn-shimmer text-xs uppercase tracking-[.12em] bg-gold text-void px-5 py-2.5 hover:bg-gold-light transition-colors">Shop Now</a>
     <button id="navBurger" class="burger md:hidden flex flex-col gap-[5px] p-2 bg-transparent border-none cursor-pointer z-[201]" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </nav>
-  <div id="navOverlay" class="fixed inset-0 z-[200] bg-void/97 backdrop-blur-xl flex items-center justify-center opacity-0 invisible transition-all duration-350" style="transition:opacity .35s,visibility .35s">
+  <div id="navOverlay" class="fixed inset-0 z-[200] backdrop-blur-xl flex items-center justify-center opacity-0 invisible transition-all duration-350" style="background:rgba(26,15,46,.97);transition:opacity .35s,visibility .35s">
     <ul class="list-none text-center flex flex-col gap-8">
       <li><a href="index.html" class="font-display text-3xl text-gray-100 hover:text-gold-light transition-colors">Home</a></li>
       <li><a href="index.html#shop" class="font-display text-3xl text-gray-100 hover:text-gold-light transition-colors">Shop</a></li>
@@ -53,7 +49,7 @@
 
 
   <!-- HERO -->
-  <section class="relative min-h-[70vh] flex flex-col justify-center items-center text-center overflow-hidden bg-void pt-24">
+  <section class="relative min-h-[70vh] flex flex-col justify-center items-center text-center overflow-hidden pt-24" style="background:var(--bg-page)">
     <div class="absolute inset-0" style="background:radial-gradient(ellipse 60% 50% at 30% 40%,rgba(155,127,212,.15) 0%,transparent 60%),radial-gradient(ellipse 40% 60% at 75% 60%,rgba(200,160,96,.10) 0%,transparent 55%),radial-gradient(ellipse 80% 80% at 50% 50%,rgba(46,32,64,.6) 0%,transparent 70%)"></div>
     <div class="orb absolute w-[500px] h-[500px] rounded-full bg-amethyst opacity-[.06] -top-24 -left-24"></div>
     <div class="orb absolute w-[300px] h-[300px] rounded-full bg-gold opacity-[.06] bottom-0 right-[10%]" style="animation-delay:-6s;animation-duration:22s"></div>
@@ -63,7 +59,7 @@
     <div class="absolute inset-0 opacity-30 pointer-events-none" style="background-image:url(&quot;data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E&quot;)"></div>
     <div class="relative z-[2] max-w-3xl px-6 reveal">
       <span class="block text-[.65rem] font-body uppercase tracking-[.32em] text-gold mb-4">Services · Energy Work</span>
-      <h1 class="hero-title font-display text-[clamp(2.2rem,7vw,5rem)] font-light leading-[1] tracking-[-0.02em] text-gray-100 mb-6">Restore your <em class="italic text-gold-light">energy</em></h1>
+      <h1 class="hero-title font-display text-[clamp(2.2rem,7vw,5rem)] font-light leading-[1] tracking-[-0.02em] mb-6" style="color:var(--text-heading)"">Restore your <em class="italic " style="color:var(--violet)">energy</em></h1>
       <p class="font-display text-[clamp(1rem,2.5vw,1.3rem)] font-light italic text-rose leading-relaxed max-w-xl mx-auto mb-12">Our life outcomes, despite our best efforts, are not entirely in our control. Traumas, emotional changes, heartbreak and loss can deplete our energy and block positive opportunities. We offer a wide range of spiritual and extrasensory energy work for different circumstances.</p>
       <div class="hero-ctas flex gap-5 justify-center flex-wrap">
         <a href="https://www.utopiastore.ca/book-now" rel="noopener" class="btn-shimmer text-xs font-medium uppercase tracking-[.18em] bg-gold text-void px-8 py-4 border border-gold hover:bg-gold-light transition-all">Book a Session</a>
@@ -77,7 +73,7 @@
     <div class="max-w-3xl mx-auto">
       <div class="reveal">
         <span class="block text-[.65rem] uppercase tracking-[.32em] text-gold mb-4">The Practice</span>
-        <h2 class="font-display text-[clamp(2rem,5vw,3.8rem)] font-light leading-[1.08] tracking-[-0.01em] text-gray-100 mb-6">Beyond the <em class="italic text-gold-light">physical</em></h2>
+        <h2 class="font-display text-[clamp(2rem,5vw,3.8rem)] font-light leading-[1.08] tracking-[-0.01em] mb-6" style="color:var(--text-heading)"">Beyond the <em class="italic " style="color:var(--violet)">physical</em></h2>
       </div>
       <div class="reveal reveal-d1 space-y-6">
         <p class="text-[clamp(0.9rem,1.8vw,1.05rem)] font-light text-rose leading-[1.9] max-w-[52ch]">In addition to our physical biology, there exists another system within us — heavily connected with all our life events, behaviours, and how we age. This energy is often referred to as Chi or vital force. It lines up with the physical body and clusters into groups called Chakras.</p>
@@ -93,7 +89,7 @@
     </div>
     <div class="reveal reveal-d1 flex flex-col justify-center px-6 py-10 md:p-16">
       <span class="block text-[.65rem] uppercase tracking-[.32em] text-gold mb-4">What We Offer</span>
-      <h2 class="font-display text-[clamp(2rem,5vw,3.8rem)] font-light leading-[1.08] tracking-[-0.01em] text-gray-100 mb-8">Techniques &amp; <em class="italic text-gold-light">modalities</em></h2>
+      <h2 class="font-display text-[clamp(2rem,5vw,3.8rem)] font-light leading-[1.08] tracking-[-0.01em] text-gray-100 mb-8">Techniques &amp; <em class="italic " style="color:var(--violet)">modalities</em></h2>
       <div class="grid grid-cols-2 gap-3">
         <div class="bg-card border border-amethyst/[.12] px-5 py-4 text-center"><span class="font-display text-[clamp(1.1rem,2.5vw,1.5rem)] font-light text-gray-100">Reiki</span></div>
         <div class="bg-card border border-amethyst/[.12] px-5 py-4 text-center"><span class="font-display text-[clamp(1.1rem,2.5vw,1.5rem)] font-light text-gray-100">Distant Body Scans</span></div>
@@ -113,7 +109,7 @@
     <div class="max-w-5xl mx-auto">
       <div class="reveal text-center mb-16">
         <span class="block text-[.65rem] uppercase tracking-[.32em] text-gold mb-4">Our Practitioners</span>
-        <h2 class="font-display text-[clamp(2rem,5vw,3.8rem)] font-light leading-[1.08] tracking-[-0.01em] text-gray-100">Meet your <em class="italic text-gold-light">guides</em></h2>
+        <h2 class="font-display text-[clamp(2rem,5vw,3.8rem)] font-light leading-[1.08] tracking-[-0.01em] text-gray-100">Meet your <em class="italic " style="color:var(--violet)">guides</em></h2>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
@@ -160,7 +156,7 @@
   <!-- BOTTOM CTA -->
   <section class="py-[clamp(5rem,10vw,9rem)] px-6 bg-void text-center">
     <div class="max-w-3xl mx-auto reveal">
-      <h2 class="font-display text-[clamp(2rem,5vw,3.8rem)] font-light leading-[1.08] tracking-[-0.01em] text-gray-100 mb-6">Ready to begin your <em class="italic text-gold-light">journey?</em></h2>
+      <h2 class="font-display text-[clamp(2rem,5vw,3.8rem)] font-light leading-[1.08] tracking-[-0.01em] mb-6" style="color:var(--text-heading)"">Ready to begin your <em class="italic " style="color:var(--violet)">journey?</em></h2>
       <p class="text-[clamp(0.9rem,1.8vw,1.05rem)] font-light text-rose leading-[1.9] max-w-[52ch] mx-auto mb-8">Sessions available in-store at 1826 Lonsdale Ave, North Vancouver. Walk-ins welcome — booking ahead recommended.</p>
       <div class="hero-ctas flex gap-5 justify-center flex-wrap">
         <a href="https://www.utopiastore.ca/book-now" rel="noopener" class="btn-shimmer text-xs font-medium uppercase tracking-[.18em] bg-gold text-void px-8 py-4 border border-gold hover:bg-gold-light transition-all">Book a Session</a>
@@ -171,7 +167,7 @@
 
 
   <!-- FOOTER -->
-  <footer class="bg-[rgba(10,7,16,.95)] border-t border-amethyst/[.08] px-6 md:px-10 py-12">
+  <footer style="background:var(--bg-dark)" class=" border-t border-amethyst/[.08] px-6 md:px-10 py-12">
     <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1fr] gap-8">
       <div class="col-span-2 md:col-span-1">
         <p class="font-display text-xl tracking-[.25em] text-gold-light mb-3">U T O P I A</p>
