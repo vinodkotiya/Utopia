@@ -134,20 +134,20 @@ body {
 /* ── Tab system ── */
 .tab-bar { display:flex;gap:0;border-bottom:2px solid var(--border) }
 .tab-btn {
-  padding:.75rem 1.5rem;
-  font-size:.8rem;
-  letter-spacing:.1em;
+  padding:.65rem 1.4rem;
+  font-size:.78rem;
+  letter-spacing:.08em;
   text-transform:uppercase;
   background:transparent;
-  border:none;
+  border:1.5px solid var(--border);
+  border-radius:50px;
   cursor:pointer;
   color:var(--text-muted);
-  border-bottom:2px solid transparent;
-  margin-bottom:-2px;
-  transition:color .2s;
+  transition:all .25s;
   font-family:var(--font-body);
 }
-.tab-btn.active { color:var(--violet);border-bottom-color:var(--violet) }
+.tab-btn.active { color:#fff;background:var(--violet);border-color:var(--violet) }
+.tab-btn:not(.active):hover { border-color:var(--violet);color:var(--violet) }
 
 /* ── Pill links ── */
 .pill {
