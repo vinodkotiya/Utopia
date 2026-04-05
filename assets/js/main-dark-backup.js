@@ -27,9 +27,9 @@ if (burger && overlay) {
 window.addEventListener('scroll', () => {
   if (nav) {
     const s = window.scrollY > 60;
-    nav.style.background = s ? 'rgba(253,250,246,.95)' : 'rgba(253,250,246,.85)';
-    nav.style.backdropFilter = 'blur(12px)';
-    nav.style.borderBottom = '1px solid rgba(160,114,42,' + (s ? '0.2' : '0.15') + ')';
+    nav.style.background = s ? 'rgba(26,20,37,.92)' : '';
+    nav.style.backdropFilter = s ? 'blur(12px)' : '';
+    nav.style.borderBottom = s ? '1px solid rgba(155,127,212,.12)' : '';
   }
   if (!prefersReduced && orbs.length) {
     const y = window.scrollY;
