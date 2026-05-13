@@ -3,33 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Utopia Store — In-Store Signage</title>
+<title>Utopia Store — In-Store Display</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--violet:#5B2D8E;--violet-light:#7B4DB8;--bg:#0F0A1A;--text:#EDE8FF;--gold:#C8A060;--muted:rgba(237,232,255,.5)}
+:root{--violet:#5B2D8E;--violet-light:#7B4DB8;--bg:#FFFFFF;--bg-section:#F8F5FF;--text:#0F0A1A;--text-body:#2D2035;--text-muted:#7A6B8A;--gold:#C17B2A;--border:rgba(91,45,142,.1)}
 html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--text);font-family:'Jost',sans-serif}
 
-/* Rotate entire page 90deg CW for vertical signage (right=top) */
+/* Rotate for vertical signage */
 .signage{
   width:100vh;height:100vw;
   transform:rotate(90deg) translateY(-100vw);
   transform-origin:top left;
   position:absolute;top:0;left:0;
   display:flex;flex-direction:column;
-  overflow:hidden;
+  overflow:hidden;background:var(--bg);
 }
 
-/* Header strip */
-.header{
-  padding:2rem 3rem;
-  display:flex;align-items:center;justify-content:space-between;
-  background:rgba(91,45,142,.15);
-  border-bottom:1px solid rgba(237,232,255,.1);
-  flex-shrink:0;
-}
-.header img{height:60px;width:auto}
-.header .tagline{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-style:italic;color:var(--muted)}
+/* Progress bar */
+.progress{height:4px;background:var(--bg-section);flex-shrink:0;position:relative}
+.progress-bar{height:100%;background:linear-gradient(90deg,var(--violet),var(--violet-light));width:0%;transition:width .3s linear}
+.progress-bar.running{transition:width 30s linear;width:100%}
 
 /* Slide container */
 .slides{flex:1;position:relative;overflow:hidden}
@@ -37,92 +31,77 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
   position:absolute;inset:0;
   display:flex;align-items:center;justify-content:center;
   padding:3rem;
-  opacity:0;transition:opacity 1.5s ease;
+  opacity:0;transform:scale(.98);
+  transition:opacity 1s ease,transform 1s ease;
 }
-.slide.active{opacity:1}
+.slide.active{opacity:1;transform:scale(1)}
 
-/* Slide: Welcome */
-.slide-welcome{flex-direction:column;text-align:center;gap:2rem}
-.slide-welcome h1{font-family:'Cormorant Garamond',serif;font-size:4.5rem;font-weight:300;letter-spacing:.08em}
-.slide-welcome h1 em{color:var(--gold);font-style:italic}
-.slide-welcome p{font-size:1.3rem;color:var(--muted);max-width:600px;line-height:1.7}
-.slide-welcome .info{display:flex;gap:2rem;margin-top:1rem}
-.slide-welcome .info span{font-size:.9rem;color:var(--muted);padding:.5rem 1.2rem;border:1px solid rgba(237,232,255,.15);border-radius:50px}
+/* Welcome slide — logo only */
+.slide-welcome{flex-direction:column;text-align:center;gap:1.5rem;background:var(--bg)}
+.slide-welcome img{height:180px;width:auto;animation:logoPulse 4s ease-in-out infinite}
+.slide-welcome p{font-size:1.2rem;color:var(--text-muted);letter-spacing:.1em}
+@keyframes logoPulse{0%,100%{filter:drop-shadow(0 0 20px rgba(91,45,142,.1))}50%{filter:drop-shadow(0 0 40px rgba(91,45,142,.2))}}
 
-/* Slide: Reader */
-.slide-reader{gap:3rem}
-.reader-img{width:220px;height:220px;border-radius:50%;overflow:hidden;border:3px solid var(--violet);flex-shrink:0}
+/* Reader slides */
+.slide-reader{gap:3rem;background:var(--bg)}
+.reader-img{width:200px;height:200px;border-radius:50%;overflow:hidden;border:3px solid var(--violet);flex-shrink:0;box-shadow:0 8px 30px rgba(91,45,142,.12)}
 .reader-img img{width:100%;height:100%;object-fit:cover}
-.reader-info{max-width:500px}
-.reader-info .day{font-size:.85rem;text-transform:uppercase;letter-spacing:.25em;color:var(--gold);margin-bottom:.5rem}
-.reader-info h2{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:300;margin-bottom:.5rem}
-.reader-info .title{font-size:1rem;color:var(--violet-light);margin-bottom:1.5rem}
-.reader-info p{font-size:1.05rem;color:var(--muted);line-height:1.8}
+.reader-info{max-width:480px}
+.reader-info .day{font-size:.85rem;text-transform:uppercase;letter-spacing:.3em;color:var(--violet);margin-bottom:.5rem;font-weight:500}
+.reader-info h2{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;color:var(--text);margin-bottom:.4rem}
+.reader-info .title{font-size:.9rem;color:var(--violet-light);margin-bottom:1.2rem;font-weight:400}
+.reader-info p{font-size:1rem;color:var(--text-body);line-height:1.8}
 
-/* Slide: Services */
-.slide-services{flex-direction:column;text-align:center;gap:2rem}
-.slide-services h2{font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:300}
-.slide-services h2 em{color:var(--gold);font-style:italic}
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:700px}
-.svc-item{padding:1.5rem;border:1px solid rgba(237,232,255,.1);border-radius:12px;text-align:center}
-.svc-item .icon{font-size:2rem;margin-bottom:.5rem}
-.svc-item .name{font-size:1rem;color:var(--text)}
-.svc-item .sub{font-size:.75rem;color:var(--muted);margin-top:.3rem}
+/* Services slide */
+.slide-services{flex-direction:column;text-align:center;gap:2rem;background:var(--bg-section)}
+.slide-services h2{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:300;color:var(--text)}
+.slide-services h2 em{color:var(--violet);font-style:italic}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;max-width:650px}
+.svc-item{padding:1.2rem;background:var(--bg);border:1px solid var(--border);border-radius:10px}
+.svc-item .icon{font-size:1.8rem;margin-bottom:.4rem}
+.svc-item .name{font-size:.95rem;color:var(--text);font-weight:500}
+.svc-item .sub{font-size:.72rem;color:var(--text-muted);margin-top:.2rem}
 
-/* Slide: Shop */
-.slide-shop{flex-direction:column;text-align:center;gap:2rem}
-.slide-shop h2{font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:300}
-.slide-shop .cats{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;max-width:700px}
-.slide-shop .cat{padding:.8rem 1.5rem;border:1px solid rgba(237,232,255,.12);border-radius:50px;font-size:1rem;color:var(--text)}
+/* Shop slide */
+.slide-shop{flex-direction:column;text-align:center;gap:2rem;background:var(--bg)}
+.slide-shop h2{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:300;color:var(--text)}
+.slide-shop h2 em{color:var(--violet);font-style:italic}
+.cats{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center;max-width:650px}
+.cat{padding:.7rem 1.3rem;border:1.5px solid var(--border);border-radius:50px;font-size:.95rem;color:var(--text-body);background:var(--bg)}
 
-/* Footer strip */
+/* Footer */
 .footer{
-  padding:1.5rem 3rem;
+  padding:1rem 3rem;
   display:flex;align-items:center;justify-content:space-between;
-  background:rgba(91,45,142,.1);
-  border-top:1px solid rgba(237,232,255,.08);
+  background:var(--bg-section);
+  border-top:1px solid var(--border);
   flex-shrink:0;
-  font-size:.85rem;color:var(--muted);
+  font-size:.8rem;color:var(--text-muted);
 }
 
-/* Ambient particles */
-.particle{position:absolute;border-radius:50%;background:radial-gradient(circle,#FFD54F,#E8752A,#D4421A);opacity:0;animation:float linear infinite}
-@keyframes float{0%{opacity:0;transform:translateY(0)}10%{opacity:.4}90%{opacity:.4}100%{opacity:0;transform:translateY(-100%)}}
-
-/* Mandala bg */
-.mandala{position:absolute;top:50%;left:50%;width:400px;height:400px;transform:translate(-50%,-50%);opacity:.04;animation:spin 120s linear infinite}
-@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+/* Particles */
+.particle{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(91,45,142,.3),rgba(123,77,184,.1));opacity:0;animation:floatUp linear infinite}
+@keyframes floatUp{0%{opacity:0;transform:translateY(0)}10%{opacity:.3}90%{opacity:.3}100%{opacity:0;transform:translateY(-100%)}}
 </style>
 </head>
 <body>
 <div class="signage">
-  <!-- Header -->
-  <div class="header">
-    <img src="assets/logo with name original.png" alt="Utopia">
-    <span class="tagline">Sacred Space · Since 2004 · 1826 Lonsdale Ave</span>
-  </div>
+  <!-- Progress bar -->
+  <div class="progress"><div class="progress-bar" id="progressBar"></div></div>
 
   <!-- Slides -->
   <div class="slides" id="slides">
-    <!-- Mandala bg -->
-    <img class="mandala" src="assets/images/mandala.svg" alt="" aria-hidden="true">
-
-    <!-- Slide 0: Welcome -->
+    <!-- Slide 0: Welcome — Logo only -->
     <div class="slide slide-welcome active">
-      <h1>Welcome to <em>Utopia</em></h1>
-      <p>North Vancouver's sacred crystal and metaphysical shop. Healing crystals, tarot readings, intention tools, and meaningful gifts.</p>
-      <div class="info">
-        <span>🔮 Crystals & Minerals</span>
-        <span>🕯️ Candles & Incense</span>
-        <span>🎴 Tarot & Oracle</span>
-      </div>
+      <img src="assets/logo with name original.png" alt="Utopia Store">
+      <p>Sacred Metaphysical · Crystals · Tarot · Healing</p>
     </div>
 
     <!-- Slide 1: Kim (Friday) -->
     <div class="slide slide-reader">
       <div class="reader-img"><img src="assets/images/kim.jpg" alt="Kim"></div>
       <div class="reader-info">
-        <div class="day">Every Friday</div>
+        <div class="day">✦ Every Friday</div>
         <h2>Kim</h2>
         <div class="title">Integrative Spiritual Practitioner</div>
         <p>Intuitive readings, energy clearing, and guided healing. Kim works with you to shift through blocks, unravel past events, and return you to your full potential.</p>
@@ -133,10 +112,10 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
     <div class="slide slide-reader">
       <div class="reader-img"><img src="assets/images/helen.png" alt="Helen"></div>
       <div class="reader-info">
-        <div class="day">Every Monday</div>
+        <div class="day">✦ Every Monday</div>
         <h2>Helen</h2>
         <div class="title">Intuitive Energy Specialist · Clairvoyant & Medium</div>
-        <p>Clairvoyant readings, tea leaf readings, mediumship, and crystal ball readings. Helen helps integrate body, mind, and spirit for deeper self-understanding.</p>
+        <p>Clairvoyant readings, tea leaf readings, mediumship, and crystal ball readings. Helen integrates body, mind, and spirit for deeper self-understanding.</p>
       </div>
     </div>
 
@@ -144,7 +123,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
     <div class="slide slide-reader">
       <div class="reader-img"><img src="assets/images/elizabeth.jpg" alt="Irena"></div>
       <div class="reader-info">
-        <div class="day">Every Tuesday</div>
+        <div class="day">✦ Every Tuesday</div>
         <h2>Irena</h2>
         <div class="title">Intuitive Tarot Reader & Energy Healer</div>
         <p>Tarot card readings for insight and empowerment, along with energy sessions for healing and stress reduction. Guiding you through life's challenges.</p>
@@ -164,7 +143,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
       </div>
     </div>
 
-    <!-- Slide 5: Shop categories -->
+    <!-- Slide 5: Shop by Intention -->
     <div class="slide slide-shop">
       <h2>Shop by <em>Intention</em></h2>
       <div class="cats">
@@ -183,37 +162,43 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
   <!-- Footer -->
   <div class="footer">
     <span>Mon–Sat 11am–6pm · Sun 12pm–5pm</span>
-    <span>shop.utopiastore.ca · Free Click & Collect</span>
+    <span>1826 Lonsdale Ave · shop.utopiastore.ca</span>
   </div>
 </div>
 
-<!-- Particles -->
 <script>
-const slides=document.getElementById('slides');
-// Add particles
-for(let i=0;i<15;i++){
+// Particles
+const slidesEl=document.getElementById('slides');
+for(let i=0;i<12;i++){
   const p=document.createElement('div');
   p.className='particle';
-  Object.assign(p.style,{
-    position:'absolute',
-    left:Math.random()*100+'%',
-    bottom:-(Math.random()*10)+'%',
-    width:(2+Math.random()*3)+'px',
-    height:(2+Math.random()*3)+'px',
-    animationDuration:(10+Math.random()*15)+'s',
-    animationDelay:(Math.random()*8)+'s'
-  });
-  slides.appendChild(p);
+  Object.assign(p.style,{position:'absolute',left:Math.random()*100+'%',bottom:-(Math.random()*10)+'%',width:(2+Math.random()*3)+'px',height:(2+Math.random()*3)+'px',animationDuration:(12+Math.random()*18)+'s',animationDelay:(Math.random()*10)+'s'});
+  slidesEl.appendChild(p);
 }
 
-// Slide cycling — 30 seconds each
+// Auto-cycling slides with progress bar
 const allSlides=document.querySelectorAll('.slide');
+const bar=document.getElementById('progressBar');
 let current=0;
-setInterval(()=>{
+const DURATION=30000;
+
+function nextSlide(){
   allSlides[current].classList.remove('active');
   current=(current+1)%allSlides.length;
   allSlides[current].classList.add('active');
-},30000);
+  resetProgress();
+}
+
+function resetProgress(){
+  bar.classList.remove('running');
+  bar.style.width='0%';
+  void bar.offsetWidth; // force reflow
+  bar.classList.add('running');
+}
+
+// Start immediately
+resetProgress();
+setInterval(nextSlide,DURATION);
 </script>
 </body>
 </html>
