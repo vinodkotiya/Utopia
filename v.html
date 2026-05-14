@@ -3,14 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Utopia Store — In-Store Display</title>
+<title>Utopia Store — Signage</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--violet:#5B2D8E;--violet-light:#7B4DB8;--bg:#FFFFFF;--bg-section:#F8F5FF;--text:#0F0A1A;--text-body:#2D2035;--text-muted:#7A6B8A;--gold:#C17B2A;--border:rgba(91,45,142,.1)}
-html,body{width:100%;height:100%;overflow:hidden;background:#FFFFFF;color:var(--text);font-family:'Jost',sans-serif}
+html,body{width:100%;height:100%;overflow:hidden;background:#FFFFFF;font-family:'Jost',sans-serif;color:#0F0A1A}
 
-/* Rotate for vertical signage */
 .signage{
   width:100vh;height:100vw;
   transform:rotate(90deg) translateY(-100vw);
@@ -20,117 +18,120 @@ html,body{width:100%;height:100%;overflow:hidden;background:#FFFFFF;color:var(--
   overflow:hidden;background:#FFFFFF;
 }
 
-/* Progress bar */
-.progress{height:4px;background:var(--bg-section);flex-shrink:0;position:relative}
-.progress-bar{height:100%;background:linear-gradient(90deg,var(--violet),var(--violet-light));width:0%;transition:width .3s linear}
+/* Progress */
+.progress{height:6px;background:#F8F5FF;flex-shrink:0}
+.progress-bar{height:100%;background:linear-gradient(90deg,#5B2D8E,#7B4DB8,#C8A0FF);width:0%;transition:width .3s linear}
 .progress-bar.running{transition:width 30s linear;width:100%}
 
-/* Slide container */
+/* Slides */
 .slides{flex:1;position:relative;overflow:hidden}
-.slide{
-  position:absolute;inset:0;
-  display:flex;align-items:center;justify-content:center;
-  padding:3rem;
-  opacity:0;transform:scale(.98);
-  transition:opacity 1s ease,transform 1s ease;
-}
-.slide.active{opacity:1;transform:scale(1)}
+.slide{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 1.2s ease;background:#FFFFFF}
+.slide.active{opacity:1}
 
-/* Welcome slide — logo only */
-.slide-welcome{flex-direction:column;text-align:center;gap:1.5rem;background:#FFFFFF}
-.slide-welcome img{height:180px;width:auto;animation:logoPulse 4s ease-in-out infinite}
-.slide-welcome p{font-size:1.2rem;color:var(--text-muted);letter-spacing:.1em}
-@keyframes logoPulse{0%,100%{filter:drop-shadow(0 0 20px rgba(91,45,142,.1))}50%{filter:drop-shadow(0 0 40px rgba(91,45,142,.2))}}
+/* Welcome — big logo */
+.slide-welcome{flex-direction:column;text-align:center;gap:2rem}
+.slide-welcome img{height:280px;width:auto;animation:logoPulse 5s ease-in-out infinite}
+.slide-welcome p{font-size:2rem;color:#7A6B8A;letter-spacing:.12em;font-weight:300}
+@keyframes logoPulse{0%,100%{filter:drop-shadow(0 0 15px rgba(91,45,142,.08))}50%{filter:drop-shadow(0 0 50px rgba(91,45,142,.18))}}
 
-/* Reader slides */
-.slide-reader{gap:3rem;background:#FFFFFF}
-.reader-img{width:200px;height:200px;border-radius:50%;overflow:hidden;border:3px solid var(--violet);flex-shrink:0;box-shadow:0 8px 30px rgba(91,45,142,.12)}
+/* Reading announcement image */
+.slide-announce{background:#FFFFFF}
+.slide-announce img{width:100%;height:100%;object-fit:contain}
+
+/* Reader */
+.slide-reader{gap:4rem;padding:4rem}
+.reader-img{width:260px;height:260px;border-radius:50%;overflow:hidden;border:4px solid #5B2D8E;flex-shrink:0;box-shadow:0 12px 40px rgba(91,45,142,.15)}
 .reader-img img{width:100%;height:100%;object-fit:cover}
-.reader-info{max-width:480px}
-.reader-info .day{font-size:.85rem;text-transform:uppercase;letter-spacing:.3em;color:var(--violet);margin-bottom:.5rem;font-weight:500}
-.reader-info h2{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;color:var(--text);margin-bottom:.4rem}
-.reader-info .title{font-size:.9rem;color:var(--violet-light);margin-bottom:1.2rem;font-weight:400}
-.reader-info p{font-size:1rem;color:var(--text-body);line-height:1.8}
+.reader-info{max-width:550px}
+.reader-info .day{font-size:1.2rem;text-transform:uppercase;letter-spacing:.3em;color:#5B2D8E;margin-bottom:.8rem;font-weight:500}
+.reader-info h2{font-family:'Cormorant Garamond',serif;font-size:4.5rem;font-weight:300;margin-bottom:.5rem}
+.reader-info .title{font-size:1.3rem;color:#7B4DB8;margin-bottom:1.5rem}
+.reader-info p{font-size:1.4rem;color:#2D2035;line-height:1.8}
 
-/* Services slide */
-.slide-services{flex-direction:column;text-align:center;gap:2rem;background:var(--bg-section)}
-.slide-services h2{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:300;color:var(--text)}
-.slide-services h2 em{color:var(--violet);font-style:italic}
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;max-width:650px}
-.svc-item{padding:1.2rem;background:var(--bg);border:1px solid var(--border);border-radius:10px}
-.svc-item .icon{font-size:1.8rem;margin-bottom:.4rem}
-.svc-item .name{font-size:.95rem;color:var(--text);font-weight:500}
-.svc-item .sub{font-size:.72rem;color:var(--text-muted);margin-top:.2rem}
+/* Dummy reader placeholder */
+.reader-img.dummy{background:#F8F5FF;display:flex;align-items:center;justify-content:center;border-color:#7B4DB8}
+.reader-img.dummy span{font-size:4rem;color:#7B4DB8}
 
-/* Shop slide */
-.slide-shop{flex-direction:column;text-align:center;gap:2rem;background:#FFFFFF}
-.slide-shop h2{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:300;color:var(--text)}
-.slide-shop h2 em{color:var(--violet);font-style:italic}
-.cats{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center;max-width:650px}
-.cat{padding:.7rem 1.3rem;border:1.5px solid var(--border);border-radius:50px;font-size:.95rem;color:var(--text-body);background:var(--bg)}
+/* Video slide */
+.slide-video{padding:0}
+.slide-video video{width:100%;height:100%;object-fit:cover}
+
+/* Services */
+.slide-services{flex-direction:column;text-align:center;gap:2.5rem;background:#F8F5FF;padding:4rem}
+.slide-services h2{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:300}
+.slide-services h2 em{color:#5B2D8E;font-style:italic}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:750px}
+.svc-item{padding:1.5rem;background:#FFFFFF;border:1px solid rgba(91,45,142,.1);border-radius:12px}
+.svc-item .icon{font-size:2.5rem;margin-bottom:.5rem}
+.svc-item .name{font-size:1.3rem;font-weight:500}
+.svc-item .sub{font-size:.9rem;color:#7A6B8A;margin-top:.3rem}
+
+/* Shop */
+.slide-shop{flex-direction:column;text-align:center;gap:2.5rem;padding:4rem}
+.slide-shop h2{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:300}
+.slide-shop h2 em{color:#5B2D8E;font-style:italic}
+.cats{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;max-width:750px}
+.cat{padding:1rem 2rem;border:2px solid rgba(91,45,142,.12);border-radius:50px;font-size:1.3rem;color:#2D2035}
 
 /* Footer */
-.footer{
-  padding:1rem 3rem;
-  display:flex;align-items:center;justify-content:space-between;
-  background:var(--bg-section);
-  border-top:1px solid var(--border);
-  flex-shrink:0;
-  font-size:.8rem;color:var(--text-muted);
-}
-
-/* Particles */
-.particle{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(91,45,142,.3),rgba(123,77,184,.1));opacity:0;animation:floatUp linear infinite}
-@keyframes floatUp{0%{opacity:0;transform:translateY(0)}10%{opacity:.3}90%{opacity:.3}100%{opacity:0;transform:translateY(-100%)}}
+.footer{padding:1.2rem 3rem;display:flex;align-items:center;justify-content:space-between;background:#F8F5FF;border-top:1px solid rgba(91,45,142,.08);flex-shrink:0;font-size:1.1rem;color:#7A6B8A}
 </style>
 </head>
 <body>
 <div class="signage">
-  <!-- Progress bar -->
   <div class="progress"><div class="progress-bar" id="progressBar"></div></div>
 
-  <!-- Slides -->
   <div class="slides" id="slides">
-    <!-- Slide 0: Welcome — Logo only -->
+    <!-- 0: Welcome logo -->
     <div class="slide slide-welcome active">
-      <img src="assets/logo with name original.png" alt="Utopia Store">
-      <p>Sacred Metaphysical · Crystals · Tarot · Healing</p>
+      <img src="assets/logo with name original.png" alt="Utopia">
+      <p>Crystals · Tarot · Healing · Gifts</p>
     </div>
 
-    <!-- Slide 1: Kim (Friday) -->
+    <!-- 1: Reading announcement image -->
+    <div class="slide slide-announce">
+      <img src="assets/signage/grok-image-e05c72e6-1c7f-45ff-97ba-2ec6d2282de4.png" alt="Reading services now available">
+    </div>
+
+    <!-- 2: Kim (Friday) -->
     <div class="slide slide-reader">
       <div class="reader-img"><img src="assets/images/kim.jpg" alt="Kim"></div>
       <div class="reader-info">
         <div class="day">✦ Every Friday</div>
         <h2>Kim</h2>
         <div class="title">Integrative Spiritual Practitioner</div>
-        <p>Intuitive readings, energy clearing, and guided healing. Kim works with you to shift through blocks, unravel past events, and return you to your full potential.</p>
+        <p>Intuitive readings, energy clearing, and guided healing. Shift through blocks and return to your full potential.</p>
       </div>
     </div>
 
-    <!-- Slide 2: Helen (Monday) -->
+    <!-- 3: Helen (Monday) -->
     <div class="slide slide-reader">
       <div class="reader-img"><img src="assets/images/helen.png" alt="Helen"></div>
       <div class="reader-info">
         <div class="day">✦ Every Monday</div>
         <h2>Helen</h2>
-        <div class="title">Intuitive Energy Specialist · Clairvoyant & Medium</div>
-        <p>Clairvoyant readings, tea leaf readings, mediumship, and crystal ball readings. Helen integrates body, mind, and spirit for deeper self-understanding.</p>
+        <div class="title">Clairvoyant · Medium · Energy Specialist</div>
+        <p>Clairvoyant readings, tea leaf readings, mediumship, and crystal ball readings for deeper self-understanding.</p>
       </div>
     </div>
 
-    <!-- Slide 3: Irena (Tuesday) -->
+    <!-- 4: Video break -->
+    <div class="slide slide-video">
+      <video src="assets/signage/grok-video-ca490f43-5ae8-47a4-81ca-6d655e0457d2.mp4" muted autoplay loop playsinline></video>
+    </div>
+
+    <!-- 5: Irena (Tuesday) — dummy pic -->
     <div class="slide slide-reader">
-      <div class="reader-img"><img src="assets/images/elizabeth.jpg" alt="Irena"></div>
+      <div class="reader-img dummy"><span>✦</span></div>
       <div class="reader-info">
         <div class="day">✦ Every Tuesday</div>
         <h2>Irena</h2>
         <div class="title">Intuitive Tarot Reader & Energy Healer</div>
-        <p>Tarot card readings for insight and empowerment, along with energy sessions for healing and stress reduction. Guiding you through life's challenges.</p>
+        <p>Tarot readings for insight and empowerment. Energy sessions for healing and stress reduction.</p>
       </div>
     </div>
 
-    <!-- Slide 4: Services -->
+    <!-- 6: Services -->
     <div class="slide slide-services">
       <h2>Our <em>Services</em></h2>
       <div class="svc-grid">
@@ -143,7 +144,12 @@ html,body{width:100%;height:100%;overflow:hidden;background:#FFFFFF;color:var(--
       </div>
     </div>
 
-    <!-- Slide 5: Shop by Intention -->
+    <!-- 7: Video break 2 -->
+    <div class="slide slide-video">
+      <video src="assets/signage/grok-video-ca490f43-5ae8-47a4-81ca-6d655e0457d2 (1).mp4" muted autoplay loop playsinline></video>
+    </div>
+
+    <!-- 8: Shop by Intention -->
     <div class="slide slide-shop">
       <h2>Shop by <em>Intention</em></h2>
       <div class="cats">
@@ -157,9 +163,13 @@ html,body{width:100%;height:100%;overflow:hidden;background:#FFFFFF;color:var(--
         <span class="cat">✿ Peace</span>
       </div>
     </div>
+
+    <!-- 9: Video break 3 -->
+    <div class="slide slide-video">
+      <video src="assets/signage/grok-video-ca490f43-5ae8-47a4-81ca-6d655e0457d2 (2).mp4" muted autoplay loop playsinline></video>
+    </div>
   </div>
 
-  <!-- Footer -->
   <div class="footer">
     <span>Mon–Sat 11am–6pm · Sun 12pm–5pm</span>
     <span>1826 Lonsdale Ave · shop.utopiastore.ca</span>
@@ -167,36 +177,34 @@ html,body{width:100%;height:100%;overflow:hidden;background:#FFFFFF;color:var(--
 </div>
 
 <script>
-// Particles
-const slidesEl=document.getElementById('slides');
-for(let i=0;i<12;i++){
-  const p=document.createElement('div');
-  p.className='particle';
-  Object.assign(p.style,{position:'absolute',left:Math.random()*100+'%',bottom:-(Math.random()*10)+'%',width:(2+Math.random()*3)+'px',height:(2+Math.random()*3)+'px',animationDuration:(12+Math.random()*18)+'s',animationDelay:(Math.random()*10)+'s'});
-  slidesEl.appendChild(p);
-}
-
-// Auto-cycling slides with progress bar
 const allSlides=document.querySelectorAll('.slide');
 const bar=document.getElementById('progressBar');
 let current=0;
 const DURATION=30000;
 
 function nextSlide(){
+  // Pause video on current slide if any
+  const curVid=allSlides[current].querySelector('video');
+  if(curVid){curVid.pause();curVid.currentTime=0}
+  
   allSlides[current].classList.remove('active');
   current=(current+1)%allSlides.length;
   allSlides[current].classList.add('active');
+  
+  // Play video on new slide if any
+  const newVid=allSlides[current].querySelector('video');
+  if(newVid){newVid.play()}
+  
   resetProgress();
 }
 
 function resetProgress(){
   bar.classList.remove('running');
   bar.style.width='0%';
-  void bar.offsetWidth; // force reflow
+  void bar.offsetWidth;
   bar.classList.add('running');
 }
 
-// Start immediately
 resetProgress();
 setInterval(nextSlide,DURATION);
 </script>
