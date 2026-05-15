@@ -134,3 +134,90 @@ document.querySelectorAll('.scroll-row').forEach(row => {
     row.scrollLeft = scrollLeft - (x - startX) * 1.5;
   });
 });
+
+// ── Google Reviews Slider ──
+(function() {
+  const slider = document.getElementById('reviewsSlider');
+  const dotsContainer = document.getElementById('reviewDots');
+  if (!slider || !dotsContainer) return;
+
+  const cards = slider.querySelectorAll('.review-card');
+  const cardCount = cards.length;
+  let currentIndex = 0;
+  let autoplayTimer;
+
+  // Calculate how many cards visible at once
+  function getVisibleCount() {
+    const sliderWidth = slider.offsetWidth;
+    const cardWidth = cards[0].offsetWidth + 20; // 20 = gap
+    return Math.floor(sliderWidth / cardWidth) || 1;
+  }
+
+  function getMaxIndex() {
+    return Math.max(0, cardCount - getVisibleCount());
+  }
+
+  // Build dots
+  function buildDots() {
+    dotsContainer.innerHTML = '';
+    const maxIdx = getMaxIndex();
+    for (let i = 0; i <= maxIdx; i++) {
+      const dot = document.createElement('span');
+      dot.className = 'dot' + (i === currentIndex ? ' active' : '');
+      dot.addEventListener('click', () => goTo(i));
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  function updateDots() {
+    const dots = dotsContainer.querySelectorAll('.dot');
+    dots.forEach((d, i) => d.classList.toggle('active', i === currentIndex));
+  }
+
+  function goTo(index) {
+    const maxIdx = getMaxIndex();
+    currentIndex = Math.max(0, Math.min(index, maxIdx));
+    const cardWidth = cards[0].offsetWidth + 20;
+    slider.scrollTo({ left: currentIndex * cardWidth, behavior: 'smooth' });
+    updateDots();
+    resetAutoplay();
+  }
+
+  // Expose global function for arrow buttons
+  window.slideReviews = function(dir) {
+    goTo(currentIndex + dir);
+  };
+
+  // Autoplay
+  function resetAutoplay() {
+    clearInterval(autoplayTimer);
+    autoplayTimer = setInterval(() => {
+      const maxIdx = getMaxIndex();
+      if (currentIndex >= maxIdx) goTo(0);
+      else goTo(currentIndex + 1);
+    }, 5000);
+  }
+
+  // Pause on hover
+  slider.addEventListener('mouseenter', () => clearInterval(autoplayTimer));
+  slider.addEventListener('mouseleave', resetAutoplay);
+
+  // Touch/drag support
+  let touchStartX = 0, touchDiff = 0;
+  slider.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; clearInterval(autoplayTimer); }, { passive: true });
+  slider.addEventListener('touchmove', e => { touchDiff = touchStartX - e.touches[0].clientX; }, { passive: true });
+  slider.addEventListener('touchend', () => {
+    if (Math.abs(touchDiff) > 50) {
+      goTo(currentIndex + (touchDiff > 0 ? 1 : -1));
+    }
+    touchDiff = 0;
+    resetAutoplay();
+  });
+
+  // Init
+  buildDots();
+  resetAutoplay();
+
+  // Rebuild dots on resize
+  window.addEventListener('resize', () => { buildDots(); goTo(Math.min(currentIndex, getMaxIndex())); });
+})();
