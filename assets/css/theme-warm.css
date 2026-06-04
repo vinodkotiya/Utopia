@@ -295,3 +295,24 @@ body {
 @media(prefers-reduced-motion:reduce){
   .n-orb{animation:none!important;opacity:.6}
 }
+
+/* ── Social Orb Links (Newsletter section) ── */
+.social-orb{
+  display:flex;flex-direction:column;align-items:center;gap:.6rem;
+  text-decoration:none;
+  padding:1.2rem 1.5rem;
+  border-radius:12px;
+  border:1px solid rgba(200,160,255,.15);
+  background:rgba(200,160,255,.05);
+  transition:transform .3s,background .3s,box-shadow .3s;
+  min-width:90px;
+}
+.social-orb:hover{
+  transform:translateY(-4px);
+  background:rgba(200,160,255,.12);
+  box-shadow:0 8px 30px rgba(91,45,142,.3);
+}
+.social-orb svg{opacity:.85;transition:opacity .3s}
+.social-orb:hover svg{opacity:1}
+.social-label{font-family:var(--font-body,'Jost',sans-serif);font-size:.7rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:rgba(237,232,255,.7)}
+.social-orb:hover .social-label{color:#fff}
