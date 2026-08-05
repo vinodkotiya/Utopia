@@ -1,0 +1,33 @@
+# Utopia Wellness & Gifts — robots.txt
+# https://utopiastore.ca
+
+User-agent: *
+Allow: /
+Disallow: /assets/shopify/
+Disallow: /assets/signage/
+Disallow: /v.html
+
+# AI Crawlers - Allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Sitemap
+Sitemap: https://utopiastore.ca/sitemap.xml
