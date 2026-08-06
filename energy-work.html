@@ -292,6 +292,15 @@
 
     fetchReaders()
       .then(renderAll)
+      .then(() => {
+        // After content renders, scroll to hash if present
+        if (window.location.hash) {
+          const target = document.querySelector(window.location.hash);
+          if (target) {
+            setTimeout(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+          }
+        }
+      })
       .catch(err => {
         console.warn('Readers fetch failed:', err);
         overviewContainer.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--text-muted);padding:2rem">Visit our <a href="' + BOOKING_URL + '" target="_blank" style="color:var(--violet)">booking page</a> to see available readers.</p>';
