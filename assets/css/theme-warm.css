@@ -340,3 +340,18 @@ body {
 .reader-card .rc-desc{font-size:.78rem;font-weight:300;color:var(--text-muted,#7A6B8A);line-height:1.5;margin:0 0 .75rem;flex:1;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .reader-card .rc-btn{display:inline-block;font-size:.65rem;font-weight:500;text-transform:uppercase;letter-spacing:.12em;color:#fff;background:var(--violet,#5B2D8E);padding:.5rem .9rem;border-radius:5px;text-decoration:none;text-align:center;transition:background .2s}
 .reader-card:hover .rc-btn{background:var(--violet-light,#7B4DB8)}
+
+/* ── Bio Cards (Energy Work page) ── */
+.bio-card{display:flex;gap:2rem;align-items:center;background:#fff;border:1px solid var(--border,rgba(91,45,142,.08));border-radius:16px;padding:2rem;opacity:0;animation:featuredFadeIn .6s ease forwards;transition:box-shadow .3s}
+.bio-card:hover{box-shadow:0 8px 30px rgba(91,45,142,.08)}
+.bio-img-wrap{flex-shrink:0;width:180px;height:180px;border-radius:50%;overflow:hidden;border:3px solid var(--violet,#5B2D8E);box-shadow:0 8px 25px rgba(91,45,142,.12)}
+.bio-img{width:100%;height:100%;object-fit:cover}
+.bio-content{flex:1}
+.bio-name{font-family:var(--font-display,'Cormorant Garamond',serif);font-size:clamp(1.5rem,3vw,2.2rem);font-weight:300;color:var(--text-heading,#0F0A1A);margin:0 0 .75rem}
+.bio-text{font-size:.92rem;font-weight:300;color:var(--text-body,#2D2035);line-height:1.8;margin:0 0 1.25rem}
+.bio-book-btn{display:inline-block;font-size:.72rem;font-weight:500;text-transform:uppercase;letter-spacing:.15em;color:#fff;background:var(--violet,#5B2D8E);padding:.7rem 1.8rem;border-radius:6px;text-decoration:none;transition:background .2s,transform .2s}
+.bio-book-btn:hover{background:var(--violet-light,#7B4DB8);transform:translateY(-2px)}
+@media(max-width:768px){
+  .bio-card{flex-direction:column!important;text-align:center;padding:1.5rem}
+  .bio-img-wrap{width:140px;height:140px;margin:0 auto 1rem}
+}
