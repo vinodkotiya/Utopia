@@ -316,3 +316,15 @@ body {
 .social-orb:hover svg{opacity:1}
 .social-label{font-family:var(--font-body,'Jost',sans-serif);font-size:.7rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:rgba(237,232,255,.7)}
 .social-orb:hover .social-label{color:#fff}
+
+/* ── Featured Products (Dynamic) ── */
+.featured-skeleton{border-radius:10px;background:var(--bg-section,#F8F5FF);height:220px;animation:skeletonPulse 1.5s ease-in-out infinite}
+@keyframes skeletonPulse{0%,100%{opacity:.4}50%{opacity:.8}}
+.featured-card{display:block;text-decoration:none;color:inherit;border-radius:10px;overflow:hidden;background:#fff;border:1px solid var(--border,rgba(91,45,142,.08));transition:transform .3s,box-shadow .3s;opacity:0;animation:featuredFadeIn .5s ease forwards}
+.featured-card:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(91,45,142,.12)}
+.featured-card img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;background:var(--bg-section,#F8F5FF);transition:transform .4s ease}
+.featured-card:hover img{transform:scale(1.05)}
+.featured-card .fc-body{padding:.75rem .85rem}
+.featured-card .fc-title{font-family:var(--font-display,'Cormorant Garamond',serif);font-size:.92rem;color:var(--text-heading,#0F0A1A);margin:0 0 .15rem;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.featured-card .fc-price{font-size:.78rem;font-weight:400;color:var(--violet,#5B2D8E);margin:0}
+@keyframes featuredFadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}

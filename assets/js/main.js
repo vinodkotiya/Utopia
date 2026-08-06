@@ -221,3 +221,61 @@ document.querySelectorAll('.scroll-row').forEach(row => {
   // Rebuild dots on resize
   window.addEventListener('resize', () => { buildDots(); goTo(Math.min(currentIndex, getMaxIndex())); });
 })();
+
+// ── Dynamic Featured Products (Shopify) ──
+(function() {
+  const container = document.getElementById('featuredProducts');
+  if (!container) return;
+
+  const SHOP_URL = 'https://shop.utopiastore.ca';
+  const COLLECTION = 'featured-products';
+  const LIMIT = 15;
+
+  async function fetchProducts() {
+    const url = `${SHOP_URL}/collections/${COLLECTION}/products.json?limit=${LIMIT}`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`${res.status}`);
+    const data = await res.json();
+    return data.products;
+  }
+
+  function formatPrice(variant) {
+    const amount = parseFloat(variant.price);
+    if (amount === 0) return 'Free';
+    return amount.toLocaleString('en-CA', { style: 'currency', currency: 'CAD' });
+  }
+
+  function escapeHtml(str) {
+    const d = document.createElement('div');
+    d.textContent = str;
+    return d.innerHTML;
+  }
+
+  function renderProducts(products) {
+    if (!products.length) {
+      container.innerHTML = '<p style="text-align:center;color:var(--text-muted);grid-column:1/-1;padding:2rem">No featured products available right now.</p>';
+      return;
+    }
+    container.innerHTML = products.map((product, i) => {
+      const variant = product.variants[0];
+      const image = product.images[0]?.src || '';
+      const productUrl = `${SHOP_URL}/products/${product.handle}`;
+      return `
+        <a class="featured-card" href="${productUrl}" target="_blank" rel="noopener" style="animation-delay:${i * 60}ms">
+          <img src="${image}" alt="${escapeHtml(product.title)}" loading="lazy">
+          <div class="fc-body">
+            <p class="fc-title">${escapeHtml(product.title)}</p>
+            <p class="fc-price">${formatPrice(variant)}</p>
+          </div>
+        </a>`;
+    }).join('');
+  }
+
+  fetchProducts()
+    .then(renderProducts)
+    .catch(err => {
+      console.warn('Featured products fetch failed:', err);
+      // Keep skeletons or show subtle message
+      container.innerHTML = '<p style="text-align:center;color:var(--text-muted);grid-column:1/-1;padding:2rem;font-size:.9rem">Visit our <a href="https://shop.utopiastore.ca/collections/featured-products" target="_blank" rel="noopener" style="color:var(--violet)">shop</a> to see featured products.</p>';
+    });
+})();
