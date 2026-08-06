@@ -279,3 +279,65 @@ document.querySelectorAll('.scroll-row').forEach(row => {
       container.innerHTML = '<p style="text-align:center;color:var(--text-muted);grid-column:1/-1;padding:2rem;font-size:.9rem">Visit our <a href="https://shop.utopiastore.ca/collections/featured-products" target="_blank" rel="noopener" style="color:var(--violet)">shop</a> to see featured products.</p>';
     });
 })();
+
+// ── Dynamic Readers Grid (Shopify) ──
+(function() {
+  const container = document.getElementById('readersGrid');
+  if (!container) return;
+
+  const SHOP_URL = 'https://shop.utopiastore.ca';
+  const COLLECTION = 'readers';
+  const BOOKING_URL = SHOP_URL + '/products/readings-energy-work-sessions-booking-fee';
+
+  async function fetchReaders() {
+    const url = `${SHOP_URL}/collections/${COLLECTION}/products.json?limit=10`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`${res.status}`);
+    const data = await res.json();
+    return data.products;
+  }
+
+  function getFirstLine(bodyHtml) {
+    if (!bodyHtml) return '';
+    const div = document.createElement('div');
+    div.innerHTML = bodyHtml;
+    const text = (div.textContent || '').trim().replace(/\s+/g, ' ');
+    const match = text.match(/^.*?[.!?](\s|$)/);
+    let line = match ? match[0].trim() : text;
+    if (line.length > 100) line = line.slice(0, 97).trim() + '…';
+    return line;
+  }
+
+  function escapeHtml(str) {
+    const d = document.createElement('div');
+    d.textContent = str;
+    return d.innerHTML;
+  }
+
+  function renderReaders(products) {
+    if (!products.length) {
+      container.innerHTML = '<p style="text-align:center;color:var(--text-muted);grid-column:1/-1;padding:2rem">No readers available right now.</p>';
+      return;
+    }
+    container.innerHTML = products.map((product, i) => {
+      const image = product.images[0]?.src || '';
+      const desc = getFirstLine(product.body_html);
+      return `
+        <div class="reader-card" style="animation-delay:${i * 80}ms">
+          <img class="rc-img" src="${image}" alt="${escapeHtml(product.title)}" loading="lazy">
+          <div class="rc-body">
+            <p class="rc-name">${escapeHtml(product.title)}</p>
+            <p class="rc-desc">${escapeHtml(desc)}</p>
+            <a class="rc-btn" href="${BOOKING_URL}" target="_blank" rel="noopener">Book Now ✦</a>
+          </div>
+        </div>`;
+    }).join('');
+  }
+
+  fetchReaders()
+    .then(renderReaders)
+    .catch(err => {
+      console.warn('Readers fetch failed:', err);
+      container.innerHTML = '<p style="text-align:center;color:var(--text-muted);grid-column:1/-1;padding:2rem;font-size:.9rem">Visit our <a href="' + BOOKING_URL + '" target="_blank" rel="noopener" style="color:var(--violet)">booking page</a> to see available readers.</p>';
+    });
+})();

@@ -328,3 +328,15 @@ body {
 .featured-card .fc-title{font-family:var(--font-display,'Cormorant Garamond',serif);font-size:.92rem;color:var(--text-heading,#0F0A1A);margin:0 0 .15rem;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .featured-card .fc-price{font-size:.78rem;font-weight:400;color:var(--violet,#5B2D8E);margin:0}
 @keyframes featuredFadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── Readers Grid (Dynamic) ── */
+.reader-skeleton{border-radius:12px;background:var(--bg-card,#fff);height:280px;animation:skeletonPulse 1.5s ease-in-out infinite;border:1px solid var(--border,rgba(91,45,142,.08))}
+.reader-card{display:flex;flex-direction:column;text-decoration:none;color:inherit;border-radius:12px;overflow:hidden;background:#fff;border:1px solid var(--border,rgba(91,45,142,.08));transition:transform .3s,box-shadow .3s;opacity:0;animation:featuredFadeIn .5s ease forwards}
+.reader-card:hover{transform:translateY(-6px);box-shadow:0 12px 35px rgba(91,45,142,.12)}
+.reader-card .rc-img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;background:var(--bg-section,#F8F5FF);transition:transform .4s ease}
+.reader-card:hover .rc-img{transform:scale(1.04)}
+.reader-card .rc-body{padding:.85rem;flex:1;display:flex;flex-direction:column}
+.reader-card .rc-name{font-family:var(--font-display,'Cormorant Garamond',serif);font-size:1.1rem;color:var(--text-heading,#0F0A1A);margin:0 0 .3rem;line-height:1.2}
+.reader-card .rc-desc{font-size:.78rem;font-weight:300;color:var(--text-muted,#7A6B8A);line-height:1.5;margin:0 0 .75rem;flex:1;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.reader-card .rc-btn{display:inline-block;font-size:.65rem;font-weight:500;text-transform:uppercase;letter-spacing:.12em;color:#fff;background:var(--violet,#5B2D8E);padding:.5rem .9rem;border-radius:5px;text-decoration:none;text-align:center;transition:background .2s}
+.reader-card:hover .rc-btn{background:var(--violet-light,#7B4DB8)}
