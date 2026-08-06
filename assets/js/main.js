@@ -314,6 +314,10 @@ document.querySelectorAll('.scroll-row').forEach(row => {
     return d.innerHTML;
   }
 
+  function slugify(str) {
+    return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+  }
+
   function renderReaders(products) {
     if (!products.length) {
       container.innerHTML = '<p style="text-align:center;color:var(--text-muted);grid-column:1/-1;padding:2rem">No readers available right now.</p>';
@@ -322,13 +326,17 @@ document.querySelectorAll('.scroll-row').forEach(row => {
     container.innerHTML = products.map((product, i) => {
       const image = product.images[0]?.src || '';
       const desc = getFirstLine(product.body_html);
+      const slug = slugify(product.title);
       return `
         <div class="reader-card" style="animation-delay:${i * 80}ms">
           <img class="rc-img" src="${image}" alt="${escapeHtml(product.title)}" loading="lazy">
           <div class="rc-body">
             <p class="rc-name">${escapeHtml(product.title)}</p>
             <p class="rc-desc">${escapeHtml(desc)}</p>
-            <a class="rc-btn" href="${BOOKING_URL}" target="_blank" rel="noopener">Book Now ✦</a>
+            <div class="rc-btns">
+              <a class="rc-btn rc-btn-outline" href="energy-work.html#bio-${slug}">Read Bio</a>
+              <a class="rc-btn" href="${BOOKING_URL}" target="_blank" rel="noopener">Book Now</a>
+            </div>
           </div>
         </div>`;
     }).join('');

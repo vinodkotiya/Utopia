@@ -355,3 +355,8 @@ body {
   .bio-card{flex-direction:column!important;text-align:center;padding:1.5rem}
   .bio-img-wrap{width:140px;height:140px;margin:0 auto 1rem}
 }
+
+/* ── Reader Card Dual Buttons ── */
+.reader-card .rc-btns{display:flex;gap:.4rem;flex-wrap:wrap}
+.reader-card .rc-btn-outline{background:transparent!important;color:var(--violet,#5B2D8E)!important;border:1.5px solid var(--violet,#5B2D8E);padding:.4rem .7rem}
+.reader-card .rc-btn-outline:hover{background:var(--violet,#5B2D8E)!important;color:#fff!important}
