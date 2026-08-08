@@ -50,6 +50,14 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Shipping & Returns -->
+  <url>
+    <loc>https://utopiastore.ca/shipping-returns.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Blog -->
   <url>
     <loc>https://utopiastore.ca/blog/index.html</loc>
