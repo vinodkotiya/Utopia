@@ -216,6 +216,12 @@
 
     function getFullDescription(bodyHtml) {
       if (!bodyHtml) return '';
+      // Sanitize: remove scripts, styles, iframes, and fb embeds
+      bodyHtml = bodyHtml.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '');
+      bodyHtml = bodyHtml.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '');
+      bodyHtml = bodyHtml.replace(/<iframe[^>]*>[\s\S]*?<\/iframe>/gi, '');
+      bodyHtml = bodyHtml.replace(/<div[^>]*class="[^"]*fb-[^"]*"[^>]*>[\s\S]*?<\/div>/gi, '');
+      bodyHtml = bodyHtml.replace(/<div[^>]*data-href[^>]*>[\s\S]*?<\/div>/gi, '');
       return bodyHtml;
     }
 
@@ -301,7 +307,13 @@
           }
           pastContainer.innerHTML = products.map((p, i) => {
             const image = p.images[0]?.src || '';
-            const fullDesc = p.body_html || '';
+            let fullDesc = p.body_html || '';
+            // Sanitize: remove scripts, styles, iframes, and fb embeds
+            fullDesc = fullDesc.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '');
+            fullDesc = fullDesc.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '');
+            fullDesc = fullDesc.replace(/<iframe[^>]*>[\s\S]*?<\/iframe>/gi, '');
+            fullDesc = fullDesc.replace(/<div[^>]*class="[^"]*fb-[^"]*"[^>]*>[\s\S]*?<\/div>/gi, '');
+            fullDesc = fullDesc.replace(/<div[^>]*data-href[^>]*>[\s\S]*?<\/div>/gi, '');
             const isEven = i % 2 === 0;
             return `
               <div class="bio-card" style="scroll-margin-top:6rem;animation-delay:${i * 100}ms;flex-direction:${isEven ? 'row' : 'row-reverse'};opacity:.85">

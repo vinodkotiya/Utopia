@@ -239,6 +239,12 @@
 
     function getFullDescription(bodyHtml) {
       if (!bodyHtml) return '';
+      // Sanitize: remove scripts, styles, iframes, and fb embeds
+      bodyHtml = bodyHtml.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '');
+      bodyHtml = bodyHtml.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '');
+      bodyHtml = bodyHtml.replace(/<iframe[^>]*>[\s\S]*?<\/iframe>/gi, '');
+      bodyHtml = bodyHtml.replace(/<div[^>]*class="[^"]*fb-[^"]*"[^>]*>[\s\S]*?<\/div>/gi, '');
+      bodyHtml = bodyHtml.replace(/<div[^>]*data-href[^>]*>[\s\S]*?<\/div>/gi, '');
       return bodyHtml;
     }
 
