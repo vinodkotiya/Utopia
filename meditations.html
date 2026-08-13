@@ -216,13 +216,50 @@
 
     function getFullDescription(bodyHtml) {
       if (!bodyHtml) return '';
-      // Sanitize: remove scripts, styles, iframes, and fb embeds
-      bodyHtml = bodyHtml.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '');
-      bodyHtml = bodyHtml.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '');
-      bodyHtml = bodyHtml.replace(/<iframe[^>]*>[\s\S]*?<\/iframe>/gi, '');
-      bodyHtml = bodyHtml.replace(/<div[^>]*class="[^"]*fb-[^"]*"[^>]*>[\s\S]*?<\/div>/gi, '');
-      bodyHtml = bodyHtml.replace(/<div[^>]*data-href[^>]*>[\s\S]*?<\/div>/gi, '');
-      return bodyHtml;
+      return sanitizeHtml(bodyHtml);
+    }
+
+    function sanitizeHtml(html) {
+      // Remove scripts, styles, iframes
+      html = html.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '');
+      html = html.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '');
+      html = html.replace(/<iframe[^>]*>[\s\S]*?<\/iframe>/gi, '');
+      // Parse into DOM to clean attributes and FB junk
+      const div = document.createElement('div');
+      div.innerHTML = html;
+      // Remove all elements with FB-specific classes or bis_size
+      div.querySelectorAll('[bis_size], [data-href], .fb-post, .fb-video').forEach(el => el.remove());
+      // Remove FB emoji images (from static.xx.fbcdn.net) — replace with alt text
+      div.querySelectorAll('img[src*="fbcdn.net"]').forEach(el => {
+        const alt = el.getAttribute('alt') || '';
+        el.replaceWith(document.createTextNode(alt));
+      });
+      // Remove links with fbclid or facebook.com/hashtag
+      div.querySelectorAll('a[href*="fbclid"], a[href*="facebook.com/hashtag"]').forEach(el => {
+        el.replaceWith(document.createTextNode(el.textContent));
+      });
+      // Strip all class and style attributes and non-standard attrs from remaining elements
+      div.querySelectorAll('*').forEach(el => {
+        const tag = el.tagName.toLowerCase();
+        // Keep only safe tags
+        const safeTags = ['p','br','strong','b','em','i','u','ul','ol','li','h1','h2','h3','h4','h5','h6','a','span','div'];
+        if (!safeTags.includes(tag)) {
+          el.replaceWith(document.createTextNode(el.textContent));
+          return;
+        }
+        // Remove all attributes except href on <a>
+        const attrs = [...el.attributes];
+        attrs.forEach(attr => {
+          if (tag === 'a' && attr.name === 'href' && !attr.value.includes('fbclid')) return;
+          if (tag === 'a' && attr.name === 'target') return;
+          if (tag === 'a' && attr.name === 'rel') return;
+          el.removeAttribute(attr.name);
+        });
+      });
+      // Clean up empty divs/spans
+      div.querySelectorAll('div:empty, span:empty').forEach(el => el.remove());
+      return div.innerHTML;
+    }
     }
 
     function slugify(str) {
@@ -307,13 +344,7 @@
           }
           pastContainer.innerHTML = products.map((p, i) => {
             const image = p.images[0]?.src || '';
-            let fullDesc = p.body_html || '';
-            // Sanitize: remove scripts, styles, iframes, and fb embeds
-            fullDesc = fullDesc.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '');
-            fullDesc = fullDesc.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '');
-            fullDesc = fullDesc.replace(/<iframe[^>]*>[\s\S]*?<\/iframe>/gi, '');
-            fullDesc = fullDesc.replace(/<div[^>]*class="[^"]*fb-[^"]*"[^>]*>[\s\S]*?<\/div>/gi, '');
-            fullDesc = fullDesc.replace(/<div[^>]*data-href[^>]*>[\s\S]*?<\/div>/gi, '');
+            let fullDesc = sanitizeHtml(p.body_html || '');
             const isEven = i % 2 === 0;
             return `
               <div class="bio-card" style="scroll-margin-top:6rem;animation-delay:${i * 100}ms;flex-direction:${isEven ? 'row' : 'row-reverse'};opacity:.85">
