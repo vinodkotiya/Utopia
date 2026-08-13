@@ -222,14 +222,14 @@
         const slug = slugify(p.title);
         const productUrl = SHOP_URL + '/products/' + p.handle;
         return `
-          <div class="reader-card" style="animation-delay:${i * 80}ms">
-            <img class="rc-img" src="${image}" alt="${escapeHtml(p.title)}" loading="lazy">
-            <div class="rc-body">
-              <p class="rc-name">${escapeHtml(p.title)}</p>
-              <p class="rc-desc">${escapeHtml(desc)}</p>
+          <div class="wellness-card" style="animation-delay:${i * 80}ms">
+            <img class="wc-img" src="${image}" alt="${escapeHtml(p.title)}" loading="lazy">
+            <div class="wc-body">
+              <p class="wc-name">${escapeHtml(p.title)}</p>
+              <p class="wc-desc">${escapeHtml(desc)}</p>
               <div style="display:flex;flex-direction:column;gap:.4rem;margin-top:auto">
-                <a class="rc-btn" href="#bio-${slug}" style="background:transparent;color:var(--teal, #1A7A6E);border:1.5px solid var(--teal, #1A7A6E)">Details ↓</a>
-                <a class="rc-btn" href="${productUrl}" target="_blank" rel="noopener" style="background:var(--teal, #1A7A6E);color:#fff;border:1.5px solid var(--teal, #1A7A6E)">Book Now</a>
+                <a class="wc-btn" href="#bio-${slug}" style="background:transparent;color:var(--teal, #1A7A6E);border:1.5px solid var(--teal, #1A7A6E)">Details ↓</a>
+                <a class="wc-btn" href="${productUrl}" target="_blank" rel="noopener">Book Now</a>
               </div>
             </div>
           </div>`;
@@ -244,8 +244,8 @@
         const productUrl = SHOP_URL + '/products/' + p.handle;
         return `
           <div id="bio-${slug}" class="bio-card" style="scroll-margin-top:6rem;animation-delay:${i * 100}ms;flex-direction:${isEven ? 'row' : 'row-reverse'}">
-            <div class="bio-img-wrap">
-              <img src="${image}" alt="${escapeHtml(p.title)}" loading="lazy" class="bio-img">
+            <div class="bio-img-wrap" style="border-radius:12px;width:220px;height:auto;aspect-ratio:9/16;border:none">
+              <img src="${image}" alt="${escapeHtml(p.title)}" loading="lazy" class="bio-img" style="border-radius:12px">
             </div>
             <div class="bio-content">
               <h3 class="bio-name">${escapeHtml(p.title)}</h3>
