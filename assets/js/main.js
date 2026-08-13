@@ -418,7 +418,7 @@ document.querySelectorAll('.scroll-row').forEach(row => {
   if (!container) return;
 
   const SHOP_URL = 'https://shop.utopiastore.ca';
-  const COLLECTION = 'past-events';
+  const COLLECTION = 'pastevent';
 
   async function fetchArchive() {
     const url = `${SHOP_URL}/collections/${COLLECTION}/products.json?limit=10`;

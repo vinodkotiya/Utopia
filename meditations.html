@@ -294,7 +294,7 @@
     // Also fetch past events
     const pastContainer = document.getElementById('pastEventsGrid');
     if (pastContainer) {
-      fetch(SHOP_URL + '/collections/past-events/products.json?limit=10')
+      fetch(SHOP_URL + '/collections/pastevent/products.json?limit=10')
         .then(r => r.json())
         .then(data => {
           const products = data.products;
