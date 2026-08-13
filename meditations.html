@@ -201,9 +201,7 @@
 
     function getFullDescription(bodyHtml) {
       if (!bodyHtml) return '';
-      const div = document.createElement('div');
-      div.innerHTML = bodyHtml;
-      return div.textContent.trim().replace(/\s+/g, ' ');
+      return bodyHtml;
     }
 
     function slugify(str) {
@@ -251,7 +249,7 @@
             </div>
             <div class="bio-content">
               <h3 class="bio-name">${escapeHtml(p.title)}</h3>
-              <p class="bio-text">${escapeHtml(fullDesc)}</p>
+              <div class="bio-text">${fullDesc}</div>
               <a href="${productUrl}" target="_blank" rel="noopener" class="bio-book-btn" style="background:var(--teal, #1A7A6E);border-color:var(--teal, #1A7A6E)">Book Now ✦</a>
             </div>
           </div>`;
