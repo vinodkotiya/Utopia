@@ -239,37 +239,13 @@
 
     function getFullDescription(bodyHtml) {
       if (!bodyHtml) return '';
-      return sanitizeHtml(bodyHtml);
-    }
-
-    function sanitizeHtml(html) {
-      html = html.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '');
-      html = html.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '');
-      html = html.replace(/<iframe[^>]*>[\s\S]*?<\/iframe>/gi, '');
-      const div = document.createElement('div');
-      div.innerHTML = html;
-      div.querySelectorAll('[bis_size], [data-href], .fb-post, .fb-video').forEach(el => el.remove());
-      div.querySelectorAll('img[src*="fbcdn.net"]').forEach(el => {
-        el.replaceWith(document.createTextNode(el.getAttribute('alt') || ''));
-      });
-      div.querySelectorAll('a[href*="fbclid"], a[href*="facebook.com/hashtag"]').forEach(el => {
-        el.replaceWith(document.createTextNode(el.textContent));
-      });
-      div.querySelectorAll('*').forEach(el => {
-        const tag = el.tagName.toLowerCase();
-        const safeTags = ['p','br','strong','b','em','i','u','ul','ol','li','h1','h2','h3','h4','h5','h6','a','span','div'];
-        if (!safeTags.includes(tag)) { el.replaceWith(document.createTextNode(el.textContent)); return; }
-        const attrs = [...el.attributes];
-        attrs.forEach(attr => {
-          if (tag === 'a' && attr.name === 'href' && !attr.value.includes('fbclid')) return;
-          if (tag === 'a' && attr.name === 'target') return;
-          if (tag === 'a' && attr.name === 'rel') return;
-          el.removeAttribute(attr.name);
-        });
-      });
-      div.querySelectorAll('div:empty, span:empty').forEach(el => el.remove());
-      return div.innerHTML;
-    }
+      // Sanitize: remove scripts, styles, iframes, and fb embeds
+      bodyHtml = bodyHtml.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '');
+      bodyHtml = bodyHtml.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '');
+      bodyHtml = bodyHtml.replace(/<iframe[^>]*>[\s\S]*?<\/iframe>/gi, '');
+      bodyHtml = bodyHtml.replace(/<div[^>]*class="[^"]*fb-[^"]*"[^>]*>[\s\S]*?<\/div>/gi, '');
+      bodyHtml = bodyHtml.replace(/<div[^>]*data-href[^>]*>[\s\S]*?<\/div>/gi, '');
+      return bodyHtml;
     }
 
     function slugify(str) {
