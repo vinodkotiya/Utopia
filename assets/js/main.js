@@ -411,3 +411,65 @@ document.querySelectorAll('.scroll-row').forEach(row => {
       container.innerHTML = '<p style="text-align:center;color:var(--text-muted);grid-column:1/-1;padding:2rem;font-size:.9rem">Visit our <a href="https://shop.utopiastore.ca/collections/wellness" target="_blank" rel="noopener" style="color:var(--teal,#1A7A6E)">wellness page</a> to see available services.</p>';
     });
 })();
+
+// ── Archive: Past Events Grid (Shopify) ──
+(function() {
+  const container = document.getElementById('archiveGrid');
+  if (!container) return;
+
+  const SHOP_URL = 'https://shop.utopiastore.ca';
+  const COLLECTION = 'past-events';
+
+  async function fetchArchive() {
+    const url = `${SHOP_URL}/collections/${COLLECTION}/products.json?limit=10`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`${res.status}`);
+    const data = await res.json();
+    return data.products;
+  }
+
+  function getFirstLine(bodyHtml) {
+    if (!bodyHtml) return '';
+    const div = document.createElement('div');
+    div.innerHTML = bodyHtml;
+    const text = (div.textContent || '').trim().replace(/\s+/g, ' ');
+    const match = text.match(/^.*?[.!?](\s|$)/);
+    let line = match ? match[0].trim() : text;
+    if (line.length > 90) line = line.slice(0, 87).trim() + '\u2026';
+    return line;
+  }
+
+  function escapeHtml(str) {
+    const d = document.createElement('div');
+    d.textContent = str;
+    return d.innerHTML;
+  }
+
+  function renderArchive(products) {
+    if (!products.length) {
+      container.innerHTML = '<p style="text-align:center;color:var(--text-muted);grid-column:1/-1;padding:2rem">No past events to show.</p>';
+      return;
+    }
+    container.innerHTML = products.map((product, i) => {
+      const image = product.images[0]?.src || '';
+      const desc = getFirstLine(product.body_html);
+      const slug = product.handle;
+      return `
+        <div class="wellness-card" style="animation-delay:${i * 80}ms">
+          <img class="wc-img" src="${image}" alt="${escapeHtml(product.title)}" loading="lazy">
+          <div class="wc-body">
+            <p class="wc-name">${escapeHtml(product.title)}</p>
+            <p class="wc-desc">${escapeHtml(desc)}</p>
+            <a class="wc-btn" href="meditations.html#past-events" style="background:var(--violet,#5B2D8E)">View Details</a>
+          </div>
+        </div>`;
+    }).join('');
+  }
+
+  fetchArchive()
+    .then(renderArchive)
+    .catch(err => {
+      console.warn('Archive fetch failed:', err);
+      container.innerHTML = '<p style="text-align:center;color:var(--text-muted);grid-column:1/-1;padding:2rem;font-size:.9rem">Check out our <a href="meditations.html#past-events" style="color:var(--violet)">past events</a>.</p>';
+    });
+})();
