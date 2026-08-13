@@ -350,9 +350,10 @@ body {
 .bio-name{font-family:var(--font-display,'Cormorant Garamond',serif);font-size:clamp(1.5rem,3vw,2.2rem);font-weight:300;color:var(--text-heading,#0F0A1A);margin:0 0 .75rem}
 .bio-text{font-size:.92rem;font-weight:300;color:var(--text-body,#2D2035);line-height:1.8;margin:0 0 1.25rem}
 .bio-text p{margin-bottom:.8rem}
-.bio-text ul,.bio-text ol{margin:.5rem 0 .8rem 1.2rem;padding:0}
-.bio-text li{margin-bottom:.3rem}
-.bio-text strong,.bio-text b{font-weight:500;color:var(--text-heading,#0F0A1A)}
+.bio-text ul,.bio-text ol{margin:.5rem 0 .8rem 1.2rem!important;padding-left:1rem!important;list-style:disc!important}
+.bio-text ol{list-style:decimal!important}
+.bio-text li{margin-bottom:.3rem;display:list-item!important}
+.bio-text strong,.bio-text b{font-weight:700!important;color:var(--text-heading,#0F0A1A)}
 .bio-book-btn{display:inline-block;font-size:.72rem;font-weight:500;text-transform:uppercase;letter-spacing:.15em;color:#fff;background:var(--violet,#5B2D8E);padding:.7rem 1.8rem;border-radius:6px;text-decoration:none;transition:background .2s,transform .2s}
 .bio-book-btn:hover{background:var(--violet-light,#7B4DB8);transform:translateY(-2px)}
 @media(max-width:768px){
