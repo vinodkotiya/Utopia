@@ -18,6 +18,157 @@
     tailwind.config={theme:{extend:{colors:{void:'#FFFFFF',deep:'#F8F5FF',card:'#FFFFFF',surface:'#F0EBFF',gold:{DEFAULT:'#5B2D8E',light:'#7B4DB8'},amethyst:{DEFAULT:'#5B2D8E',dim:'#E8DFFF'},rose:'#2D2035',sage:'#1A7A6E'},fontFamily:{display:['Cormorant Garamond','Georgia','serif'],body:['Jost','sans-serif']}}}}
   </script>
   <link rel="stylesheet" href="../assets/css/theme-warm.css">
+  <style>
+    .blog-search {
+      position: relative;
+      max-width: 560px;
+      margin: 0 auto 2.5rem;
+    }
+    .blog-search input {
+      width: 100%;
+      padding: 1rem 1rem 1rem 3rem;
+      font-family: var(--font-body);
+      font-size: .95rem;
+      font-weight: 300;
+      color: var(--text-body);
+      background: var(--bg-card);
+      border: 1.5px solid var(--border);
+      border-radius: 50px;
+      outline: none;
+      transition: border-color .3s, box-shadow .3s;
+    }
+    .blog-search input::placeholder {
+      color: var(--text-muted);
+      font-weight: 300;
+    }
+    .blog-search input:focus {
+      border-color: var(--violet);
+      box-shadow: 0 0 0 3px rgba(91, 45, 142, .1);
+    }
+    .blog-search .search-icon {
+      position: absolute;
+      left: 1.1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+      transition: color .3s;
+    }
+    .blog-search input:focus ~ .search-icon {
+      color: var(--violet);
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    @media (min-width: 640px) {
+      .blog-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 1024px) {
+      .blog-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .blog-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 12px;
+      padding: 1.75rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: .75rem;
+      transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+      opacity: 0;
+      animation: featuredFadeIn .5s ease forwards;
+    }
+    .blog-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 35px rgba(91, 45, 142, .1);
+      border-color: var(--border-hover);
+    }
+    .blog-card .card-title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 400;
+      color: var(--text-heading);
+      line-height: 1.3;
+      margin: 0;
+    }
+    .blog-card .card-desc {
+      font-family: var(--font-body);
+      font-size: .85rem;
+      font-weight: 300;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin: 0;
+      flex: 1;
+    }
+    .blog-card .card-link {
+      font-family: var(--font-body);
+      font-size: .78rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: var(--violet);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: .35rem;
+      transition: color .2s, gap .2s;
+    }
+    .blog-card .card-link:hover {
+      color: var(--violet-light);
+      gap: .6rem;
+    }
+
+    .post-count {
+      font-family: var(--font-body);
+      font-size: .82rem;
+      font-weight: 300;
+      color: var(--text-muted);
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .load-more-wrap {
+      text-align: center;
+      margin-top: 2.5rem;
+    }
+    .load-more-btn {
+      font-family: var(--font-body);
+      font-size: .78rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      color: #fff;
+      background: var(--violet);
+      border: none;
+      padding: .85rem 2.2rem;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background .2s, transform .2s, box-shadow .2s;
+    }
+    .load-more-btn:hover {
+      background: var(--violet-light);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(91, 45, 142, .2);
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 3rem 1rem;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--text-muted);
+    }
+    .no-results span {
+      display: block;
+      font-size: 2.5rem;
+      margin-bottom: .75rem;
+    }
+  </style>
 </head>
 <body style="background:var(--bg-page);color:var(--text-body)">
 
@@ -66,21 +217,38 @@
   </div>
 
   <!-- BLOG LISTING -->
-  <section class="pt-28 pb-16 px-6" style="background:var(--bg-section)">
-    <div class="max-w-3xl mx-auto">
-      <h1 class="text-[clamp(1.6rem,4vw,2.4rem)] leading-[1.25] mb-10 text-center" style="font-family:var(--font-display);color:var(--text-heading)">Blog</h1>
-      <ul class="list-none space-y-6">
-        <li><a href="psychic-readings-north-vancouver.html" class="block p-5 rounded-lg border transition-all hover:shadow-md" style="border-color:var(--border);text-decoration:none"><span class="block text-[1.05rem] font-medium mb-1" style="font-family:var(--font-display);color:var(--text-heading)">Psychic Readings in North Vancouver: Clarity, Tarot &amp; Mediumship</span><span class="block text-[.85rem] font-light" style="color:var(--text-body)">Looking for a psychic reading near you? Discover in-person Clarity &amp; Guidance Sessions at Utopia on Lonsdale.</span></a></li>
-        <li><a href="magician-tarot-meaning.html" class="block p-5 rounded-lg border transition-all hover:shadow-md" style="border-color:var(--border);text-decoration:none"><span class="block text-[1.05rem] font-medium mb-1" style="font-family:var(--font-display);color:var(--text-heading)">The Magician Tarot Card: In-Depth Meaning &amp; Manifestation</span><span class="block text-[.85rem] font-light" style="color:var(--text-body)">Explore the upright and reversed meanings of The Magician and how to channel its energy.</span></a></li>
-        <li><a href="enhancing-rituals.html" class="block p-5 rounded-lg border transition-all hover:shadow-md" style="border-color:var(--border);text-decoration:none"><span class="block text-[1.05rem] font-medium mb-1" style="font-family:var(--font-display);color:var(--text-heading)">Enhancing Your Rituals with Crystals &amp; Sacred Tools</span><span class="block text-[.85rem] font-light" style="color:var(--text-body)">Learn how to elevate your spiritual practice with crystals, candles, and intention setting.</span></a></li>
-        <li><a href="himalayan-singing-bowls.html" class="block p-5 rounded-lg border transition-all hover:shadow-md" style="border-color:var(--border);text-decoration:none"><span class="block text-[1.05rem] font-medium mb-1" style="font-family:var(--font-display);color:var(--text-heading)">Himalayan Singing Bowls: Sound Healing &amp; Meditation</span><span class="block text-[.85rem] font-light" style="color:var(--text-body)">Discover the ancient practice of sound healing with Himalayan singing bowls.</span></a></li>
-        <li><a href="crystals-new-year-resolutions.html" class="block p-5 rounded-lg border transition-all hover:shadow-md" style="border-color:var(--border);text-decoration:none"><span class="block text-[1.05rem] font-medium mb-1" style="font-family:var(--font-display);color:var(--text-heading)">Crystals for New Year Resolutions</span><span class="block text-[.85rem] font-light" style="color:var(--text-body)">Support your goals and intentions with the right crystals for the new year.</span></a></li>
-        <li><a href="quartz-crystals-clear-home.html" class="block p-5 rounded-lg border transition-all hover:shadow-md" style="border-color:var(--border);text-decoration:none"><span class="block text-[1.05rem] font-medium mb-1" style="font-family:var(--font-display);color:var(--text-heading)">Harnessing the Power of Quartz Crystals to Clear Your Home</span><span class="block text-[.85rem] font-light" style="color:var(--text-body)">Learn how to use quartz crystals to cleanse stagnant energy and create harmony.</span></a></li>
-        <li><a href="properties-of-calcite.html" class="block p-5 rounded-lg border transition-all hover:shadow-md" style="border-color:var(--border);text-decoration:none"><span class="block text-[1.05rem] font-medium mb-1" style="font-family:var(--font-display);color:var(--text-heading)">Properties of Calcite: Healing, Energy &amp; Uses</span><span class="block text-[.85rem] font-light" style="color:var(--text-body)">Explore the healing properties and practical uses of calcite crystals.</span></a></li>
-        <li><a href="crystals-lost-love-healing.html" class="block p-5 rounded-lg border transition-all hover:shadow-md" style="border-color:var(--border);text-decoration:none"><span class="block text-[1.05rem] font-medium mb-1" style="font-family:var(--font-display);color:var(--text-heading)">Breaking Free from Lost Love: Healing with Crystals</span><span class="block text-[.85rem] font-light" style="color:var(--text-body)">Five powerful healing crystals to support your heart through heartbreak.</span></a></li>
-        <li><a href="amethyst-magical-stone.html" class="block p-5 rounded-lg border transition-all hover:shadow-md" style="border-color:var(--border);text-decoration:none"><span class="block text-[1.05rem] font-medium mb-1" style="font-family:var(--font-display);color:var(--text-heading)">Amethyst the Magical Stone: Properties, Uses &amp; Healing Benefits</span><span class="block text-[.85rem] font-light" style="color:var(--text-body)">Discover the calming, intuitive properties of amethyst and how to use it.</span></a></li>
-        <li><a href="elevate-your-vibration.html" class="block p-5 rounded-lg border transition-all hover:shadow-md" style="border-color:var(--border);text-decoration:none"><span class="block text-[1.05rem] font-medium mb-1" style="font-family:var(--font-display);color:var(--text-heading)">Elevate Your Vibration: A Guide to Raising Your Energy Frequency</span><span class="block text-[.85rem] font-light" style="color:var(--text-body)">A practical guide to raising your energy through meditation, nature, and gratitude.</span></a></li>
-      </ul>
+  <section class="pt-28 pb-20 px-6" style="background:var(--bg-section)">
+    <div class="max-w-6xl mx-auto">
+
+      <!-- Header -->
+      <div class="text-center mb-10">
+        <h1 class="text-[clamp(1.8rem,4.5vw,2.8rem)] leading-[1.2] mb-3" style="font-family:var(--font-display);color:var(--text-heading)">Blog &amp; Resources</h1>
+        <p class="text-[clamp(.9rem,1.5vw,1.05rem)]" style="font-family:var(--font-body);font-weight:300;color:var(--text-muted)">Explore crystals, tarot, energy healing, and mindful living</p>
+      </div>
+
+      <!-- Search -->
+      <div class="blog-search">
+        <input type="text" id="blogSearch" placeholder="Search articles..." aria-label="Search blog posts">
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      </div>
+
+      <!-- Post count -->
+      <p class="post-count" id="postCount"></p>
+
+      <!-- Card grid -->
+      <div class="blog-grid" id="blogGrid"></div>
+
+      <!-- No results -->
+      <div class="no-results" id="noResults" style="display:none">
+        <span>✦</span>
+        No posts found. Try a different search term.
+      </div>
+
+      <!-- Load More -->
+      <div class="load-more-wrap" id="loadMoreWrap" style="display:none">
+        <button class="load-more-btn" id="loadMoreBtn">Load More</button>
+      </div>
+
     </div>
   </section>
 
@@ -133,8 +301,111 @@
   </footer>
   <script src="../assets/js/main.js"></script>
 
+  <!-- Blog Logic -->
+  <script>
+  (function() {
+    'use strict';
+
+    const POSTS_PER_PAGE = 12;
+
+    const posts = [
+      { title: "Psychic Readings in North Vancouver: Clarity, Tarot & Mediumship", desc: "Looking for a psychic reading near you? Discover in-person Clarity & Guidance Sessions at Utopia on Lonsdale.", url: "psychic-readings-north-vancouver.html" },
+      { title: "The Magician Tarot Card: In-Depth Meaning & Manifestation", desc: "Explore the upright and reversed meanings of The Magician and how to channel its energy.", url: "magician-tarot-meaning.html" },
+      { title: "Enhancing Your Rituals with Crystals & Sacred Tools", desc: "Learn how to elevate your spiritual practice with crystals, candles, and intention setting.", url: "enhancing-rituals.html" },
+      { title: "Himalayan Singing Bowls: Sound Healing & Meditation", desc: "Discover the ancient practice of sound healing with Himalayan singing bowls.", url: "himalayan-singing-bowls.html" },
+      { title: "Crystals for New Year Resolutions", desc: "Support your goals and intentions with the right crystals for the new year.", url: "crystals-new-year-resolutions.html" },
+      { title: "Harnessing the Power of Quartz Crystals to Clear Your Home", desc: "Learn how to use quartz crystals to cleanse stagnant energy and create harmony.", url: "quartz-crystals-clear-home.html" },
+      { title: "Properties of Calcite: Healing, Energy & Uses", desc: "Explore the healing properties and practical uses of calcite crystals.", url: "properties-of-calcite.html" },
+      { title: "Breaking Free from Lost Love: Healing with Crystals", desc: "Five powerful healing crystals to support your heart through heartbreak.", url: "crystals-lost-love-healing.html" },
+      { title: "Amethyst the Magical Stone: Properties, Uses & Healing Benefits", desc: "Discover the calming, intuitive properties of amethyst and how to use it.", url: "amethyst-magical-stone.html" },
+      { title: "Elevate Your Vibration: A Guide to Raising Your Energy Frequency", desc: "A practical guide to raising your energy through meditation, nature, and gratitude.", url: "elevate-your-vibration.html" }
+    ];
+
+    const grid = document.getElementById('blogGrid');
+    const searchInput = document.getElementById('blogSearch');
+    const postCount = document.getElementById('postCount');
+    const noResults = document.getElementById('noResults');
+    const loadMoreWrap = document.getElementById('loadMoreWrap');
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+
+    let visibleCount = POSTS_PER_PAGE;
+    let filteredPosts = [...posts];
+
+    function createCard(post, index) {
+      const card = document.createElement('article');
+      card.className = 'blog-card';
+      card.style.animationDelay = (index % POSTS_PER_PAGE) * 0.06 + 's';
+      card.innerHTML = `
+        <h2 class="card-title">${post.title}</h2>
+        <p class="card-desc">${post.desc}</p>
+        <a href="${post.url}" class="card-link">Read <span aria-hidden="true">→</span></a>
+      `;
+      return card;
+    }
+
+    function render() {
+      grid.innerHTML = '';
+      const toShow = filteredPosts.slice(0, visibleCount);
+
+      if (toShow.length === 0) {
+        noResults.style.display = 'block';
+        postCount.textContent = '';
+        loadMoreWrap.style.display = 'none';
+        return;
+      }
+
+      noResults.style.display = 'none';
+
+      toShow.forEach(function(post, i) {
+        grid.appendChild(createCard(post, i));
+      });
+
+      // Post count
+      if (filteredPosts.length === posts.length) {
+        postCount.textContent = 'Showing ' + toShow.length + ' of ' + filteredPosts.length + ' posts';
+      } else {
+        postCount.textContent = 'Showing ' + toShow.length + ' of ' + filteredPosts.length + ' results';
+      }
+
+      // Load more button
+      if (visibleCount < filteredPosts.length) {
+        loadMoreWrap.style.display = 'block';
+      } else {
+        loadMoreWrap.style.display = 'none';
+      }
+    }
+
+    function handleSearch() {
+      const query = searchInput.value.trim().toLowerCase();
+      visibleCount = POSTS_PER_PAGE;
+
+      if (!query) {
+        filteredPosts = [...posts];
+      } else {
+        filteredPosts = posts.filter(function(post) {
+          return post.title.toLowerCase().includes(query) ||
+                 post.desc.toLowerCase().includes(query);
+        });
+      }
+
+      render();
+    }
+
+    function handleLoadMore() {
+      visibleCount += POSTS_PER_PAGE;
+      render();
+    }
+
+    searchInput.addEventListener('input', handleSearch);
+    loadMoreBtn.addEventListener('click', handleLoadMore);
+
+    // Initial render
+    render();
+  })();
+  </script>
+
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"LocalBusiness","@id":"https://utopiastore.ca/#business","name":"Utopia Wellness & Gifts","url":"https://utopiastore.ca","telephone":"+16049848782","address":{"@type":"PostalAddress","streetAddress":"1826 Lonsdale Avenue","addressLocality":"North Vancouver","addressRegion":"BC","postalCode":"V7M 2J9","addressCountry":"CA"},"geo":{"@type":"GeoCoordinates","latitude":49.3256251,"longitude":-123.0719743},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"11:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"16:00","closes":"18:00"}],"priceRange":"$$"}
+  {"@context":"https://schema.org","@type":"LocalBusiness","@id":"https://utopiastore.ca/#business","name":"Utopia Wellness & Gifts","url":"https://utopiastore.ca","telephone":"+16049848782","address":{"@type":"PostalAddress","streetAddress":"1826 Lonsdale Avenue","addressLocality":"North Vancouver","addressRegion":"BC","postalCode":"V7M 2J9","addressCountry":"CA"},"geo":{"@type":"GeoCoordinates","latitude":49.3256251,"longitude":-123.0719743},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"11:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"16:00","closes":"18:00"}],"priceRange":"$"}
   </script>
 </body>
 </html>
