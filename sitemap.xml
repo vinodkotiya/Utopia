@@ -61,9 +61,15 @@
   <!-- Blog -->
   <url>
     <loc>https://utopiastore.ca/blog/index.html</loc>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://utopiastore.ca/blog/psychic-readings-north-vancouver.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://utopiastore.ca/blog/magician-tarot-meaning.html</loc>
