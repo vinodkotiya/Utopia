@@ -1,0 +1,80 @@
+BLOG CONVERSION MAPPING — Utopia Wellness & Gifts
+================================================
+Old Filename → New Filename (in output/ folder)
+================================================
+
+=== COMPLETED ===
+
+1. 10-best-crystals-for-grief-and-how-to-use-them.html → crystals-for-grief-north-vancouver.html
+2. 6-best-crystals-for-upcoming-job-interviews.html → crystals-for-job-interviews.html
+3. 12-most-powerful-crystals-for-scorpios.html → crystals-for-scorpios.html
+4. 5-ways-to-use-energy-cleansing-to-remove-bad-energy-from-your-home.html → energy-cleansing-remove-bad-energy.html
+5. 7-ways-to-find-your-spirit-animal.html → find-your-spirit-animal.html
+6. 20-powerful-blessings-for-welcoming-the-new-year.html → new-year-blessings-rituals.html
+7. 5-main-benefits-of-burning-sage.html → benefits-burning-sage.html
+8. 10-ways-to-manifest-more-money-in-your-life.html → manifest-money-abundance.html
+9. 11-card-celtic-cross-spread.html → celtic-cross-tarot-spread.html
+10. 12-archangels-and-their-connection-to-the-zodiac.html → archangels-zodiac-connection.html
+11. 333-angel-numbers-meaning-in-money.html → angel-number-333-money.html
+12. 5-signs-someone-is-looking-down-on-you-from-heaven.html → signs-from-heaven.html
+13. 5-ways-to-attract-good-karma.html → attract-good-karma.html
+14. 6-powerful-ways-to-balance-you-root-chakra.html → root-chakra-balance.html
+15. 7-powerful-throat-chakra-affirmations-for-clear-communication.html → throat-chakra-affirmations.html
+16. 7-essential-ingredients-for-a-super-spiritual-bath.html → spiritual-bath-ingredients.html
+17. 7-common-nightmares-that-are-actually-warnings.html → nightmares-warnings.html
+18. 6-reasons-you-need-a-wellness-coach.html → wellness-coach-benefits.html
+
+=== COMPLETED (continued) ===
+
+19. 757-angel-number-meaning-for-love-and-twin-flames.html → angel-number-757-love.html
+20. 8-card-tarot-spread-your-guide-to-deep-meaningful-readings.html → 8-card-tarot-spread-guide.html
+21. 7-benefits-of-choosing-a-phone-psychic-reading-for-spiritual-guidance.html → benefits-in-person-reading.html
+
+=== IN PROGRESS ===
+22. 6-best-palm-reading-apps-digital-fortune-telling-at-your-fingertips.html → palmistry-basics-guide.html ✅
+23. 10-signs-that-let-you-know-if-youre-a-victim-of-witchcraft.html → spiritual-protection-energy-shielding.html ✅
+24. 8-effective-tips-for-emotional-healing.html → emotional-healing-tips.html ✅
+25. 8-signs-archangel-raphael-is-connecting-with-you.html → archangel-raphael-signs.html ✅
+26. 9-unmistakable-signs-someone-is-manifesting-you.html → signs-someone-manifesting-you.html ✅
+27. a-guide-to-air-signs.html → air-signs-astrology-guide.html ✅
+28. 7-spiritual-signs-your-ex-is-still-thinking-about-you.html → spiritual-signs-ex-thinking-of-you.html
+29. 12-signs-he-has-strong-feelings-for-you-but-is-scared.html → tarot-relationship-clarity.html
+26. 15-signs-that-your-partner-is-cheating-and-how-to-deal-with-it.html → clarity-sessions-relationship-guidance.html
+27. 12-signs-hell-never-ask-you-out-how-to-get-over-it.html → self-worth-moving-forward.html
+28. 10-proven-strategies-on-how-to-keep-a-guy-interested-in-you.html → keeping-love-alive-spiritual-practices.html
+29. 7-surefire-signs-he-wants-you-to-be-his-girlfriend.html → understanding-relationship-intentions.html
+30. 8-effective-tips-for-emotional-healing.html → emotional-healing-tips.html
+31. 8-signs-archangel-raphael-is-connecting-with-you.html → archangel-raphael-signs.html
+32. 8-subtle-warning-signs-hes-losing-interest-in-your-relationship.html → clarity-when-relationship-shifts.html
+33. 9-signs-you-will-never-find-love-and-what-to-do-about-it.html → finding-love-spiritual-guidance.html
+34. 9-unmistakable-signs-someone-is-manifesting-you.html → signs-someone-manifesting-you.html
+35. a-betrayal-in-dreams-decoding-the-meaning-of-cheating-in-your-sleep.html → dreams-about-betrayal-meaning.html
+36. a-guide-to-air-signs.html → air-signs-astrology-guide.html
+37. a-guide-to-tarot-deck-rider-waite.html → rider-waite-tarot-guide.html
+38. a-guide-to-the-5-card-tarot-spread.html → five-card-tarot-spread.html
+39. a-love-odyssey-page-of-wands-tarot-card-in-love-reading.html → page-of-wands-love-meaning.html
+40. a-magical-poem-to-learn-the-major-arcana.html → major-arcana-poem-guide.html
+41. accurate-tarot-reading.html → accurate-tarot-reading-tips.html
+42. ace-of-cups-tarot-card-meaning-symbolism-interpretation.html → ace-of-cups-meaning.html
+43. ace-of-wands-tarot-card-meaning-symbolism-interpretation.html → ace-of-wands-meaning.html
+44. affection-rejection-why-does-my-boyfriend-hate-me.html → navigating-relationship-distance.html
+45. analyzing-the-symbolism-of-dreaming-about-frogs.html → frog-dream-symbolism.html
+46. angel-insights.html → angel-insights-guidance.html
+47. angel-number-666-what-you-need-to-know.html → angel-number-666-meaning.html
+48. angel-numbers-decoding-the-significance-of-the-1234.html → angel-number-1234-meaning.html
+49. angel-readings-unveiled-who-is-the-supreme-archangel.html → supreme-archangel-guide.html
+50. angelic-flowers.html → angelic-flowers-spiritual-meaning.html
+51. aquarius-and-libra-compatibility-a-perfect-match-or-failure.html → aquarius-libra-compatibility.html
+52. archangel-jophiel-a-deep-dive-into-the-angel-of-beauty.html → archangel-jophiel-guide.html
+53. archangel-vs-angel-understanding-the-differences.html → archangel-vs-angel-differences.html
+54. are-kipper-cards-the-best-deck-of-fortune-telling-cards.html → kipper-cards-guide.html
+55. are-mediums-real-how-to-spot-a-fake-psychic.html → choosing-authentic-medium.html
+56. are-pisces-and-leo-compatible.html → pisces-leo-compatibility.html
+57. are-scorpio-and-taurus-compatible.html → scorpio-taurus-compatibility.html
+58. astrology-and-horoscope.html → astrology-horoscope-basics.html
+59. bee-spiritual-meaning-symbolism-and-significance.html → bee-spiritual-meaning.html
+60. beginning-of-the-month-tarot-spread.html → monthly-tarot-spread.html
+
+=== REMAINING (files 61-350+ to be mapped and converted) ===
+
+See source folder for remaining files. Work continues in batches.

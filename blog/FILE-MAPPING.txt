@@ -1,0 +1,37 @@
+BLOG CONVERSION FILE MAPPING — Utopia Wellness & Gifts
+======================================================
+
+OLD FILENAME → NEW FILENAME
+----------------------------
+
+1.  10-best-crystals-for-grief-and-how-to-use-them.html → crystals-for-grief-north-vancouver.html
+2.  6-best-crystals-for-upcoming-job-interviews.html → crystals-for-job-interviews.html
+3.  12-most-powerful-crystals-for-scorpios.html → crystals-for-scorpios.html
+4.  5-ways-to-use-energy-cleansing-to-remove-bad-energy-from-your-home.html → energy-cleansing-remove-bad-energy.html
+5.  7-ways-to-find-your-spirit-animal.html → find-your-spirit-animal.html
+6.  20-powerful-blessings-for-welcoming-the-new-year.html → new-year-blessings-rituals.html
+7.  5-main-benefits-of-burning-sage.html → benefits-burning-sage.html
+8.  10-ways-to-manifest-more-money-in-your-life.html → manifest-money-abundance.html
+9.  11-card-celtic-cross-spread.html → celtic-cross-tarot-spread.html
+10. 12-archangels-and-their-connection-to-the-zodiac.html → archangels-zodiac-connection.html
+11. 333-angel-numbers-meaning-in-money.html → angel-number-333-money.html
+12. 5-signs-someone-is-looking-down-on-you-from-heaven.html → signs-from-heaven.html
+13. 5-ways-to-attract-good-karma.html → attract-good-karma.html
+14. 6-powerful-ways-to-balance-you-root-chakra.html → root-chakra-balance.html
+15. 7-powerful-throat-chakra-affirmations-for-clear-communication.html → throat-chakra-affirmations.html
+16. 7-essential-ingredients-for-a-super-spiritual-bath.html → spiritual-bath-ingredients.html
+17. 7-common-nightmares-that-are-actually-warnings.html → nightmares-warnings.html
+18. 6-reasons-you-need-a-wellness-coach.html → wellness-coach-benefits.html
+19. 757-angel-number-meaning-for-love-and-twin-flames.html → angel-number-757-love.html
+20. 8-card-tarot-spread-your-guide-to-deep-meaningful-readings.html → 8-card-tarot-spread-guide.html
+21. 7-benefits-of-choosing-a-phone-psychic-reading-for-spiritual-guidance.html → benefits-in-person-reading.html
+22. 6-best-palm-reading-apps-digital-fortune-telling-at-your-fingertips.html → palmistry-basics-guide.html
+23. 7-spiritual-signs-your-ex-is-still-thinking-about-you.html → spiritual-signs-ex-thinking-of-you.html
+24. 12-signs-he-has-strong-feelings-for-you-but-is-scared.html → tarot-relationship-clarity.html
+25. 10-signs-that-let-you-know-if-youre-a-victim-of-witchcraft.html → spiritual-protection-energy-shielding.html
+26. 15-signs-that-your-partner-is-cheating-and-how-to-deal-with-it.html → clarity-session-relationship-guidance.html
+27. 12-signs-hell-never-ask-you-out-how-to-get-over-it.html → self-worth-after-rejection.html
+28. 10-proven-strategies-on-how-to-keep-a-guy-interested-in-you.html → keeping-love-alive-spiritual-practices.html
+29. 7-surefire-signs-he-wants-you-to-be-his-girlfriend.html → understanding-relationship-energy.html
+
+INDEX PAGE: index.html (blog listing with all articles)
