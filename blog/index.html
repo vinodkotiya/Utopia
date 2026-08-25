@@ -103,6 +103,13 @@
         <button class="cat-btn" data-cat="WELLNESS">Wellness <span class="count">5</span></button>
         <button class="cat-btn" data-cat="NUMEROLOGY">Numerology <span class="count">3</span></button>
       </div>
+      <!-- SEARCH -->
+      <div class="mt-4">
+        <div style="position:relative;max-width:400px;margin:0 auto">
+          <input type="search" id="blogSearch" placeholder="Search articles..." aria-label="Search blog articles" style="width:100%;padding:.7rem 1rem .7rem 2.5rem;font-size:.85rem;font-family:var(--font-body);border:1.5px solid var(--border);border-radius:8px;background:var(--bg-card);color:var(--text-body);outline:none;transition:border-color .2s" onfocus="this.style.borderColor='var(--violet)'" onblur="this.style.borderColor='var(--border)'">
+          <svg style="position:absolute;left:.8rem;top:50%;transform:translateY(-50%);pointer-events:none" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -155,13 +162,17 @@
     var data=JSON.parse(document.getElementById('blogData').textContent);
     var currentCat='ALL';
     var currentPage=1;
+    var searchQuery='';
     var grid=document.getElementById('blogGrid');
     var pag=document.getElementById('pagination');
     var countEl=document.getElementById('resultCount');
+    var searchInput=document.getElementById('blogSearch');
 
     function filtered(){
-      if(currentCat==='ALL')return data;
-      return data.filter(function(d){return d.c===currentCat});
+      var items=data;
+      if(currentCat!=='ALL')items=items.filter(function(d){return d.c===currentCat});
+      if(searchQuery){var q=searchQuery.toLowerCase();items=items.filter(function(d){return d.t.toLowerCase().indexOf(q)!==-1||d.d.toLowerCase().indexOf(q)!==-1||d.c.toLowerCase().indexOf(q)!==-1})}
+      return items;
     }
 
     function totalPages(items){return Math.ceil(items.length/PER_PAGE)}
@@ -222,6 +233,17 @@
       else currentPage=parseInt(p);
       renderCards();
       grid.scrollIntoView({behavior:'smooth',block:'start'});
+    });
+
+    // Search input
+    var searchTimer;
+    searchInput.addEventListener('input',function(){
+      clearTimeout(searchTimer);
+      searchTimer=setTimeout(function(){
+        searchQuery=searchInput.value.trim();
+        currentPage=1;
+        renderCards();
+      },200);
     });
 
     // Initial render
