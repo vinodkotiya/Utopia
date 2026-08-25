@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- 🔧 CHANGE: Page title (under 60 characters ideal) -->
-  <title>YOUR BLOG TITLE HERE | Utopia Wellness &amp; Gifts</title>
-  <!-- 🔧 CHANGE: Meta description (under 160 characters, answer a question directly for AEO) -->
-  <meta name="description" content="YOUR META DESCRIPTION HERE — make it answer a question someone might ask Google or an AI.">
-  <!-- 🔧 CHANGE: Canonical URL (use the filename) -->
-  <link rel="canonical" href="https://utopiastore.ca/blog/YOUR-SLUG-HERE.html">
+  <!-- 🔧 REPLACE: {{TITLE}} -->
+  <title>{{TITLE}} | Utopia Wellness &amp; Gifts</title>
+  <!-- 🔧 REPLACE: {{META_DESCRIPTION}} — first 155 chars of opening paragraph works well -->
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <!-- 🔧 REPLACE: {{SLUG}} — the filename without .html, e.g. what-does-the-first-house-represent-in-astrology -->
+  <link rel="canonical" href="https://utopiastore.ca/blog/{{SLUG}}.html">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="YOUR BLOG TITLE HERE | Utopia Wellness &amp; Gifts">
-  <meta property="og:description" content="YOUR META DESCRIPTION HERE">
-  <meta property="og:url" content="https://utopiastore.ca/blog/YOUR-SLUG-HERE.html">
+  <meta property="og:title" content="{{TITLE}} | Utopia Wellness &amp; Gifts">
+  <meta property="og:description" content="{{META_DESCRIPTION}}">
+  <meta property="og:url" content="https://utopiastore.ca/blog/{{SLUG}}.html">
   <meta property="og:image" content="https://utopiastore.ca/favicon/android-chrome-512x512.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="YOUR BLOG TITLE HERE | Utopia Wellness &amp; Gifts">
-  <meta name="twitter:description" content="YOUR META DESCRIPTION HERE">
+  <meta name="twitter:title" content="{{TITLE}} | Utopia Wellness &amp; Gifts">
+  <meta name="twitter:description" content="{{META_DESCRIPTION}}">
   <meta name="theme-color" content="#FFFFFF">
   <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
@@ -79,145 +79,71 @@
         <li>›</li>
         <li><a href="index.html" style="color:var(--violet);text-decoration:none">Blog</a></li>
         <li>›</li>
-        <!-- 🔧 CHANGE: Breadcrumb label -->
-        <li style="color:rgba(45,32,53,.7)">YOUR SHORT TITLE</li>
+        <!-- 🔧 REPLACE: {{BREADCRUMB}} — short version of title -->
+        <li style="color:rgba(45,32,53,.7)">{{BREADCRUMB}}</li>
       </ol>
     </nav>
   </section>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       ARTICLE — Your blog content goes here
-       Structure for best SEO/AEO:
-       - H1 (one only, at top)
-       - Opening 2 paragraphs (hook + context)
-       - ⬇️ INLINE BOOKING CTA (after 2nd paragraph)
-       - H2 sections (each covering a subtopic)
-       - Lists (bullet or numbered) for scannability
-       - Bold key phrases
-       - Short paragraphs (2-4 sentences max)
-       - H3 for sub-subsections if needed
-       - ⬇️ BOTTOM BOOKING CTA (at the end)
-  ═══════════════════════════════════════════════════════════ -->
+  <!-- ARTICLE -->
   <article class="py-[clamp(2rem,5vw,4rem)] px-6" style="background:var(--bg-section)">
-    <div class="max-w-3xl mx-auto">
+    <div class="max-w-3xl mx-auto blog-content">
 
-      <!-- H1: Main Title (one per page, target primary keyword) -->
-      <h1 class="text-[clamp(1.6rem,4vw,2.4rem)] leading-[1.25] mb-4" style="font-family:var(--font-display);color:var(--text-heading)">
-        <!-- 🔧 CHANGE: Your H1 title -->
-        YOUR MAIN BLOG HEADING HERE
-      </h1>
+      <!-- 🔧 REPLACE: {{TITLE}} -->
+      <h1 class="text-[clamp(1.6rem,4vw,2.4rem)] leading-[1.25] mb-4" style="font-family:var(--font-display);color:var(--text-heading)">{{TITLE}}</h1>
 
-      <!-- Author + Date (optional but good for E-E-A-T) -->
-      <p class="text-[.85rem] font-light mb-8" style="color:var(--text-muted);font-style:italic">
-        <!-- 🔧 CHANGE: Author name and date -->
-        Written by YOUR NAME · August 2026
-      </p>
+      <!-- 🔧 REPLACE: {{DATE}} — e.g. May 16, 2027 -->
+      <p class="text-[.85rem] font-light mb-8" style="color:var(--text-muted);font-style:italic">{{DATE}}</p>
 
-      <!-- ═══ OPENING PARAGRAPHS (2 paragraphs max before first CTA) ═══ -->
+      <!-- ═══════════════════════════════════════════════════════
+           🔧 REPLACE: {{CONTENT_INTRO}} 
+           First 1-2 paragraphs (the opening/hook paragraphs before the CTA)
+      ═══════════════════════════════════════════════════════════ -->
 
-      <p class="text-[clamp(0.9rem,1.8vw,1.05rem)] font-light leading-[1.9] mb-6" style="color:var(--text-body)">
-        <!-- 🔧 CHANGE: Opening paragraph 1 — hook the reader, state the problem or question -->
-        YOUR FIRST PARAGRAPH HERE. Start with what the reader is searching for. Answer their question directly in the first 2 sentences (this is what AI engines extract for answers).
-      </p>
+{{CONTENT_INTRO}}
 
-      <p class="text-[clamp(0.9rem,1.8vw,1.05rem)] font-light leading-[1.9] mb-8" style="color:var(--text-body)">
-        <!-- 🔧 CHANGE: Opening paragraph 2 — expand, add context -->
-        YOUR SECOND PARAGRAPH HERE. Provide context, establish why this matters, and hint at what the reader will learn below.
-      </p>
-
-      <!-- ═══════════════════════════════════════════
-           INLINE BOOKING CTA (appears after 2 paragraphs)
-           ═══════════════════════════════════════════ -->
-      <div style="background:var(--bg-accent);border:1px solid var(--border);border-radius:12px;padding:1.5rem 2rem;margin:2rem 0 2.5rem;text-align:center">
+      <!-- ═══ MID CTA — Book Our Reader (links to energy-work.html) ═══ -->
+      <div style="background:var(--bg-accent);border:1px solid var(--border);border-radius:12px;padding:1.5rem 2rem;margin:2.5rem 0;text-align:center">
         <p style="font-family:var(--font-display);font-size:1.1rem;color:var(--text-heading);margin-bottom:.5rem">Looking for personal guidance?</p>
-        <p style="font-size:.85rem;font-weight:300;color:var(--text-muted);margin-bottom:1rem">Book a Clarity & Guidance Session with one of our experienced readers.</p>
-        <a href="../energy-work.html" class="btn-shimmer" style="font-size:.75rem;font-weight:500;text-transform:uppercase;letter-spacing:.15em;background:var(--violet);color:#fff;padding:.75rem 1.8rem;text-decoration:none;border-radius:6px;display:inline-block">Book a Session →</a>
+        <p style="font-size:.85rem;font-weight:300;color:var(--text-muted);margin-bottom:1rem">Book a Clarity &amp; Guidance session with one of our experienced readers — in person at 1826 Lonsdale Ave, North Vancouver.</p>
+        <a href="../energy-work.html" class="btn-shimmer" style="font-size:.75rem;font-weight:500;text-transform:uppercase;letter-spacing:.15em;background:var(--violet);color:#fff;padding:.75rem 1.8rem;text-decoration:none;border-radius:6px;display:inline-block">Book Our Reader →</a>
       </div>
 
-      <!-- ═══ MAIN CONTENT SECTIONS ═══ -->
+      <!-- ═══════════════════════════════════════════════════════
+           🔧 REPLACE: {{CONTENT_BODY}}
+           Remaining content (all H2/H3 sections, FAQ, etc.)
+           
+           HTML patterns:
+           ## Heading        →  <h2 class="text-[clamp(1.2rem,3vw,1.7rem)] leading-[1.3] mt-12 mb-5" style="font-family:var(--font-display);color:var(--text-heading)">Heading</h2>
+           ### Sub-heading   →  <h3 class="text-[1.1rem] leading-[1.3] mt-8 mb-3" style="font-family:var(--font-display);color:var(--text-heading)">Sub-heading</h3>
+           Paragraph         →  <p class="text-[clamp(0.9rem,1.8vw,1.05rem)] font-light leading-[1.9] mb-6" style="color:var(--text-body)">Text here</p>
+           **Bold text**     →  <strong>Bold text</strong>
+      ═══════════════════════════════════════════════════════════ -->
 
-      <!-- H2: Section heading (target a secondary keyword or subtopic) -->
-      <h2 class="text-[clamp(1.2rem,3vw,1.7rem)] leading-[1.3] mt-12 mb-5" style="font-family:var(--font-display);color:var(--text-heading)">
-        <!-- 🔧 CHANGE: Section title -->
-        YOUR FIRST H2 HEADING
-      </h2>
-
-      <p class="text-[clamp(0.9rem,1.8vw,1.05rem)] font-light leading-[1.9] mb-6" style="color:var(--text-body)">
-        <!-- 🔧 CHANGE: Section content -->
-        Section paragraph content here. Keep paragraphs to 2-4 sentences for readability.
-      </p>
-
-      <!-- Bullet list (great for SEO — featured snippets love lists) -->
-      <ul class="list-disc pl-6 mb-6 space-y-2 text-[clamp(0.9rem,1.8vw,1.05rem)] font-light leading-[1.9]" style="color:var(--text-body)">
-        <li><strong>Key point 1</strong> — explanation</li>
-        <li><strong>Key point 2</strong> — explanation</li>
-        <li><strong>Key point 3</strong> — explanation</li>
-      </ul>
-
-      <!-- H2: Another section -->
-      <h2 class="text-[clamp(1.2rem,3vw,1.7rem)] leading-[1.3] mt-12 mb-5" style="font-family:var(--font-display);color:var(--text-heading)">
-        YOUR SECOND H2 HEADING
-      </h2>
-
-      <p class="text-[clamp(0.9rem,1.8vw,1.05rem)] font-light leading-[1.9] mb-6" style="color:var(--text-body)">
-        More content here...
-      </p>
-
-      <!-- H3: Sub-section (use when H2 has multiple parts) -->
-      <h3 class="text-[1.1rem] leading-[1.3] mt-8 mb-3" style="font-family:var(--font-display);color:var(--text-heading)">
-        Optional H3 Sub-heading
-      </h3>
-
-      <p class="text-[clamp(0.9rem,1.8vw,1.05rem)] font-light leading-[1.9] mb-6" style="color:var(--text-body)">
-        Sub-section content...
-      </p>
-
-      <!-- 
-        ═══ ADD MORE H2/H3 SECTIONS AS NEEDED ═══
-        
-        TIPS FOR SEO/AEO:
-        • Each H2 should target a question someone might ask
-        • Start sections with a direct answer (AI engines extract these)
-        • Use bullet lists for steps, features, or comparisons
-        • Bold important terms and brand mentions
-        • Link to relevant internal pages (energy-work.html, meditations.html, shop)
-        • Keep total word count 800-2000 words for depth
-        • Include your location naturally: "North Vancouver", "Lonsdale Ave"
-      -->
-
-      <!-- ═══════════════════════════════════════════
-           BOTTOM BOOKING CTA (at the end of article)
-           ═══════════════════════════════════════════ -->
-      <div style="background:linear-gradient(135deg,var(--bg-accent),var(--bg-section));border:1.5px solid var(--violet);border-radius:16px;padding:2.5rem;margin:3rem 0 2rem;text-align:center">
-        <p style="font-family:var(--font-display);font-size:clamp(1.3rem,3vw,1.8rem);color:var(--text-heading);margin-bottom:.75rem">Ready to take the next step?</p>
-        <p style="font-size:.95rem;font-weight:300;color:var(--text-body);line-height:1.7;max-width:45ch;margin:0 auto 1.5rem">Book a Clarity & Guidance Session at Utopia Wellness & Gifts — in person at 1826 Lonsdale Ave, North Vancouver.</p>
-        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
-          <a href="../energy-work.html" class="btn-shimmer" style="font-size:.75rem;font-weight:500;text-transform:uppercase;letter-spacing:.18em;background:var(--violet);color:#fff;padding:1rem 2rem;border:1px solid var(--violet);text-decoration:none;display:inline-block;border-radius:6px">Book a Reading</a>
-          <a href="https://shop.utopiastore.ca" target="_blank" rel="noopener" class="btn-shimmer" style="font-size:.75rem;text-transform:uppercase;letter-spacing:.18em;color:var(--violet);background:transparent;padding:1rem 2rem;border:1.5px solid var(--violet);text-decoration:none;display:inline-block;border-radius:6px">Shop the Collection</a>
-        </div>
-      </div>
-
-      <!-- Prev/Next Navigation -->
-      <nav class="flex justify-between items-center pt-8 mt-10" style="border-top:1px solid var(--border)">
-        <!-- 🔧 CHANGE: Previous and next post links -->
-        <a href="PREVIOUS-POST.html" class="text-[.8rem] font-light" style="color:var(--violet);text-decoration:none">← Previous Post Title</a>
-        <a href="NEXT-POST.html" class="text-[.8rem] font-light" style="color:var(--violet);text-decoration:none">Next Post Title →</a>
-      </nav>
+{{CONTENT_BODY}}
 
     </div>
   </article>
 
-  <!-- SHOP CTA SECTION -->
+  <!-- ═══ BOTTOM CTA — Shop Our Collection (links to shop.utopiastore.ca) ═══ -->
   <section class="py-16 px-6 border-t" style="background:var(--bg-section);border-color:var(--border)">
     <div class="max-w-3xl mx-auto text-center">
-      <p class="text-[clamp(0.9rem,1.8vw,1.05rem)] font-light leading-[1.9] mb-8" style="color:var(--text-body)">Inspired by this article? Browse our hand-selected collection of healing crystals, intention kits, and sacred tools — available online with free click &amp; collect at our Lonsdale Ave store.</p>
-      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
-        <a href="https://shop.utopiastore.ca" target="_blank" rel="noopener" class="btn-shimmer" style="font-size:.75rem;font-weight:500;text-transform:uppercase;letter-spacing:.18em;background:var(--violet);color:#fff;padding:1rem 2rem;border:1px solid var(--violet);text-decoration:none;display:inline-block;border-radius:6px">Shop the Collection</a>
-        <a href="../energy-work.html" class="btn-shimmer" style="font-size:.75rem;text-transform:uppercase;letter-spacing:.18em;color:var(--violet);background:transparent;padding:1rem 2rem;border:1.5px solid var(--violet);text-decoration:none;display:inline-block;border-radius:6px">Book a Reading</a>
-      </div>
+      <p style="font-family:var(--font-display);font-size:clamp(1.3rem,3vw,1.8rem);color:var(--text-heading);margin-bottom:.75rem">Inspired by this article?</p>
+      <p style="font-size:.95rem;font-weight:300;color:var(--text-body);line-height:1.7;max-width:50ch;margin:0 auto 1.5rem">Browse our hand-selected collection of healing crystals, intention kits, and sacred tools — available online with free click &amp; collect at our Lonsdale Ave store.</p>
+      <a href="https://shop.utopiastore.ca/" target="_blank" rel="noopener" class="btn-shimmer" style="font-size:.75rem;font-weight:500;text-transform:uppercase;letter-spacing:.18em;background:var(--violet);color:#fff;padding:1rem 2rem;border:1px solid var(--violet);text-decoration:none;display:inline-block;border-radius:6px">Shop Our Collection →</a>
       <p class="mt-8"><a href="index.html" class="text-[.75rem] uppercase tracking-[.2em]" style="color:var(--violet);text-decoration:none">← Back to Blog</a></p>
     </div>
   </section>
+
+  <!-- ═══ RANDOM BLOG IMAGE (displays a random image from assets/blog/1-10.jpg) ═══ -->
+  <section class="py-12 px-6" style="background:var(--bg-section)">
+    <div class="max-w-3xl mx-auto">
+      <img id="blogRandomImg" alt="Utopia Wellness & Gifts" loading="lazy" style="width:100%;max-height:500px;object-fit:cover;object-position:center;border-radius:12px;display:block">
+    </div>
+  </section>
+  <script>
+    (function(){var n=Math.floor(Math.random()*10)+1;document.getElementById('blogRandomImg').src='../assets/blog/'+n+'.jpg';})();
+  </script>
 
   <!-- FOOTER (dark) -->
   <footer class="px-6 md:px-10 py-12" style="background:var(--bg-dark)">
@@ -267,9 +193,9 @@
 
   <script src="../assets/js/main.js"></script>
 
-  <!-- STRUCTURED DATA — 🔧 CHANGE the headline, url, and dates -->
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"YOUR BLOG TITLE HERE","url":"https://utopiastore.ca/blog/YOUR-SLUG-HERE.html","publisher":{"@type":"Organization","name":"Utopia Wellness & Gifts","url":"https://utopiastore.ca"},"author":{"@type":"Organization","name":"Utopia Wellness & Gifts"},"datePublished":"2026-08-13","dateModified":"2026-08-13"}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://utopiastore.ca/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://utopiastore.ca/blog/"},{"@type":"ListItem","position":3,"name":"YOUR SHORT TITLE","item":"https://utopiastore.ca/blog/YOUR-SLUG-HERE.html"}]}</script>
+  <!-- STRUCTURED DATA — 🔧 REPLACE: {{TITLE}}, {{SLUG}}, {{DATE_ISO}} (YYYY-MM-DD) -->
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"{{TITLE}}","url":"https://utopiastore.ca/blog/{{SLUG}}.html","publisher":{"@type":"Organization","name":"Utopia Wellness & Gifts","url":"https://utopiastore.ca"},"author":{"@type":"Organization","name":"Utopia Wellness & Gifts"},"datePublished":"{{DATE_ISO}}","dateModified":"{{DATE_ISO}}"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://utopiastore.ca/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://utopiastore.ca/blog/"},{"@type":"ListItem","position":3,"name":"{{BREADCRUMB}}","item":"https://utopiastore.ca/blog/{{SLUG}}.html"}]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","@id":"https://utopiastore.ca/#business","name":"Utopia Wellness & Gifts","url":"https://utopiastore.ca","telephone":"+16049848782","address":{"@type":"PostalAddress","streetAddress":"1826 Lonsdale Avenue","addressLocality":"North Vancouver","addressRegion":"BC","postalCode":"V7M 2J9","addressCountry":"CA"},"geo":{"@type":"GeoCoordinates","latitude":49.3256251,"longitude":-123.0719743},"priceRange":"$$"}</script>
 </body>
 </html>

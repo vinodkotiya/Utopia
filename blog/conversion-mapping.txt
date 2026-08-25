@@ -37,8 +37,26 @@ Old Filename → New Filename (in output/ folder)
 25. 8-signs-archangel-raphael-is-connecting-with-you.html → archangel-raphael-signs.html ✅
 26. 9-unmistakable-signs-someone-is-manifesting-you.html → signs-someone-manifesting-you.html ✅
 27. a-guide-to-air-signs.html → air-signs-astrology-guide.html ✅
-28. 7-spiritual-signs-your-ex-is-still-thinking-about-you.html → spiritual-signs-ex-thinking-of-you.html
-29. 12-signs-he-has-strong-feelings-for-you-but-is-scared.html → tarot-relationship-clarity.html
+28. a-guide-to-tarot-deck-rider-waite.html → rider-waite-tarot-guide.html ✅
+29. a-guide-to-the-5-card-tarot-spread.html → five-card-tarot-spread.html ✅
+30. bee-spiritual-meaning-symbolism-and-significance.html → bee-spiritual-meaning.html ✅
+31. angel-number-666-what-you-need-to-know.html → angel-number-666-meaning.html ✅
+32. angel-numbers-decoding-the-significance-of-the-1234.html → angel-number-1234-meaning.html ✅
+33. analyzing-the-symbolism-of-dreaming-about-frogs.html → frog-dream-symbolism.html ✅
+34. ace-of-cups-tarot-card-meaning-symbolism-interpretation.html → ace-of-cups-meaning.html ✅
+34. ace-of-cups-tarot-card-meaning-symbolism-interpretation.html → ace-of-cups-meaning.html ✅
+35. ace-of-wands-tarot-card-meaning-symbolism-interpretation.html → ace-of-wands-meaning.html ✅
+36. archangel-jophiel-a-deep-dive-into-the-angel-of-beauty.html → archangel-jophiel-guide.html ✅
+37. archangel-vs-angel-understanding-the-differences.html → archangel-vs-angel-differences.html ✅
+38. are-scorpio-and-taurus-compatible.html → scorpio-taurus-compatibility.html ✅
+39. cord-cutting-ritual-a-powerful-tool-for-releasing-emotional-baggage.html → cord-cutting-ritual.html ✅
+40. creating-a-sacred-space-at-home.html → creating-sacred-space.html ✅
+41. death-tarot-card-meaning-symbolism-interpretation.html → death-tarot-card-meaning.html ✅
+42. beginning-of-the-month-tarot-spread.html → monthly-tarot-spread.html ✅
+43. exploring-twin-flame-connections-the-magic-of-the-747-angel-number.html → twin-flame-747-angel-number.html ✅
+44. break-free-from-negative-energy-with-the-egg-cleansing-ritual.html → egg-cleansing-ritual.html ✅
+45. 7-spiritual-signs-your-ex-is-still-thinking-about-you.html → spiritual-signs-ex-thinking-of-you.html
+35. 12-signs-he-has-strong-feelings-for-you-but-is-scared.html → tarot-relationship-clarity.html
 26. 15-signs-that-your-partner-is-cheating-and-how-to-deal-with-it.html → clarity-sessions-relationship-guidance.html
 27. 12-signs-hell-never-ask-you-out-how-to-get-over-it.html → self-worth-moving-forward.html
 28. 10-proven-strategies-on-how-to-keep-a-guy-interested-in-you.html → keeping-love-alive-spiritual-practices.html
@@ -75,6 +93,403 @@ Old Filename → New Filename (in output/ folder)
 59. bee-spiritual-meaning-symbolism-and-significance.html → bee-spiritual-meaning.html
 60. beginning-of-the-month-tarot-spread.html → monthly-tarot-spread.html
 
-=== REMAINING (files 61-350+ to be mapped and converted) ===
+=== BATCH — IN PROGRESS ===
+
+61. best-astrology-sites-where-to-get-the-most-accurate-horoscope.html → astrology-basics-accurate-readings-2.html ✅ REWRITTEN
+62. best-online-psychic-reading-sites-ultimate-comparison-for-2025.html → choosing-psychic-reading-guide.html ✅ REWRITTEN
+63. best-online-tarot-reading-top-platforms-for-virtual-card-consultation.html → in-person-tarot-reading-benefits-2.html ✅ REWRITTEN
+64. best-tarot-cards-to-pull-top-cards.html → best-tarot-cards-to-pull.html ✅ REWRITTEN
+65. best-tarot-decks.html → choosing-your-tarot-deck.html ✅ REWRITTEN
+
+66. best-tarot-readers-how-to-find-and-choose-a-gifted-reader.html → finding-gifted-tarot-reader.html ✅ REWRITTEN
+67. best-tarot-reading.html → what-makes-best-tarot-reading.html ✅ REWRITTEN
+68. best-tarot-spread-for-career.html → tarot-spread-for-career.html ✅ REWRITTEN
+69. birthstones-by-month-what-do-they-mean.html → birthstones-meaning-by-month.html ✅ REWRITTEN
+70. bringing-magic-into-your-daily-routine.html → magic-in-daily-routine.html ✅ REWRITTEN
+71. burning-bright-understanding-what-the-fire-signs-are-in-astrology.html → fire-signs-astrology.html ✅ REWRITTEN-V2
+72. burnout-to-60-day-pivot-plan-purple-garden-astrology-tarot-career-reading.html → tarot-career-burnout-recovery.html ✅ REWRITTEN-V2
+73. can-tarot-cards-be-used-for-marriage-predictions.html → tarot-marriage-love-predictions.html ✅ REWRITTEN
+74. can-you-predict-love-life-based-on-birth-chart.html → birth-chart-love-life.html ✅ REWRITTEN
+75. capricorn-and-capricorn-compatibility-pros-and-cons-of-a-zodiac-pairing.html → capricorn-compatibility-guide.html ✅ REWRITTEN
+76. career-predictions-by-zodiac-signs-in-2024.html → zodiac-career-predictions.html ✅ REWRITTEN
+77. chinese-astrology-vs-western-astrology-differences-and-similarities.html → chinese-western-astrology.html ✅ REWRITTEN
+78. cold-reading-technique.html → intuitive-reading-techniques.html ✅ REWRITTEN
+79. compatibility-between-aries-and-aquarius.html → aries-aquarius-love-compatibility.html ✅ REWRITTEN
+80. contacting-your-guardian-angel.html → connecting-with-guardian-angel.html ✅ REWRITTEN
+81. cosmic-secrets-to-successfully-manifesting-a-specific-person.html → manifesting-love-cosmic-guidance.html ✅ REWRITTEN
+82. crystals-for-communication-16-best-stones-for-speaking-your-truth.html → crystals-for-clear-communication.html ✅ REWRITTEN
+83. cutting-through-the-mystery-the-role-of-swords-in-tarot-reading.html → swords-in-tarot-guide.html ✅ REWRITTEN
+84. daily-tarot-draw.html → daily-tarot-card-practice.html ✅ REWRITTEN
+85. dating-by-the-stars-how-your-zodiac-sign-influences-your-love-life.html → zodiac-dating-love-guide.html ✅ REWRITTEN
+
+86. deciphering-liliths-mark-in-palmistry-what-does-it-mean-for-you.html → lilith-mark-palmistry.html ✅ REWRITTEN
+87. decoding-the-red-aura-meaning-energy-passion-and-power.html → red-aura-meaning.html ✅ REWRITTEN
+88. different-tarot-reading-styles-and-readers-skills.html → tarot-reading-styles.html ✅ REWRITTEN
+89. different-zodiac-systems-around-the-world-what-each-tradition-brings.html → zodiac-systems-world.html ✅ REWRITTEN
+90. do-tarot-cards-have-to-be-gifted-the-truth-about-this-myth.html → tarot-cards-gifted-myth.html ✅ REWRITTEN
+91. do-tarot-cards-really-work.html → do-tarot-cards-work-2.html ✅ REWRITTEN
+92. do-you-have-dreams-about-bears-heres-what-can-it-mean.html → bear-dreams-meaning.html ✅ REWRITTEN
+93. does-he-like-me-tarot-spread.html → tarot-spread-love-clarity.html ✅ REWRITTEN
+94. does-your-left-hand-itching-mean-money-is-coming.html → left-hand-itching-spiritual.html ✅ REWRITTEN
+95. dream-analysis.html → dream-analysis-basics.html ✅ REWRITTEN
+96. dreamers-quest-what-does-it-mean-to-dream-about-alligators.html → alligator-dream-meaning.html ✅ REWRITTEN
+97. dreams-of-the-departed-what-it-means-to-see-a-dead-person-alive-in-dreams.html → dreams-deceased-loved-ones.html ✅ REWRITTEN
+98. driving-forward-in-love-interpreting-the-chariot-tarot-card.html → chariot-tarot-love.html ✅ REWRITTEN
+99. echoes-of-the-unconscious-what-do-recurring-dreams-signify.html → recurring-dreams-meaning.html ✅ REWRITTEN
+100. effective-ways-for-overcoming-holiday-blues.html → overcoming-holiday-blues-2.html ✅ REWRITTEN
+101. embrace-change-top-10-crystals-for-new-beginnings.html → crystals-new-beginnings-2.html ✅ REWRITTEN
+102. empower-your-love-the-10-best-crystals-for-heart-chakra-healing.html → crystals-heart-chakra-2.html ✅ REWRITTEN
+103. everything-you-need-to-know-about-9th-house-astrology.html → ninth-house-astrology.html ✅ REWRITTEN
+104. everything-you-need-to-know-about-past-life-reading.html → past-life-reading-guide-2.html ✅ REWRITTEN
+105. everything-you-need-to-know-about-root-chakra.html → root-chakra-complete-guide.html ✅ REWRITTEN
+106. everything-you-should-know-about-money-line.html → money-line-palmistry.html ✅ REWRITTEN
+107. explore-the-enigmatic-insights-of-dreaming-about-being-kidnapped.html → kidnapping-dream-meaning.html ✅ REWRITTEN
+108. exploring-the-depths-what-is-the-spiritual-meaning-of-crying-in-a-dream.html → crying-dream-spiritual-meaning.html ✅ REWRITTEN
+109. exploring-the-realm-of-grasshopper-spiritual-meaning.html → grasshopper-spiritual-meaning.html ✅ REWRITTEN
+110. exploring-zodiac-signs-colors-what-your-astrological-hue-reveals.html → zodiac-colors-meaning.html ✅ REWRITTEN
+111. find-your-perfect-match-zodiac-signs-that-are-meant-to-be-together.html → zodiac-perfect-match.html ✅ REWRITTEN
+112. finding-comfort-10-crystals-for-pain-relief-support.html → crystals-for-pain-relief.html ✅ REWRITTEN
+113. finding-life-purpose-with-tarot-cards.html → tarot-life-purpose-2.html ✅ REWRITTEN
+114. finding-my-soulmate-energy-a-purple-garden-astrology-tarot-reading-that-rewired-how-i-date.html → soulmate-energy-reading.html ✅ REWRITTEN
+115. free-angel-number-calculator.html → angel-numbers-meaning-guide.html ✅ REWRITTEN
+116. getting-to-know-the-zodiac-what-are-the-water-signs.html → water-signs-guide.html ✅ REWRITTEN
+117. guardian-angel-tarot-spread.html → guardian-angel-spread-2.html ✅ REWRITTEN
+118. happy-birth-day.html → birthday-spiritual-meaning.html ✅ REWRITTEN
+119. having-sexual-dreams.html → sexual-dreams-spiritual-meaning.html ✅ REWRITTEN
+120. healing-and-manifesting-10-best-crystals-for-the-new-year.html → crystals-new-year-2.html ✅ REWRITTEN
+121. heavenly-presence-7-signs-that-angels-are-in-your-house.html → signs-angels-in-home.html ✅ REWRITTEN
+122. hole-in-the-ear-spiritual-meaning-9-main-interpretations-and-myths.html → hole-in-ear-spiritual.html ✅ REWRITTEN
+123. holiday-gift-ideas-for-each-zodiac-sign.html → zodiac-gift-ideas.html ✅ REWRITTEN
+124. how-a-health-line-palm-reading-can-set-you-on-the-path-to-wellness.html → health-line-palmistry.html ✅ REWRITTEN
+125. how-accurate-are-psychics-what-you-need-to-know.html → psychic-accuracy-guide.html ✅ REWRITTEN
+126. how-can-the-1212-angel-number-influence-your-career-path.html → angel-number-1212-career.html ✅ REWRITTEN
+127. how-can-you-decode-your-dreams.html → decode-your-dreams.html ✅ REWRITTEN
+128. how-do-psychics-work.html → how-psychics-work.html ✅ REWRITTEN
+129. how-do-you-know-if-someone-is-your-soulmate-8-ways-to-tell.html → soulmate-signs.html ✅ REWRITTEN
+130. how-do-you-know-when-a-relationship-is-over-8-signs-to-follow.html → relationship-ending-clarity.html ✅ REWRITTEN
+131. how-does-a-chinese-palmistry-reading-work.html → chinese-palmistry-guide.html ✅ REWRITTEN
+132. how-does-palmistry-work.html → how-palmistry-works.html ✅ REWRITTEN
+133. how-does-pluto-in-aquarius-affect-each-zodiac-sign.html → pluto-in-aquarius-effects.html ✅ REWRITTEN
+134. how-does-uranus-retrograde-affect-each-zodiac-sign.html → uranus-retrograde-effects.html ✅ REWRITTEN
+135. how-does-your-moon-sign-affect-your-life.html → moon-sign-influence.html ✅ REWRITTEN
+
+136. how-long-does-it-take-to-get-over-a-breakup-5-key-factors.html → healing-after-breakup.html ✅ REWRITTEN
+137. how-neptune-in-retrograde-impacts-your-sign.html → neptune-retrograde-effects.html ✅ REWRITTEN
+138. how-purple-garden-tarot-reading-helped-me-choose-myself-after-a-breakup.html → tarot-self-discovery-breakup.html ✅ REWRITTEN
+139. how-to-become-a-psychic.html → developing-psychic-gifts.html ✅ REWRITTEN
+140. how-to-become-a-tarot-card-reader-5-things-you-need-to-know.html → becoming-tarot-reader.html ✅ REWRITTEN
+141. how-to-become-an-astrologer-5-things-you-need-to-know.html → becoming-astrologer.html ✅ REWRITTEN
+142. how-to-break-up-with-someone-you-love.html → ending-relationship-with-love.html ✅ REWRITTEN
+143. how-to-celebrate-summer-solstice-6-rituals-for-june.html → summer-solstice-rituals.html ✅ REWRITTEN
+144. how-to-cleanse-crystals-the-rituals-you-should-know.html → cleansing-crystals-rituals.html ✅ REWRITTEN
+145. how-to-cleanse-tarot-cards-top-5-methods.html → cleanse-tarot-cards-methods.html ✅ REWRITTEN
+146. how-to-cleanse-tarot-cards-without-sage.html → cleanse-tarot-without-sage.html ✅ REWRITTEN
+147. how-to-cleanse-your-aura-in-6-simple-steps.html → aura-cleansing-steps.html ✅ REWRITTEN
+148. how-to-communicate-with-spirits-find-your-spirit-guide.html → spirit-guide-communication.html ✅ REWRITTEN
+149. how-to-create-your-own-moon-water.html → making-moon-water.html ✅ REWRITTEN
+150. how-to-determine-your-ascendant-sign.html → find-your-rising-sign.html ✅ REWRITTEN
+151. how-to-develop-psychic-abilities-the-easy-way.html → develop-psychic-abilities.html ✅ REWRITTEN
+152. how-to-develop-your-clairaudient-ability.html → developing-clairaudience.html ✅ REWRITTEN
+153. how-to-do-a-new-year-tarot-spread.html → new-year-tarot-spread.html ✅ REWRITTEN
+154. how-to-find-a-psychic-7-tips-for-choosing-the-right-one.html → choosing-right-psychic.html ✅ REWRITTEN
+155. how-to-forgive-a-cheater-and-move-forward-with-a-relationship-5-helpful-tips.html → forgiveness-spiritual-healing.html ✅ REWRITTEN
+156. how-to-get-rid-of-tarot-cards-safely.html → releasing-tarot-cards-safely.html ✅ REWRITTEN
+157. how-to-get-the-best-psychic-reading.html → getting-best-psychic-reading.html ✅ REWRITTEN
+158. how-to-have-the-dreams-you-want-4-things-you-should-do.html → lucid-dreaming-guide.html ✅ REWRITTEN
+159. how-to-heal-sacral-chakra-5-best-tips.html → sacral-chakra-healing.html ✅ REWRITTEN
+160. how-to-identify-symptoms-of-negative-energy-in-your-home.html → negative-energy-home-signs.html ✅ REWRITTEN
+161. how-to-interpret-911-angel-number-for-your-love-life.html → angel-number-911-love.html ✅ REWRITTEN
+162. how-to-know-if-he-still-loves-you-after-a-fight-8-proven-signs.html → relationship-repair-guidance.html ✅ REWRITTEN
+163. how-to-know-if-you-have-a-lucky-signs-on-palms.html → lucky-palm-signs.html ✅ REWRITTEN
+164. how-to-make-an-altar-your-diy-guide.html → building-home-altar.html ✅ REWRITTEN
+165. how-to-make-him-miss-you-10-proven-tactics.html → energetic-attraction-practices.html ✅ REWRITTEN
+166. how-to-make-him-regret-losing-you-10-proven-strategies.html → self-empowerment-after-loss.html ✅ REWRITTEN
+167. how-to-make-someone-fall-in-love-with-you.html → attracting-love-ethically.html ✅ REWRITTEN
+168. how-to-move-on-from-a-toxic-relationship-7-proven-strategies.html → healing-toxic-relationship.html ✅ REWRITTEN
+169. how-to-open-a-third-eye-chakra.html → opening-third-eye-chakra.html ✅ REWRITTEN
+170. how-to-read-palms-for-love.html → palmistry-love-reading.html ✅ REWRITTEN
+171. how-to-recognize-an-earth-angel.html → recognizing-earth-angels.html ✅ REWRITTEN
+172. how-to-recognize-physical-signs-of-intuition.html → physical-signs-intuition.html ✅ REWRITTEN
+173. how-to-recognize-signs-that-you-are-born-with-a-veil.html → born-with-veil-signs.html ✅ REWRITTEN
+174. how-to-recognize-warning-signs-from-angels.html → angel-warning-signs.html ✅ REWRITTEN
+175. how-to-recognize-when-an-angel-is-near-7-heavenly-signs.html → angel-near-signs.html ✅ REWRITTEN
+176. how-to-sell-tarot-readings-online-complete-beginners-guide.html → sharing-spiritual-gifts.html ✅ REWRITTEN
+177. how-to-set-boundaries-in-a-relationship-5-essential-strategies.html → spiritual-boundaries-relationships.html ✅ REWRITTEN
+178. how-to-stop-being-jealous-in-relationships-10-effective-tips.html → overcoming-jealousy-spiritually.html ✅ REWRITTEN
+179. how-to-tap-into-your-spiritual-gifts-8-effective-techniques.html → awakening-spiritual-gifts.html ✅ REWRITTEN
+180. how-to-transform-your-life-with-powerful-crown-chakra-affirmations.html → crown-chakra-affirmations.html ✅ REWRITTEN
+181. if-your-period-falls-on-a-full-moon-heres-what-it-means.html → full-moon-menstruation-meaning.html ✅ REWRITTEN
+182. illuminating-your-path-with-new-moon-tarot-spreads.html → new-moon-tarot-spreads.html ✅ REWRITTEN
+183. im-happily-married-so-why-do-i-keep-dreaming-about-my-ex.html → dreaming-about-ex-meaning.html ✅ REWRITTEN
+184. interpreting-and-analyzing-dreams.html → dream-interpretation-guide.html ✅ REWRITTEN
+185. interpreting-dreams-about-mice-uncovering-hidden-meanings-and-symbols.html → mice-dream-meaning.html ✅ REWRITTEN
+
+186. introducing-our-may-23-staff-picks.html → staff-picks-crystals.html ✅ REWRITTEN
+187. introduction-to-chakras.html → chakras-introduction.html ✅ REWRITTEN
+188. introduction-to-psychic-abilities.html → psychic-abilities-intro.html ✅ REWRITTEN
+189. irritating-or-misunderstood-unraveling-the-myths-of-the-most-annoying-zodiac-signs.html → misunderstood-zodiac-signs.html ✅ REWRITTEN
+190. is-2024-going-to-be-a-bad-year.html → yearly-energy-forecast.html ✅ REWRITTEN
+191. is-empathy-a-spiritual-gift-6-things-you-need-to-know.html → empathy-spiritual-gift.html ✅ REWRITTEN
+192. is-he-coming-back-tarot-spread.html → tarot-spread-return-clarity.html ✅ REWRITTEN
+193. is-palm-reading-real-separating-fact-from-fiction.html → is-palmistry-real.html ✅ REWRITTEN
+194. is-seeing-a-dead-person-alive-in-dreams-a-message-from-beyond.html → deceased-in-dreams-message.html ✅ REWRITTEN
+195. is-seeing-a-dog-in-your-dream-a-good-or-bad-omen.html → dog-dream-meaning.html ✅ REWRITTEN
+196. is-the-letter-m-on-your-palm-heres-the-spiritual-meaning.html → letter-m-palm-meaning.html ✅ REWRITTEN
+197. journey-through-the-romantic-realms-of-ace-of-pentacles-love-tarot-card.html → ace-pentacles-love.html ✅ REWRITTEN
+198. judgment-tarot-card-meaning-symbolism-interpretation.html → judgment-tarot-meaning.html ✅ REWRITTEN
+199. jupiter-sign-and-its-influence-understanding-your-astrological-path.html → jupiter-sign-influence.html ✅ REWRITTEN
+200. justice-tarot-card-meaning-symbolism-interpretation.html → justice-tarot-meaning.html ✅
+201. king-of-cups-tarot-card-meaning-symbolism-interpretation.html → king-of-cups-meaning.html ✅
+202. king-of-swords-tarot-card-meaning-symbolism-interpretation.html → king-of-swords-meaning.html ✅
+203. knight-of-cups-tarot-card-meaning-symbolism-interpretation.html → knight-of-cups-meaning.html ✅
+204. left-eye-twitching-a-spiritual-omen-or-just-superstition.html → left-eye-twitching-meaning.html ✅
+205. life-path-number-3-meaning-the-creative-communicator.html → life-path-number-3.html ✅
+206. list-of-tarot-cards-with-pictures.html → tarot-cards-visual-guide.html ✅
+207. love-readings.html → love-reading-guide.html ✅
+208. love-tarot-card.html → love-tarot-cards-guide.html ✅
+209. love-tarot-spread-for-finding-your-soulmate.html → soulmate-tarot-spread.html ✅
+210. loving-kindness-meditation.html → loving-kindness-meditation.html ✅
+211. main-benefits-of-online-psychic-readings.html → benefits-psychic-readings.html ✅
+212. manifestation-rituals-for-a-prosperous-new-year.html → new-year-manifestation-rituals.html ✅
+213. manifestation-tarot-spread-for-starting-year-strong.html → manifestation-tarot-spread.html ✅
+214. manifesting-your-will-understanding-the-magician-tarot-card-meaning.html → magician-tarot-meaning.html ✅
+215. marriage-palm-reading.html → marriage-lines-palmistry.html ✅
+216. mars-in-sagittarius-meaning-and-effects.html → mars-sagittarius-meaning.html ✅
+217. meditation-basics-for-spiritual-awakening.html → meditation-spiritual-awakening.html ✅
+218. mindful-eating-as-a-spiritual-practice.html → mindful-eating-spiritual.html ✅
+219. moon-in-retrograde-unveiling-its-mystical-impact-on-your-life.html → moon-retrograde-effects.html ✅
+220. most-common-symbols-in-dreams.html → common-dream-symbols.html ✅
+221. nature-and-nurture-what-does-a-green-aura-mean.html → green-aura-meaning.html ✅
+222. navigating-2024-with-the-chinese-zodiac-year-of-the-dragon.html → chinese-zodiac-dragon-year.html ✅
+223. new-year-tarot-spread-your-complete-guide-to-starting-the-year-with-clarity.html → complete-new-year-spread.html ✅
+224. no-child-line-on-your-palm-heres-what-it-could-mean.html → no-child-line-palmistry.html ✅
+225. numerical-messages-exploring-the-symbolism-of-the-707-angel-number.html → angel-number-707-meaning.html ✅
+226. oracle-guidance.html → oracle-cards-guidance.html ✅
+227. our-advisors-top-picks-may-2023.html → spiritual-tools-recommendations.html ✅
+228. owl-sighting-meaning-and-interpretations.html → owl-sighting-meaning-2.html ✅
+229. page-of-swords-tarot-5-meanings-in-a-love-reading.html → page-swords-love-meaning.html ✅
+230. palm-readings.html → palm-reading-basics.html ✅
+231. performing-a-spiritual-cleansing.html → spiritual-cleansing-guide.html ✅
+232. potent-plants-5-protection-herbs-essential.html → protection-herbs-guide.html ✅
+233. praying-mantis-symbolism-whats-its-spiritual-significance.html → praying-mantis-meaning.html ✅
+234. preparing-for-a-psychic-reading.html → preparing-psychic-reading.html ✅
+235. psychic-readings.html → psychic-readings-guide.html ✅
+
+=== REMAINING (files 236-440+ to be mapped and converted) ===
 
 See source folder for remaining files. Work continues in batches.
+
+236. psychic-world-predictions-for-2024.html -> u-psychic-world-predictions-for-2024.html
+237. purple-garden-vs-california-psychics-ultimate-accuracy-comparison.html -> u-vs-california-psychics-ultimate-accuracy-compariso.html
+238. purple-garden-vs-keen-how-do-they-compare.html -> u-vs-keen-how-do-they-compare.html
+239. purple-garden-vs-mysticsense-how-do-they-compare.html -> u-vs-mysticsense-how-do-they-compare.html
+240. qa-with-psychic-sisters-jessica-christina.html -> u-qa-with-psychic-sisters-jessica-christina.html
+241. queen-of-swords-tarot-card-meaning-symbolism-interpretation.html -> u-queen-of-swords-tarot-card-meaning-symbolism-inter.html
+242. queen-of-wands-tarot-card-meaning-symbolism-interpretation.html -> u-queen-of-wands-tarot-card-meaning-symbolism-interp.html
+243. questions-to-ask-tarot-cards-about-love.html -> u-questions-to-ask-tarot-cards-about-love.html
+244. raven-symbolism-and-spiritual-meanings.html -> u-raven-symbolism-and-spiritual-meanings.html
+245. realistic-expectations-from-a-psychic-reading.html -> u-realistic-expectations-from-a-psychic-reading.html
+246. red-flags-revealed-9-signs-he-pretends-to-love-you.html -> u-red-flags-revealed-signs-he-pretends-to-love-you.html
+247. relationship-red-flags-6-signs-he-will-never-marry-you.html -> u-relationship-red-flags-signs-he-will-never-marry-y.html
+248. reviving-romance-how-to-reconnect-after-a-relationship-break.html -> u-reviving-romance-how-to-reconnect-after-a-relation.html
+249. seek-your-destiny-path-with-best-tarot-spreads-for-guidance.html -> u-seek-your-destiny-path-with-best-tarot-spreads-for.html
+250. seek-your-spiritual-companion-how-to-find-your-own-spirit-guide.html -> u-seek-your-spiritual-companion-how-to-find-your-own.html
+251. seeking-answers-why-am-i-dreaming-so-much-all-of-a-sudden.html -> u-seeking-answers-why-am-i-dreaming-so-much-all-of-a.html
+252. seeking-guidance-discover-the-tarot-card-of-the-year-2024.html -> u-seeking-guidance-discover-the-tarot-card-of-the-ye.html
+253. skat-card-game-or-cartomancy.html -> u-skat-card-game-or-cartomancy.html
+254. spiritual-meaning-of-a-butterfly.html -> u-spiritual-meaning-of-a-butterfly.html
+255. spiritual-meanings-of-rainbows.html -> u-spiritual-meanings-of-rainbows.html
+256. spring-awakening-what-tarot-cards-predict-for-each-zodiac-sign.html -> u-spring-awakening-what-tarot-cards-predict-for-each.html
+257. star-secrets-an-introduction-to-aspects-in-astrology.html -> u-star-secrets-an-introduction-to-aspects-in-astrolo.html
+258. start-the-year-right-things-to-do-for-good-luck-on-new-years-day.html -> u-start-the-year-right-things-to-do-for-good-luck-on.html
+259. strength-tarot-card-meaning-symbolism-interpretation.html -> u-strength-tarot-card-meaning-symbolism-interpretati.html
+260. strengthening-your-intuition.html -> u-strengthening-your-intuition.html
+261. submerged-in-the-subconscious-interpretations-of-drowning-dreams.html -> u-submerged-in-the-subconscious-interpretations-of-d.html
+262. tarot-card-meanings.html -> u-tarot-card-meanings.html
+263. tarot-card-of-the-day.html -> u-tarot-card-of-the-day.html
+264. tarot-decks-for-beginners-10-best-decks-to-start-with.html -> u-tarot-decks-for-beginners-best-decks-to-start-with.html
+265. tarot-readings.html -> u-tarot-readings.html
+266. tarot-spread-for-finding-lost-items.html -> u-tarot-spread-for-finding-lost-items.html
+267. tarot-spread-for-self-awareness.html -> u-tarot-spread-for-self-awareness.html
+268. tarot-wisdom.html -> u-tarot-wisdom.html
+269. teeth-falling-out-dream-interpretation.html -> u-teeth-falling-out-dream-interpretation.html
+270. temperance-tarot-card-meaning-symbolism-interpretation.html -> u-temperance-tarot-card-meaning-symbolism-interpreta.html
+271. the-10-best-crystals-for-sleep-and-how-to-use-them.html -> u-best-crystals-for-sleep-and-how-to-use-them.html
+272. the-12th-house-in-astrology-a-doorway-to-spiritual-growth.html -> u-the-12th-house-in-astrology-a-doorway-to-spiritual.html
+273. the-4-worst-parent-child-zodiac-compatibilities.html -> u-the-worst-parent-child-zodiac-compatibilities.html
+274. the-7-archangels-names-and-their-meanings.html -> u-the-archangels-names-and-their-meanings.html
+275. the-7-best-crystals-for-fertility.html -> u-best-crystals-for-fertility.html
+276. the-basics-and-interpretations-of-the-12-signs-of-african-astrology.html -> u-the-basics-and-interpretations-of-the-signs-of-afr.html
+277. the-best-8-protection-crystals.html -> u-best-protection-crystals.html
+278. the-best-crystals-for-attracting-money.html -> u-best-crystals-for-attracting-money.html
+279. the-best-rituals-for-attracting-good-luck.html -> u-best-rituals-for-attracting-good-luck.html
+280. the-best-tarot-readers.html -> u-best-tarot-readers.html
+281. the-big-three-of-astrology-sun-moon-and-rising-sign.html -> u-the-big-three-of-astrology-sun-moon-and-rising-sig.html
+282. the-crow-spiritual-meaning-what-do-these-mysterious-birds-symbolize.html -> u-the-crow-spiritual-meaning-what-do-these-mysteriou.html
+283. the-defining-list-of-scorpio-traits-in-females.html -> u-the-defining-list-of-scorpio-traits-in-females.html
+284. the-devil-tarot-card-meaning-symbolism-interpretation.html -> u-the-devil-tarot-card-meaning-symbolism-interpretat.html
+285. the-empress-tarot-card-meaning-symbolism-interpretation.html -> u-the-empress-tarot-card-meaning-symbolism-interpret.html
+286. the-enchanting-rabbit-spiritual-meanings-and-interpretations.html -> u-the-enchanting-rabbit-spiritual-meanings-and-inter.html
+287. the-fate-line-in-palmistry.html -> u-the-fate-line-in-palmistry.html
+288. the-gift-of-feeling-understanding-the-differences-between-clairsentience-and-empathy.html -> u-the-gift-of-feeling-understanding-the-differences.html
+289. the-great-deck-debate-is-tarot-card-reading-accurate.html -> u-the-great-deck-debate-is-tarot-card-reading-accura.html
+290. the-hermit-tarot-card-meaning.html -> u-the-hermit-tarot-card-meaning.html
+291. the-high-priestess-tarot-card-meaning-and-its-significance-in-readings.html -> u-the-high-priestess-tarot-card-meaning-and-its-sign.html
+292. the-influence-of-your-sun-sign-on-personal-development.html -> u-the-influence-of-your-sun-sign-on-personal-develop.html
+293. the-interpretation-of-dream-about-being-pregnant.html -> u-the-interpretation-of-dream-about-being-pregnant.html
+294. the-lovers-tarot-card-meaning-symbolism-interpretation.html -> u-the-lovers-tarot-card-meaning-symbolism-interpreta.html
+295. the-main-personality-traits-of-each-zodiac-sign.html -> u-the-main-personality-traits-of-each-zodiac-sign.html
+296. the-meaning-of-444-8-reasons-youre-seeing-this-angel-number.html -> u-the-meaning-of-8-reasons-youre-seeing-this-angel-n.html
+297. the-meaning-of-a-broken-life-line-in-palm-reading.html -> u-the-meaning-of-a-broken-life-line-in-palm-reading.html
+298. the-meaning-of-a-dream-about-car-accidents.html -> u-the-meaning-of-a-dream-about-car-accidents.html
+299. the-meaning-of-a-dream-about-your-crush.html -> u-the-meaning-of-a-dream-about-your-crush.html
+300. the-meaning-of-a-karmic-relationship.html -> u-the-meaning-of-a-karmic-relationship.html
+301. the-meaning-of-angel-number-888-in-love.html -> u-the-meaning-of-angel-number-in-love.html
+302. the-meaning-of-death-tarot-card-in-love.html -> u-the-meaning-of-death-tarot-card-in-love.html
+303. the-meaning-of-emperor-card-in-tarot.html -> u-the-meaning-of-emperor-card-in-tarot.html
+304. the-meaning-of-knight-of-cups-card-in-love-reading.html -> u-the-meaning-of-knight-of-cups-card-in-love-reading.html
+305. the-moon-tarot-card-meaning-symbolism-interpretation.html -> u-the-moon-tarot-card-meaning-symbolism-interpretati.html
+306. the-moon-water-ritual-embracing-the-moons-power-in-your-daily-life.html -> u-the-moon-water-ritual-embracing-the-moons-power-in.html
+307. the-most-effective-summer-solstice-rituals-you-should-try.html -> u-the-most-effective-summer-solstice-rituals-you-sho.html
+308. the-most-powerful-energy-healing-techniques.html -> u-the-most-powerful-energy-healing-techniques.html
+309. the-power-of-archangel-uriel-number-in-angelic-communications.html -> u-the-power-of-archangel-uriel-number-in-angelic-com.html
+310. the-power-of-meteor-showers.html -> u-the-power-of-meteor-showers.html
+311. the-role-of-the-moon-in-emotional-growth.html -> u-the-role-of-the-moon-in-emotional-growth.html
+312. the-role-of-zodiac-planets-in-astrology.html -> u-the-role-of-zodiac-planets-in-astrology.html
+313. the-significance-of-angel-number-222.html -> u-the-significance-of-angel-number-222.html
+314. the-significance-of-the-ring-of-solomon-in-palmistry.html -> u-the-significance-of-the-ring-of-solomon-in-palmist.html
+315. the-solar-plexus-chakra-meaning-a-guide-to-your-inner-fire.html -> u-the-solar-plexus-chakra-meaning-a-guide-to-your-in.html
+316. the-spiritual-meaning-behind-your-cats-fur-color.html -> u-the-spiritual-meaning-behind-your-cats-fur-color.html
+317. the-spiritual-meaning-of-birds-chirping-at-night.html -> u-the-spiritual-meaning-of-birds-chirping-at-night.html
+318. the-spiritual-meaning-of-cats.html -> u-the-spiritual-meaning-of-cats.html
+319. the-spiritual-meaning-of-dreaming-someone-has-died.html -> u-the-spiritual-meaning-of-dreaming-someone-has-died.html
+320. the-sun-tarot-card-meaning-symbolism-interpretation.html -> u-the-sun-tarot-card-meaning-symbolism-interpretatio.html
+321. the-symbolic-and-spiritual-meaning-of-the-blue-jay.html -> u-the-symbolic-and-spiritual-meaning-of-the-blue-jay.html
+322. the-symbolism-behind-a-red-cardinal-sighting.html -> u-the-symbolism-behind-a-red-cardinal-sighting.html
+323. the-symbolism-of-a-dragonfly-visiting-you.html -> u-the-symbolism-of-a-dragonfly-visiting-you.html
+324. the-world-tarot-card-in-love-what-does-it-mean-for-your-relationships.html -> u-the-world-tarot-card-in-love-what-does-it-mean-for.html
+325. the-world-tarot-card-meaning-symbolism-interpretation.html -> u-the-world-tarot-card-meaning-symbolism-interpretat.html
+326. tips-and-guidance-for-your-first-psychic-reading.html -> u-tips-and-guidance-for-your-first-psychic-reading.html
+327. top-10-best-crystals-for-travel-safety-and-protection.html -> u-top-best-crystals-for-travel-safety-and-protection.html
+328. top-15-new-year-resolution-ideas-for-a-transformative-year.html -> u-top-new-year-resolution-ideas-for-a-transformative.html
+329. top-8-sacral-chakra-crystals-to-enhance-your-creative-energy.html -> u-top-sacral-chakra-crystals-to-enhance-your-creativ.html
+330. tree-of-life-tarot-spread-a-complete-guide-to-this-mystical-layout.html -> u-tree-of-life-tarot-spread-a-complete-guide-to-this.html
+331. twin-souls-beliefs-in-different-cultures-and-belief-systems.html -> u-twin-souls-beliefs-in-different-cultures-and-belie.html
+332. uncovering-the-1010-angel-number-meaning-for-love.html -> u-uncovering-the-angel-number-meaning-for-love.html
+333. undead-dread-what-dreaming-about-zombies-means.html -> u-undead-dread-what-dreaming-about-zombies-means.html
+334. understand-the-unique-characteristics-of-the-simian-crease-in-palmistry.html -> u-understand-the-unique-characteristics-of-the-simia.html
+335. understanding-clairvoyance.html -> u-understanding-clairvoyance.html
+336. understanding-the-spiritual-meaning-of-menstrual-blood-in-dreams.html -> u-understanding-the-spiritual-meaning-of-menstrual-b.html
+337. understanding-the-star-tarot-card-meaning-and-symbolism.html -> u-understanding-the-star-tarot-card-meaning-and-symb.html
+338. understanding-your-natal-chart.html -> u-understanding-your-natal-chart.html
+339. unfolding-your-destiny-the-power-of-a-one-card-tarot-reading.html -> u-unfolding-your-destiny-the-power-of-a-one-card-tar.html
+340. unlocking-lifes-mysteries-with-a-simple-three-card-tarot-spread.html -> u-unlocking-lifes-mysteries-with-a-simple-three-card.html
+341. unlocking-the-ladybugs-spiritual-meaning.html -> u-unlocking-the-ladybugs-spiritual-meaning.html
+342. unveiling-the-cancer-zodiac-key-characteristics-and-traits.html -> u-unveiling-the-cancer-zodiac-key-characteristics-an.html
+343. using-crystals-for-daily-energy-boosts.html -> u-using-crystals-for-daily-energy-boosts.html
+344. using-crystals-in-everyday-routine.html -> u-using-crystals-in-everyday-routine.html
+345. what-are-7-main-chakras-and-their-effects.html -> u-what-are-main-chakras-and-their-effects.html
+346. what-are-akashic-records.html -> u-what-are-akashic-records.html
+347. what-are-grounding-meditations-and-how-do-you-perform-them.html -> u-what-are-grounding-meditations-and-how-do-you-perf.html
+348. what-are-spirit-guides-and-how-they-can-help-you-in-everyday-life.html -> u-what-are-spirit-guides-and-how-they-can-help-you-i.html
+349. what-are-the-3-most-powerful-tarot-cards.html -> u-what-are-the-most-powerful-tarot-cards.html
+350. what-are-twin-flames-and-how-to-recognize-you-have-found-yours.html -> u-what-are-twin-flames-and-how-to-recognize-you-have.html
+351. what-can-your-palm-lines-reveal-about-you.html -> u-what-can-your-palm-lines-reveal-about-you.html
+352. what-color-eyes-do-earth-angels-have.html -> u-what-color-eyes-do-earth-angels-have.html
+353. what-color-is-my-aura-a-guide-to-understanding-your-spiritual-energy.html -> u-what-color-is-my-aura-a-guide-to-understanding-you.html
+354. what-do-dreams-about-losing-hair-actually-represent.html -> u-what-do-dreams-about-losing-hair-actually-represen.html
+355. what-do-you-need-to-know-about-palm-readings-for-female.html -> u-what-do-you-need-to-know-about-palm-readings-for-f.html
+356. what-does-000-angel-number-mean.html -> u-what-does-angel-number-mean.html
+357. what-does-999-mean-spiritually-discover-what-angels-are-trying-to-tell-you.html -> u-what-does-mean-spiritually-discover-what-angels-ar.html
+358. what-does-a-broken-life-line-indicate-in-your-palm.html -> u-what-does-a-broken-life-line-indicate-in-your-palm.html
+359. what-does-a-healers-mark-mean-on-your-palm.html -> u-what-does-a-healers-mark-mean-on-your-palm.html
+360. what-does-blue-aura-mean-spiritually.html -> u-what-does-blue-aura-mean-spiritually.html
+361. what-does-clairvoyant-mean-unraveling-the-mysteries-of-the-sixth-sense.html -> u-what-does-clairvoyant-mean-unraveling-the-mysterie.html
+362. what-does-it-mean-if-two-of-swords-tarot-cards-are-reversed.html -> u-what-does-it-mean-if-two-of-swords-tarot-cards-are.html
+363. what-does-it-mean-if-you-dream-about-fire.html -> u-what-does-it-mean-if-you-dream-about-fire.html
+364. what-does-it-mean-if-you-dream-about-killing-someone.html -> u-what-does-it-mean-if-you-dream-about-killing-someo.html
+365. what-does-it-mean-to-dream-about-a-snake.html -> u-what-does-it-mean-to-dream-about-a-snake.html
+366. what-does-it-mean-to-dream-about-a-tornado.html -> u-what-does-it-mean-to-dream-about-a-tornado.html
+367. what-does-it-mean-to-experience-false-awakening-dreams.html -> u-what-does-it-mean-to-experience-false-awakening-dr.html
+368. what-does-it-mean-when-a-bird-flies-into-your-house.html -> u-what-does-it-mean-when-a-bird-flies-into-your-hous.html
+369. what-does-it-mean-when-bad-things-keep-happening-to-you.html -> u-what-does-it-mean-when-bad-things-keep-happening-t.html
+370. what-does-it-mean-when-you-dream-about-a-house-8-possible-meanings.html -> u-what-does-it-mean-when-you-dream-about-a-house-pos.html
+371. what-does-it-mean-when-you-dream-about-flying.html -> u-what-does-it-mean-when-you-dream-about-flying.html
+372. what-does-it-mean-when-you-dream-about-your-ex.html -> u-what-does-it-mean-when-you-dream-about-your-ex.html
+373. what-does-it-mean-when-you-find-a-feather.html -> u-what-does-it-mean-when-you-find-a-feather.html
+374. what-does-mercury-in-retrograde-mean.html -> u-what-does-mercury-in-retrograde-mean.html
+375. what-does-number-111-represent.html -> u-what-does-number-represent.html
+376. what-does-number-444-mean-in-love.html -> u-what-does-number-mean-in-love.html
+377. what-does-seeing-a-fox-mean-spiritually-9-possible-interpretations.html -> u-what-does-seeing-a-fox-mean-spiritually-possible-i.html
+378. what-does-the-6-of-pentacles-card-represent.html -> u-what-does-the-of-pentacles-card-represent.html
+379. what-does-the-eight-of-the-pentacles-tarot-card-represent.html -> u-what-does-the-eight-of-the-pentacles-tarot-card-re.html
+380. what-does-the-first-house-represent-in-astrology.html -> u-what-does-the-first-house-represent-in-astrology.html
+381. what-does-the-fool-tarot-card-mean.html -> u-what-does-the-fool-tarot-card-mean.html
+382. what-does-the-queen-of-pentacles-card-mean-for-love.html -> u-what-does-the-queen-of-pentacles-card-mean-for-lov.html
+383. what-does-the-sun-tarot-card-represent-in-love-reading.html -> u-what-does-the-sun-tarot-card-represent-in-love-rea.html
+384. what-does-the-tower-tarot-card-mean-and-how-can-it-reflect-your-destiny.html -> u-what-does-the-tower-tarot-card-mean-and-how-can-it.html
+385. what-does-the-wheel-of-fortune-card-mean-in-a-tarot-reading.html -> u-what-does-the-wheel-of-fortune-card-mean-in-a-taro.html
+386. what-does-your-heart-line-say-about-you.html -> u-what-does-your-heart-line-say-about-you.html
+387. what-if-you-get-the-hanged-man-card-during-tarot-reading.html -> u-what-if-you-get-the-hanged-man-card-during-tarot-r.html
+388. what-is-a-spiritual-awakening-and-are-you-having-one-right-now.html -> u-what-is-a-spiritual-awakening-and-are-you-having-o.html
+389. what-is-he-thinking-tarot-readings-to-decode-his-mind.html -> u-what-is-he-thinking-tarot-readings-to-decode-his-m.html
+390. what-is-spiritual-meditation-and-how-is-it-performed.html -> u-what-is-spiritual-meditation-and-how-is-it-perform.html
+391. what-is-the-best-tarot-spread-for-breakup.html -> u-what-is-best-tarot-spread-for-breakup.html
+392. what-is-the-children-line-in-palm-reading.html -> u-what-is-the-children-line-in-palm-reading.html
+393. what-is-the-difference-between-upright-and-reversed-tarot-cards.html -> u-what-is-the-difference-between-upright-and-reverse.html
+394. what-is-the-ideal-career-for-you-according-to-astrology.html -> u-what-is-the-ideal-career-for-you-according-to-astr.html
+395. what-is-the-main-difference-between-medium-and-psychic.html -> u-what-is-the-main-difference-between-medium-and-psy.html
+396. what-is-the-meaning-of-a-frequent-hawk-sighting.html -> u-what-is-the-meaning-of-a-frequent-hawk-sighting.html
+397. what-is-the-spiritual-significance-of-candles.html -> u-what-is-the-spiritual-significance-of-candles.html
+398. what-is-the-symbolism-and-meaning-of-a-mourning-dove.html -> u-what-is-the-symbolism-and-meaning-of-a-mourning-do.html
+399. what-is-wicca-core-beliefs-sacred-customs.html -> u-what-is-wicca-core-beliefs-sacred-customs.html
+400. what-is-your-life-path-number-and-why-is-it-important.html -> u-what-is-your-life-path-number-and-why-is-it-import.html
+401. what-is-your-venus-sign-what-does-it-mean.html -> u-what-is-your-venus-sign-what-does-it-mean.html
+402. what-is-zen-meditation-5-benefits-techniques.html -> u-what-is-zen-meditation-benefits-techniques.html
+403. what-ringing-in-your-left-ear-could-mean-spiritually.html -> u-what-ringing-in-your-left-ear-could-mean-spiritual.html
+404. what-sign-is-the-most-compatible-with-gemini.html -> u-what-sign-is-the-most-compatible-with-gemini.html
+405. what-spider-dreams-might-be-telling-you.html -> u-what-spider-dreams-might-be-telling-you.html
+406. what-tarot-card-am-i-5-ways-to-find-out.html -> u-what-tarot-card-am-i-ways-to-find-out.html
+407. what-to-ask-during-love-tarot-cards-reading.html -> u-what-to-ask-during-love-tarot-cards-reading.html
+408. what-to-do-and-what-to-avoid-during-new-moon-ritual.html -> u-what-to-do-and-what-to-avoid-during-new-moon-ritua.html
+409. what-to-say-when-smudging-yourself-for-spiritual-cleansing.html -> u-what-to-say-when-smudging-yourself-for-spiritual-c.html
+410. what-will-be-the-luckiest-zodiac-signs-in-2024.html -> u-what-will-be-the-luckiest-zodiac-signs-in-2024.html
+411. what-will-be-the-luckiest-zodiac-signs-in-2025.html -> u-what-will-be-the-luckiest-zodiac-signs-in-2025.html
+412. what-will-be-the-most-unlucky-zodiac-signs-in-2024.html -> u-what-will-be-the-most-unlucky-zodiac-signs-in-2024.html
+413. what-you-need-to-know-about-the-sacral-chakra.html -> u-what-you-need-to-know-about-the-sacral-chakra.html
+414. whats-the-difference-between-oracle-and-tarot-cards.html -> u-whats-the-difference-between-oracle-and-tarot-card.html
+415. when-should-i-cut-my-hair-for-growth-according-to-the-moon-the-energy-of-your-hair.html -> u-when-should-i-cut-my-hair-for-growth-according-to.html
+416. which-are-the-most-dangerous-zodiac-signs.html -> u-which-are-the-most-dangerous-zodiac-signs.html
+417. which-of-the-4-attachment-styles-are-you.html -> u-which-of-the-attachment-styles-are-you.html
+418. who-is-archangel-azrael-the-angel-of-grief.html -> u-who-is-archangel-azrael-the-angel-of-grief.html
+419. who-is-michael-the-archangel-unveiling-the-mysteries-of-a-divine-protector.html -> u-who-is-michael-the-archangel-unveiling-the-mysteri.html
+420. why-am-i-dreaming-about-rats-running-around-my-house.html -> u-why-am-i-dreaming-about-rats-running-around-my-hou.html
+421. why-did-i-dream-about-getting-shot-unlock-the-symbolism-behind-your-nightmares.html -> u-why-did-i-dream-about-getting-shot-unlock-the-symb.html
+422. why-different-readings-offer-different-outcomes.html -> u-why-different-readings-offer-different-outcomes.html
+423. why-do-babies-stare-at-me-unraveling-the-spiritual-meaning.html -> u-why-do-babies-stare-at-me-unraveling-the-spiritual.html
+424. why-do-i-keep-dreaming-about-the-same-person-romantically.html -> u-why-do-i-keep-dreaming-about-the-same-person-roman.html
+425. why-do-i-keep-seeing-multiple-different-angel-numbers-in-one-day.html -> u-why-do-i-keep-seeing-multiple-different-angel-numb.html
+426. why-do-i-wake-up-at-3-am-every-night-possible-spiritual-meanings.html -> u-why-do-i-wake-up-at-am-every-night-possible-spirit.html
+427. why-do-you-keep-having-bad-dreams.html -> u-why-do-you-keep-having-bad-dreams.html
+428. why-do-you-keep-seeing-angel-numbers.html -> u-why-do-you-keep-seeing-angel-numbers.html
+429. why-does-my-cat-follow-me-everywhere-unveiling-the-spiritual-connection.html -> u-why-does-my-cat-follow-me-everywhere-unveiling-the.html
+430. why-dont-i-have-dreams-6-possible-reasons.html -> u-why-dont-i-have-dreams-possible-reasons.html
+431. why-is-he-avoiding-eye-contact-all-of-a-sudden-5-possible-reasons.html -> u-why-is-he-avoiding-eye-contact-all-of-a-sudden-pos.html
+432. will-i-find-love-exploring-the-path-to-romance.html -> u-will-i-find-love-exploring-the-path-to-romance.html
+433. year-of-the-snake-chinese-zodiac-insights-for-your-sign.html -> u-year-of-the-snake-chinese-zodiac-insights-for-your.html
+434. yes-or-no-tarot-reading-for-quick-destiny-insights.html -> u-yes-or-no-tarot-reading-for-quick-destiny-insights.html
+435. your-love-language-according-to-your-zodiac-sign.html -> u-your-love-language-according-to-your-zodiac-sign.html
+436. your-tarot-birth-card-a-deep-dive-into-personal-insights-and-meanings.html -> u-your-tarot-birth-card-a-deep-dive-into-personal-in.html
+437. zodiac-love-match-unveiling-leo-and-gemini-compatibility.html -> u-zodiac-love-match-unveiling-leo-and-gemini-compati.html
+438. zodiac-signs-compatibility-in-love.html -> u-zodiac-signs-compatibility-in-love.html
+
+=== ALL FILES CONVERTED ===
+
+
+
+
+
+
+
+
+

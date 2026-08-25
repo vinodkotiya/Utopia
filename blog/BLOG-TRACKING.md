@@ -1,6 +1,8 @@
 # Blog Rewrite Tracking — Utopia Wellness & Gifts
 
-## ✅ COMPLETED (18 blogs + index)
+## ✅ COMPLETED (28 blogs + index)
+
+### Batch 1 (blogs 1–18)
 
 | # | Output Filename | Original Source File | Date | Status |
 |---|---|---|---|---|
@@ -24,24 +26,28 @@
 | 18 | wellness-coach-benefits.html | 6-reasons-you-need-a-wellness-coach.html | June 5, 2026 | ✅ |
 | — | index.html | (Blog listing page) | — | ✅ |
 
-## ⏳ REMAINING (10 blogs to process)
+## ✅ COMPLETED (continued — blogs 19–28)
 
-| # | Planned Filename | Original Source File | Topic Notes |
-|---|---|---|---|
-| 19 | angel-number-757-love.html | 757-angel-number-meaning-for-love-and-twin-flames.html | Angel numbers + love/twin flames |
-| 20 | 8-card-tarot-spread.html | 8-card-tarot-spread-your-guide-to-deep-meaningful-readings.html | Tarot spread guide |
-| 21 | psychic-reading-benefits.html | 7-benefits-of-choosing-a-phone-psychic-reading-for-spiritual-guidance.html | Repurpose as in-person reading benefits |
-| 22 | palm-reading-guide.html | 6-best-palm-reading-apps-digital-fortune-telling-at-your-fingertips.html | Repurpose as palmistry basics |
-| 23 | spiritual-signs-ex-thinking-of-you.html | 7-spiritual-signs-your-ex-is-still-thinking-about-you.html | Spiritual signs + clarity |
-| 24 | tarot-for-relationship-clarity.html | 12-signs-he-has-strong-feelings-for-you-but-is-scared.html | Repurpose: tarot for relationship clarity |
-| 25 | spiritual-protection-energy-shielding.html | 10-signs-that-let-you-know-if-youre-a-victim-of-witchcraft.html | Repurpose: energy protection/shielding |
-| 26 | clarity-session-relationship-guidance.html | 15-signs-that-your-partner-is-cheating-and-how-to-deal-with-it.html | Repurpose: clarity sessions for relationships |
-| 27 | self-worth-after-rejection.html | 12-signs-hell-never-ask-you-out-how-to-get-over-it.html | Repurpose: self-worth & moving forward |
-| 28 | keeping-love-alive-spiritual-practices.html | 10-proven-strategies-on-how-to-keep-a-guy-interested-in-you.html + 7-surefire-signs-he-wants-you-to-be-his-girlfriend.html | Repurpose: spiritual practices for healthy relationships |
+| # | Output Filename | Original Source File | Date | Status |
+|---|---|---|---|---|
+| 19 | angel-number-757-love.html | 757-angel-number-meaning-for-love-and-twin-flames.html | June 6, 2026 | ✅ |
+| 20 | 8-card-tarot-spread-guide.html | 8-card-tarot-spread-your-guide-to-deep-meaningful-readings.html | June 7, 2026 | ✅ |
+| 21 | benefits-in-person-reading.html | 7-benefits-of-choosing-a-phone-psychic-reading-for-spiritual-guidance.html | June 8, 2026 | ✅ |
+| 22 | palmistry-basics-guide.html | 6-best-palm-reading-apps-digital-fortune-telling-at-your-fingertips.html | June 9, 2026 | ✅ |
+| 23 | spiritual-signs-ex-thinking-of-you.html | 7-spiritual-signs-your-ex-is-still-thinking-about-you.html | June 12, 2026 | ✅ |
+| 24 | tarot-relationship-clarity.html | 12-signs-he-has-strong-feelings-for-you-but-is-scared.html | June 13, 2026 | ✅ |
+| 25 | spiritual-protection-energy-shielding.html | 10-signs-that-let-you-know-if-youre-a-victim-of-witchcraft.html | June 14, 2026 | ✅ |
+| 26 | clarity-session-relationship-guidance.html | 15-signs-that-your-partner-is-cheating-and-how-to-deal-with-it.html | June 15, 2026 | ✅ |
+| 27 | self-worth-after-rejection.html | 12-signs-hell-never-ask-you-out-how-to-get-over-it.html | June 18, 2026 | ✅ |
+| 28 | keeping-love-alive-spiritual-practices.html | 10-proven-strategies-on-how-to-keep-a-guy-interested-in-you.html + 7-surefire-signs-he-wants-you-to-be-his-girlfriend.html | June 21, 2026 | ✅ |
 
 ## Notes
+- All 28 original blog articles have been rewritten and repurposed for Utopia's brand
 - All relationship-focused articles have been repurposed to align with Utopia's spiritual wellness positioning
 - The "witchcraft" article has been repurposed as spiritual protection/energy shielding (no fear-based language)
 - The "palm reading apps" article has been repurposed as an intro to palmistry (no app recommendations)
 - The "phone psychic reading" article repurposed as benefits of in-person readings
-- Index page includes all 18 completed blog cards with descriptions and links
+- The "cheating signs" article repurposed as clarity sessions for relationship concerns
+- The "rejection signs" article repurposed as rebuilding self-worth after rejection
+- The "keeping a guy interested" + "signs he wants you" articles merged into spiritual practices for healthy love
+- Index page includes all 28 completed blog cards with descriptions and links
