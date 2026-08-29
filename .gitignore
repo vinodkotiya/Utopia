@@ -1,0 +1,10 @@
+# Shopify secrets & tokens — never commit
+shopify/.token
+shopify/.env
+*.token
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
