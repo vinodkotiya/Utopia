@@ -1,7 +1,7 @@
 ﻿# BLOG INDEX
 # Format: CATEGORY / TITLE / DESCRIPTION / FILE
 # Use this data to generate the blog index page cards.
-# Total entries: 486
+# Total entries: 498
 CATEGORY: TAROT
 TITLE: The 8-Card Tarot Spread: Your Guide to Deep, Meaningful Readings
 DESCRIPTION: Learn how to use the 8-card tarot spread for comprehensive insight. A step-by-step guide from Utopia Wellness & Gifts in North Vancouver.
@@ -2431,3 +2431,63 @@ CATEGORY: PSYCHIC GUIDANCE
 TITLE: What to Ask in a Reading (Love, Work, and Life Direction)
 DESCRIPTION: The best readings start with a real question. Example questions for love, work, and life direction, plus how to choose a trusted reader at Utopia in North Vancouver.
 FILE: what-to-ask-in-a-reading.html
+
+CATEGORY: ANGEL NUMBERS
+TITLE: Angel Numbers 000, 111, and 1234: What Repeating Numbers Usually Point To
+DESCRIPTION: What do 000, 111, and 1234 mean? A grounded look at repeating angel numbers as prompts to pause and act, not fixed predictions.
+FILE: angel-numbers-000-111-1234.html
+
+CATEGORY: ANGEL NUMBERS
+TITLE: Signs From Angels, Guardian Angels, and Archangels
+DESCRIPTION: Signs from angels, contacting your guardian angel, and archangels explained in grounded language. A simple way to ask for guidance at Utopia in North Vancouver.
+FILE: signs-from-angels-guardian-archangels.html
+
+CATEGORY: ASTROLOGY
+TITLE: Birth Chart, Rising Sign, and Zodiac: What People Actually Use
+DESCRIPTION: Birth chart, rising sign, and zodiac explained for self-understanding, timing, and relationships. Bring your birth date to a reading at Utopia in North Vancouver.
+FILE: birth-chart-rising-sign-zodiac.html
+
+CATEGORY: DREAMS
+TITLE: Dream Meanings People Search Most: Crush, Pregnancy, Snake, Teeth
+DESCRIPTION: What do dreams about a crush, pregnancy, snakes, or teeth falling out mean? A grounded guide to processing dreams as emotion and change, not prophecy.
+FILE: common-dream-meanings-crush-pregnancy-snake-teeth.html
+
+CATEGORY: ENERGY WORK
+TITLE: Aura Cleansing, Empaths, and Energy Clearing
+DESCRIPTION: How to cleanse your aura, empath basics, and simple energy clearing in North Vancouver. Practical resets for after crowds, conflict, or a heavy week.
+FILE: aura-cleansing-empaths-energy-clearing.html
+
+CATEGORY: PALMISTRY
+TITLE: Palm Reading: What Palmistry Can and Cannot Tell You
+DESCRIPTION: What palmistry can and cannot tell you. Palm reading as a symbolic map of tendencies, not a medical diagnosis or fixed destiny. Readings at Utopia in North Vancouver.
+FILE: palm-reading-what-palmistry-tells-you.html
+
+CATEGORY: ENERGY WORK
+TITLE: Chakras, Reiki, and Sound: What These Sessions Are For
+DESCRIPTION: Chakra balancing, Reiki, and sound baths explained as body-based resets. What to expect and how they sit beside readings at Utopia in North Vancouver.
+FILE: chakras-reiki-sound-sessions.html
+
+CATEGORY: TAROT
+TITLE: Tarot Card Meanings People Search: Death, 7 of Swords, and "Bad" Cards
+DESCRIPTION: What the Death card, Seven of Swords, and other feared tarot cards really mean. A card is a snapshot in a spread, not a life sentence. Readings at Utopia.
+FILE: tarot-card-meanings-death-swords.html
+
+CATEGORY: LOVE & RELATIONSHIPS
+TITLE: Twin Flame, Soulmate, and Love Tarot — How to Ask a Useful Question
+DESCRIPTION: Twin flame, soulmate, and love tarot: how to ask a question a reading can actually answer. Clarify the pattern, not force an outcome. Love readings at Utopia.
+FILE: twin-flame-soulmate-love-tarot.html
+
+CATEGORY: RITUALS
+TITLE: Sage, Palo Santo, and Cleansing Tools (What Shoppers Actually Need)
+DESCRIPTION: Sage, palo santo, and smudging kits: what you actually need to reset a room after conflict or a move. Shop tools or pair a cleanse with a reading at Utopia.
+FILE: sage-palo-santo-cleansing-tools.html
+
+CATEGORY: ANIMAL SPIRITS
+TITLE: Spirit Animal, Hawk, Ladybug, Bee, and "Why Is This Animal Around Me?"
+DESCRIPTION: Spirit animal, hawk, ladybug, and bee meanings, plus a practical method for reading repeated wildlife as prompts. Bring the sign to a session at Utopia.
+FILE: spirit-animal-hawk-ladybug-bee.html
+
+CATEGORY: SPIRITUALITY
+TITLE: Ringing in the Ear, Sudden Signs, and "What Is Happening to Me?"
+DESCRIPTION: Ringing in the ear, synchronicity, and signs from the universe explained on two tracks: check the physical first, then use a reading for meaning and clarity.
+FILE: ringing-ear-signs-universe.html
