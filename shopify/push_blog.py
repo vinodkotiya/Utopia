@@ -159,9 +159,14 @@ def clean_html(raw: str) -> str:
         # drop CTA / SEO helper blocks
         if any(mrk in ln for mrk in CTA_MARKERS):
             continue
-        # drop comma-keyword SEO lines: many commas and no sentence period
-        # (applies whether the text is bare or wrapped in a <p>)
-        if text_only.count(",") >= 4 and "." not in text_only:
+        # drop legacy hidden comma-keyword SEO lines: many commas and no
+        # sentence period. BUT keep an intentional "People also search" line,
+        # which is meant to be published.
+        if (
+            text_only.count(",") >= 4
+            and "." not in text_only
+            and "People also search" not in text_only
+        ):
             continue
         kept.append(ln)
 

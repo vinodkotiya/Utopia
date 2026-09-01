@@ -1,7 +1,7 @@
 ﻿# BLOG INDEX
 # Format: CATEGORY / TITLE / DESCRIPTION / FILE
 # Use this data to generate the blog index page cards.
-# Total entries: 498
+# Total entries: 499
 CATEGORY: TAROT
 TITLE: The 8-Card Tarot Spread: Your Guide to Deep, Meaningful Readings
 DESCRIPTION: Learn how to use the 8-card tarot spread for comprehensive insight. A step-by-step guide from Utopia Wellness & Gifts in North Vancouver.
@@ -2491,3 +2491,8 @@ CATEGORY: SPIRITUALITY
 TITLE: Ringing in the Ear, Sudden Signs, and "What Is Happening to Me?"
 DESCRIPTION: Ringing in the ear, synchronicity, and signs from the universe explained on two tracks: check the physical first, then use a reading for meaning and clarity.
 FILE: ringing-ear-signs-universe.html
+
+CATEGORY: SPIRITUALITY
+TITLE: Utopia Wellness & Gifts, North Vancouver: The Complete Spiritual, Tarot & Metaphysical FAQ Guide
+DESCRIPTION: The complete FAQ guide from Utopia Wellness & Gifts, North Vancouver: tarot, crystals, moon water, chakras, astrology, angel numbers, dreams, and energy clearing answered.
+FILE: utopia-north-vancouver-complete-faq-guide.html

@@ -68,6 +68,12 @@
 
   <!-- Blog Posts -->
   <url>
+    <loc>https://utopiastore.ca/blog/utopia-north-vancouver-complete-faq-guide.html</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://utopiastore.ca/blog/angel-numbers-000-111-1234.html</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>

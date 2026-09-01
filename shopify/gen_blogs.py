@@ -335,9 +335,9 @@ def faq_schema(faq):
     def esc(s):
         s = re.sub(r"<[^>]+>", "", s)
         s = (s.replace("&amp;", "&").replace("&mdash;", "-").replace("&ndash;", "-")
-               .replace("&ldquo;", '\\"').replace("&rdquo;", '\\"')
+               .replace("&ldquo;", '"').replace("&rdquo;", '"')
                .replace("&rsquo;", "'").replace("&lsquo;", "'"))
-        s = s.replace('"', '\\"')
+        s = s.replace("\\", "\\\\").replace('"', '\\"')
         return s
     items = ",".join(
         '{"@type":"Question","name":"%s","acceptedAnswer":{"@type":"Answer","text":"%s"}}'
