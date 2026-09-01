@@ -1,7 +1,7 @@
 ﻿# BLOG INDEX
 # Format: CATEGORY / TITLE / DESCRIPTION / FILE
 # Use this data to generate the blog index page cards.
-# Total entries: 478
+# Total entries: 486
 CATEGORY: TAROT
 TITLE: The 8-Card Tarot Spread: Your Guide to Deep, Meaningful Readings
 DESCRIPTION: Learn how to use the 8-card tarot spread for comprehensive insight. A step-by-step guide from Utopia Wellness & Gifts in North Vancouver.
@@ -2391,3 +2391,43 @@ CATEGORY: ASTROLOGY
 TITLE: Zodiac Systems Around the World: What Each Astrological Tradition Offers
 DESCRIPTION: Astrology is not one system. It is many, developed independently across civilizations that each watched the same sky and drew different maps of meaning....
 FILE: zodiac-systems-world.html
+
+CATEGORY: SPIRITUALITY
+TITLE: Utopia Wellness & Gifts at 1826 Lonsdale Ave, North Vancouver
+DESCRIPTION: Utopia Wellness & Gifts is the wellness and gift store at 1826 Lonsdale Ave, North Vancouver, offering crystals, meaningful gifts, and in-person Clarity & Guidance sessions.
+FILE: utopia-wellness-gifts-lonsdale.html
+
+CATEGORY: PSYCHIC GUIDANCE
+TITLE: Psychic Reading & Tarot in North Vancouver (Near Lonsdale)
+DESCRIPTION: Searching for a psychic reading or tarot shop near you in North Vancouver? Utopia at 1826 Lonsdale Ave offers in-person Clarity & Guidance sessions and spiritual tools.
+FILE: psychic-tarot-shop-north-vancouver.html
+
+CATEGORY: PSYCHIC GUIDANCE
+TITLE: Clairvoyant vs Clairsentient: What These Abilities Mean in a Reading
+DESCRIPTION: Clairvoyance is clear seeing; clairsentience is clear feeling. Learn the difference between the clair senses and how readers use them in a Clarity & Guidance session.
+FILE: clairvoyant-vs-clairsentient.html
+
+CATEGORY: TAROT
+TITLE: How to Read Tarot Cards: Spreads Beginners Actually Use
+DESCRIPTION: Learn how to read tarot with a simple 3-card spread, the Celtic Cross, and the true meaning of the Death card. Beginner-friendly guidance from Utopia in North Vancouver.
+FILE: how-to-read-tarot-spreads.html
+
+CATEGORY: RITUALS
+TITLE: Full Moon Ritual and New Moon Intentions (Simple and Usable)
+DESCRIPTION: A simple full moon ritual for release and a new moon practice for setting one clear intention. Usable steps plus New Moon Circles at Utopia in North Vancouver.
+FILE: full-moon-new-moon-rituals.html
+
+CATEGORY: CRYSTALS
+TITLE: Healing Crystals in North Vancouver: How to Choose and Use Them
+DESCRIPTION: How to choose and use healing crystals, from a crystal shop in North Vancouver. See stones in person at Utopia on Lonsdale and keep your practice simple.
+FILE: healing-crystals-north-vancouver.html
+
+CATEGORY: ANIMAL SPIRITS
+TITLE: Dragonfly, Butterfly, and Other Signs People Notice
+DESCRIPTION: Dragonfly, butterfly, cardinal, or hawk showing up often? Learn a practical way to read everyday signs as prompts to pause, not fixed predictions.
+FILE: dragonfly-butterfly-signs.html
+
+CATEGORY: PSYCHIC GUIDANCE
+TITLE: What to Ask in a Reading (Love, Work, and Life Direction)
+DESCRIPTION: The best readings start with a real question. Example questions for love, work, and life direction, plus how to choose a trusted reader at Utopia in North Vancouver.
+FILE: what-to-ask-in-a-reading.html

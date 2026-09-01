@@ -491,3 +491,11 @@ Target blog: **Utopia Wellness & Gifts** (id `125558882583`)
 | `zodiac-love-dating-guide.html` | done | 754158240023 | 2026-08-28 16:20:33 |
 | `zodiac-perfect-match.html` | done | 754158272791 | 2026-08-28 16:20:34 |
 | `zodiac-systems-world.html` | done | 754158305559 | 2026-08-28 16:20:35 |
+| `clairvoyant-vs-clairsentient.html` | done | 754266046743 | 2026-09-01 13:34:59 |
+| `dragonfly-butterfly-signs.html` | done | 754266079511 | 2026-09-01 13:35:00 |
+| `full-moon-new-moon-rituals.html` | done | 754266112279 | 2026-09-01 13:35:01 |
+| `healing-crystals-north-vancouver.html` | done | 754266145047 | 2026-09-01 13:35:02 |
+| `how-to-read-tarot-spreads.html` | done | 754266177815 | 2026-09-01 13:35:03 |
+| `psychic-tarot-shop-north-vancouver.html` | done | 754266210583 | 2026-09-01 13:35:04 |
+| `utopia-wellness-gifts-lonsdale.html` | done | 754266243351 | 2026-09-01 13:35:05 |
+| `what-to-ask-in-a-reading.html` | done | 754266276119 | 2026-09-01 13:35:06 |
