@@ -1,7 +1,7 @@
 ﻿# BLOG INDEX
 # Format: CATEGORY / TITLE / DESCRIPTION / FILE
 # Use this data to generate the blog index page cards.
-# Total entries: 499
+# Total entries: 515
 CATEGORY: TAROT
 TITLE: The 8-Card Tarot Spread: Your Guide to Deep, Meaningful Readings
 DESCRIPTION: Learn how to use the 8-card tarot spread for comprehensive insight. A step-by-step guide from Utopia Wellness & Gifts in North Vancouver.
@@ -2496,3 +2496,83 @@ CATEGORY: SPIRITUALITY
 TITLE: Utopia Wellness & Gifts, North Vancouver: The Complete Spiritual, Tarot & Metaphysical FAQ Guide
 DESCRIPTION: The complete FAQ guide from Utopia Wellness & Gifts, North Vancouver: tarot, crystals, moon water, chakras, astrology, angel numbers, dreams, and energy clearing answered.
 FILE: utopia-north-vancouver-complete-faq-guide.html
+
+CATEGORY: GIFTS
+TITLE: Best Gift Shop in North Vancouver (Lonsdale)
+DESCRIPTION: The best gift shop on Lonsdale in North Vancouver for jewelry, crystals, and intention-based gifts you can see, wrap, and give the same day. 1826 Lonsdale Ave.
+FILE: best-gift-shop-north-vancouver-lonsdale.html
+
+CATEGORY: GIFTS
+TITLE: Birthday Gifts North Vancouver
+DESCRIPTION: Birthday gifts in North Vancouver that feel considered, not last-minute: birthstone crystals, statement jewelry, and ritual gift sets, wrapped same-day at Utopia on Lonsdale.
+FILE: birthday-gifts-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Host & Housewarming Gifts Lonsdale
+DESCRIPTION: The best housewarming gifts near Lonsdale: home-cleansing sets, candles, and small décor crystals that add warmth without clutter. Wrapped same-day at Utopia North Vancouver.
+FILE: housewarming-host-gifts-lonsdale.html
+
+CATEGORY: GIFTS
+TITLE: Mother's Day Gifts North Vancouver
+DESCRIPTION: Mother's Day gifts in North Vancouver your mom will actually wear or use: jewelry, rose quartz, and curated gift sets, wrapped same-day at Utopia on Lonsdale.
+FILE: mothers-day-gifts-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Christmas & Holiday Gift Guide North Vancouver
+DESCRIPTION: A North Vancouver holiday gift guide: stocking stuffers through statement gifts, wrapped same-day at Utopia on Lonsdale. A walk-in alternative to online holiday shipping.
+FILE: christmas-holiday-gift-guide-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Last-Minute Gifts Near Lonsdale
+DESCRIPTION: Need a gift today near Lonsdale? Utopia at 1826 Lonsdale Ave has ready-to-go jewelry, crystals, and gift sets plus wrapping, so you can shop and leave in minutes.
+FILE: last-minute-gifts-lonsdale.html
+
+CATEGORY: GIFTS
+TITLE: Teacher & Coworker Gifts Under $30
+DESCRIPTION: Thoughtful teacher and coworker gifts under $30 in North Vancouver: small crystals, candles, and compact gift sets, perfect for Secret Santa or end-of-year. Utopia on Lonsdale.
+FILE: teacher-coworker-gifts-under-30.html
+
+CATEGORY: GIFTS
+TITLE: Sympathy, Get-Well & Thinking of You Gifts
+DESCRIPTION: Gentle sympathy, get-well, and thinking-of-you gifts in North Vancouver: calming candles and comforting crystals like rose quartz and amethyst. Utopia on Lonsdale.
+FILE: sympathy-get-well-thinking-of-you-gifts.html
+
+CATEGORY: GIFTS
+TITLE: Wedding & Bridal Shower Gifts
+DESCRIPTION: Wedding and bridal shower gifts with more meaning than a registry item: gemstone jewelry and intention-based gifts from Utopia on Lonsdale, North Vancouver.
+FILE: wedding-bridal-shower-gifts-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Gifts for Her — North Vancouver
+DESCRIPTION: Personal gifts for her in North Vancouver: jewelry, crystals, and intention gifts from $20 to $150+, beyond the usual candle-and-mug combo. Utopia on Lonsdale.
+FILE: gifts-for-her-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Gifts for Mom
+DESCRIPTION: Year-round gifts for mom in North Vancouver: jewelry and crystal gifts for birthdays, holidays, or just because, from $20 to $120. Utopia on Lonsdale.
+FILE: gifts-for-mom-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Meaningful Gifts for Teens
+DESCRIPTION: Meaningful gifts for teens in North Vancouver: crystal jewelry, oracle decks, and starter tarot that read as thoughtful, not childish. From $10 to $50 at Utopia on Lonsdale.
+FILE: meaningful-gifts-for-teens.html
+
+CATEGORY: GIFTS
+TITLE: Gifts for Someone Who Has Everything
+DESCRIPTION: For the person who has everything, give an experience: Clarity Sessions, readings, and energy work as gifts, plus statement jewelry. Utopia on Lonsdale, North Vancouver.
+FILE: gifts-for-someone-who-has-everything.html
+
+CATEGORY: GIFTS
+TITLE: Crystal Gifts and What They Mean
+DESCRIPTION: A gift-giving guide to crystal meanings: rose quartz, amethyst, citrine, black tourmaline, and clear quartz. Match a stone to the moment at Utopia on Lonsdale, North Vancouver.
+FILE: crystal-gifts-and-what-they-mean.html
+
+CATEGORY: GIFTS
+TITLE: Jewelry Gifts on Lonsdale
+DESCRIPTION: Gemstone and crystal jewelry gifts on Lonsdale: pendants, bracelets, and statement pieces from $30 to $150+, with intention and story behind each. Utopia North Vancouver.
+FILE: jewelry-gifts-lonsdale.html
+
+CATEGORY: GIFTS
+TITLE: Gift + Clarity Session Packages
+DESCRIPTION: Bundled Gift + Clarity Session packages at Utopia on Lonsdale: a crystal or jewelry piece paired with a short tarot, palmistry, or energy reading. North Vancouver.
+FILE: gift-clarity-session-packages.html
