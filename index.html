@@ -357,55 +357,85 @@
   </section>
   <script>
     (function(){
+      var ROTATE_MS = 5500;   // time each set of 6 stays before rotating
+      var CARDS = 6;
       function esc(s){ var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
       function catLabel(c){ return c.charAt(0) + c.slice(1).toLowerCase(); }
       function shuffle(a){ for (var i = a.length - 1; i > 0; i--){ var j = Math.floor(Math.random()*(i+1)); var t=a[i]; a[i]=a[j]; a[j]=t; } return a; }
       function pick(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
 
-      function choose(data){
-        // Group by category
-        var byCat = {};
-        data.forEach(function(d){ (byCat[d.c] = byCat[d.c] || []).push(d); });
+      // Build a fresh set: 1 fixed GIFTS post + 5 from distinct other categories.
+      function choose(byCat, cats){
         var chosen = [];
-        // 1) GIFTS always first and fixed
         if (byCat['GIFTS'] && byCat['GIFTS'].length){ chosen.push(pick(byCat['GIFTS'])); }
-        // 2) Five more, each from a distinct other category
-        var otherCats = shuffle(Object.keys(byCat).filter(function(c){ return c !== 'GIFTS'; }));
-        for (var i = 0; i < otherCats.length && chosen.length < 6; i++){
-          chosen.push(pick(byCat[otherCats[i]]));
+        var others = shuffle(cats.filter(function(c){ return c !== 'GIFTS'; }));
+        for (var i = 0; i < others.length && chosen.length < CARDS; i++){
+          chosen.push(pick(byCat[others[i]]));
         }
-        // Fallback: if fewer than 6 categories exist, top up with random posts (no dupes)
-        if (chosen.length < 6){
+        if (chosen.length < CARDS){
+          // top up if few categories exist
           var used = {}; chosen.forEach(function(c){ used[c.f] = 1; });
-          shuffle(data.slice());
-          for (var k = 0; k < data.length && chosen.length < 6; k++){
-            if (!used[data[k].f]){ used[data[k].f] = 1; chosen.push(data[k]); }
+          var all = shuffle([].concat.apply([], cats.map(function(c){ return byCat[c]; })));
+          for (var k = 0; k < all.length && chosen.length < CARDS; k++){
+            if (!used[all[k].f]){ used[all[k].f] = 1; chosen.push(all[k]); }
           }
         }
         return chosen;
       }
 
-      function render(items){
+      function cardHTML(item, idx){
+        return '<a href="blog/' + esc(item.f) + '" class="blog-tease-card" style="animation-delay:' + (idx * 90) + 'ms">'
+          + '<span class="btc-cat">' + esc(catLabel(item.c)) + '</span>'
+          + '<span class="btc-title">' + esc(item.t) + '</span>'
+          + '<span class="btc-read">Read &rarr;</span>'
+          + '</a>';
+      }
+
+      function build(data){
         var grid = document.getElementById('blogTeaseGrid');
         if (!grid) return;
-        grid.innerHTML = items.map(function(item){
-          return '<a href="blog/' + esc(item.f) + '" class="blog-tease-card" '
-            + 'style="display:block;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:1.4rem 1.5rem;text-decoration:none;transition:box-shadow .3s,transform .2s">'
-            + '<span style="display:block;font-size:.62rem;text-transform:uppercase;letter-spacing:.16em;color:var(--violet);margin-bottom:.6rem;font-weight:500">' + esc(catLabel(item.c)) + '</span>'
-            + '<span style="display:block;font-family:var(--font-display);font-size:1.15rem;line-height:1.35;color:var(--text-heading);margin-bottom:.9rem">' + esc(item.t) + '</span>'
-            + '<span style="font-size:.72rem;font-weight:500;color:var(--violet)">Read &rarr;</span>'
-            + '</a>';
-        }).join('');
+        var byCat = {};
+        data.forEach(function(d){ (byCat[d.c] = byCat[d.c] || []).push(d); });
+        var cats = Object.keys(byCat);
+
+        function renderSet(){
+          var items = choose(byCat, cats);
+          grid.innerHTML = items.map(cardHTML).join('');
+        }
+
+        renderSet();
+
+        // Rotate: fade the grid out, swap in a new set, fade/flip back in.
+        setInterval(function(){
+          if (document.hidden) return;            // pause when tab not visible
+          grid.classList.add('btc-leaving');
+          setTimeout(function(){
+            renderSet();
+            grid.classList.remove('btc-leaving');
+          }, 420);                                 // matches leave transition
+        }, ROTATE_MS);
       }
 
       fetch('blog/blogdata.json')
         .then(function(r){ return r.json(); })
-        .then(function(data){ render(choose(data)); })
+        .then(function(data){ build(data); })
         .catch(function(){ /* silent: section simply stays empty if fetch fails */ });
     })();
   </script>
   <style>
+    #blogTeaseGrid{perspective:1200px}
+    #blogTeaseGrid.btc-leaving{opacity:0;transform:translateY(10px);transition:opacity .4s ease,transform .4s ease}
+    #blogTeaseGrid{transition:opacity .4s ease,transform .4s ease}
+    .blog-tease-card{display:block;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:1.4rem 1.5rem;text-decoration:none;transition:box-shadow .3s,transform .2s;transform-origin:top center;animation:btcFlipIn .55s cubic-bezier(.2,.7,.3,1) both}
     .blog-tease-card:hover{box-shadow:0 8px 30px rgba(91,45,142,.10);transform:translateY(-3px)}
+    .btc-cat{display:block;font-size:.62rem;text-transform:uppercase;letter-spacing:.16em;color:var(--violet);margin-bottom:.6rem;font-weight:500}
+    .btc-title{display:block;font-family:var(--font-display);font-size:1.15rem;line-height:1.35;color:var(--text-heading);margin-bottom:.9rem}
+    .btc-read{font-size:.72rem;font-weight:500;color:var(--violet)}
+    @keyframes btcFlipIn{0%{opacity:0;transform:rotateX(-28deg) translateY(14px)}100%{opacity:1;transform:rotateX(0) translateY(0)}}
+    @media (prefers-reduced-motion: reduce){
+      .blog-tease-card{animation:none}
+      #blogTeaseGrid.btc-leaving{opacity:1;transform:none;transition:none}
+    }
   </style>
 
 
