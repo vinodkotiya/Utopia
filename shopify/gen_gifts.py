@@ -461,6 +461,43 @@ POSTS = [
         ],
         "keywords": "get well gifts north vancouver, recovery gifts, comfort gifts north vancouver, sympathy gifts vancouver, crystal gifts, gift shop lonsdale",
     },
+    {
+        "slug": "gifts-for-someone-in-recovery-north-vancouver",
+        "title": "Gift Ideas That Support Recovery: Thoughtful Presents from Utopia Wellness &amp; Gifts",
+        "breadcrumb": "Gifts for Recovery",
+        "meta": "Thoughtful gift ideas for someone in recovery in North Vancouver: grounding crystals, jewelry, calming candles, and oracle decks that support calm and comfort, not sobriety as a theme.",
+        "intro": [
+            "Finding the right gift for someone in recovery can feel complicated, especially around birthdays and holidays, when so many typical gifts default to wine, cocktail kits, or a bottle of something &ldquo;nice.&rdquo; The truth is, the best gifts for someone in recovery are not about their sobriety at all. They are about seeing the whole person, and giving something that supports calm, comfort, and a sense of moving forward.",
+            "At Utopia Wellness &amp; Gifts on Lonsdale Ave, we get asked for this kind of gift often. The best gifts here are grounding, calming, and personal &mdash; nothing on this list centers on the recovery itself. It simply supports the life being rebuilt around it.",
+        ],
+        "body": [
+            ("h2", "What Are the Best Gifts for Someone in Recovery?"),
+            ("h3", "Crystals for grounding and calm"),
+            ("p", "A stone that fits in the palm of a hand is a small, steady thing to reach for on a hard day. Black tourmaline and hematite are popular for grounding, while amethyst is often chosen for calm and clarity. Many people keep one on a nightstand or in a pocket, not as a cure for anything, just as something quiet to hold onto."),
+            ("h3", "Jewelry as a daily reminder"),
+            ("p", "A gemstone bracelet or pendant is something worn every day, which makes it a gift that keeps showing up in small moments rather than fading after the occasion passes. It does not carry the weight of a &ldquo;recovery gift.&rdquo; It is simply a piece of jewelry that happens to mean something to the person who gave it."),
+            ("h3", "A home reset, not a home bar"),
+            ("p", "Instead of bar decor or a wine fridge, consider a small sage or palo santo bundle for a gentle home reset, especially useful for someone moving into a new space or turning a page on a hard chapter. Paired with a calming candle, it becomes a quiet way to mark a fresh start without a single mention of what came before."),
+            ("h3", "Something for the quiet hours"),
+            ("p", "Recovery often comes with more free time and more mental clarity than people expect, and that time is worth filling with something engaging. An oracle or tarot deck, a journal, or a beginner&rsquo;s guide to crystals gives someone a new, low-pressure hobby to sit with in the evenings. These are gentle, screen-free ways to pass the time and reconnect with curiosity."),
+            ("h3", "A curated comfort set"),
+            ("p", "If you would rather not choose just one thing, our curated gift sets pair a candle, a crystal, and a small card together. It takes the guesswork out of gifting and lands as a complete, thoughtful gesture rather than a single random object."),
+            ("h3", "An experience, not an object"),
+            ("p", "Sometimes the better gift is not a thing at all. A Clarity Session, a short tarot or energy session booked for whenever the person feels ready, is a quiet hour that is entirely their own. It is a gift of time and reflection rather than another item to unwrap."),
+            ("h2", "What to Avoid"),
+            ("p", "It should go without saying, but it is worth saying anyway: skip anything alcohol-related, even as a joke, and skip gifts that make sobriety the entire theme of the present unless the person has specifically asked for that. Let their actual interests, not their recovery, guide what you choose."),
+            ("h2", "The Best Gift Is Still Showing Up"),
+            ("p", "No candle or crystal replaces consistency, patience, or a person who keeps showing up. What a thoughtful gift can do is say, quietly, that you see them and you are still here. If you are not sure where to start, stop by 1826 Lonsdale Ave and we will help you put something together that feels right, wrapped and ready to give."),
+        ],
+        "faq": [
+            ("What is a good gift for someone in recovery that is not centered on sobriety?", "Crystals, jewelry, candles, or a new oracle deck all work well, since they support calm and comfort without making recovery the focus of the gift."),
+            ("Are crystals or oracle cards appropriate even if the person is not spiritual?", "Yes. Most people receive them simply as calming, grounding objects or a new low-pressure hobby, no belief system required."),
+            ("Can Utopia help me put together a gift if I am not sure what to choose?", "Yes, our curated comfort sets combine a candle, a crystal, and a small card, and we can also help you build something more personal in store."),
+            ("Is a Clarity Session a good gift for someone rebuilding their routine?", "Yes, many people gift a session as something to look forward to on their own time, rather than something tied to any specific occasion."),
+            ("Do you offer gift wrapping for these items?", "Yes, wrapping is available at checkout, so you can shop and go straight to giving it."),
+        ],
+        "keywords": "gifts for someone in recovery, sober gifts north vancouver, recovery gifts, grounding crystals, comfort gifts north vancouver, gift shop lonsdale",
+    },
 ]
 
 

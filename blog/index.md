@@ -1,7 +1,7 @@
 ﻿# BLOG INDEX
 # Format: CATEGORY / TITLE / DESCRIPTION / FILE
 # Use this data to generate the blog index page cards.
-# Total entries: 516
+# Total entries: 517
 CATEGORY: TAROT
 TITLE: The 8-Card Tarot Spread: Your Guide to Deep, Meaningful Readings
 DESCRIPTION: Learn how to use the 8-card tarot spread for comprehensive insight. A step-by-step guide from Utopia Wellness & Gifts in North Vancouver.
@@ -2581,3 +2581,8 @@ CATEGORY: GIFTS
 TITLE: Coming Home, Coming Back to Yourself: A Guide to Get-Well Gifts from Utopia Wellness & Gifts
 DESCRIPTION: Thoughtful get-well gifts for someone recovering at home in North Vancouver: calming crystals, gentle candles, gemstone jewelry, and comfort sets from Utopia on Lonsdale.
 FILE: get-well-gifts-recovery-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Gift Ideas That Support Recovery: Thoughtful Presents from Utopia Wellness & Gifts
+DESCRIPTION: Thoughtful gift ideas for someone in recovery in North Vancouver: grounding crystals, jewelry, calming candles, and oracle decks that support calm and comfort, not sobriety as a theme.
+FILE: gifts-for-someone-in-recovery-north-vancouver.html
