@@ -220,6 +220,12 @@ def main():
         f.write(html)
     print(f"wrote {SLUG}.html")
 
+    try:
+        from gen_blogdata import regenerate
+        regenerate()
+    except Exception as e:
+        print(f"(gen_blogdata skipped: {e})")
+
 
 if __name__ == "__main__":
     main()

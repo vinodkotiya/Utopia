@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Refresh blogdata.json on blog index save",
+      "trigger": "PostFileSave",
+      "description": "Regenerates blog/blogdata.json (the homepage teaser data) whenever blog/index.html is saved, keeping the homepage blog cards in sync with the full post list.",
+      "matcher": "blog[\\\\/]index\\.html$",
+      "action": {
+        "type": "command",
+        "command": "python shopify/gen_blogdata.py"
+      }
+    }
+  ]
+}
