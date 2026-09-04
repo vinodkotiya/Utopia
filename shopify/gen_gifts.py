@@ -427,6 +427,40 @@ POSTS = [
         ],
         "keywords": "crystal gifts, gift shop lonsdale, meaningful gifts vancouver, unique gifts north vancouver",
     },
+    {
+        "slug": "get-well-gifts-recovery-north-vancouver",
+        "title": "Coming Home, Coming Back to Yourself: A Guide to Get-Well Gifts from Utopia Wellness &amp; Gifts",
+        "breadcrumb": "Get-Well Gifts",
+        "meta": "Thoughtful get-well gifts for someone recovering at home in North Vancouver: calming crystals, gentle candles, gemstone jewelry, and comfort sets from Utopia on Lonsdale.",
+        "intro": [
+            "Coming home after a hospital stay, a surgery, or a hard stretch of illness is its own kind of milestone. The hardest part is technically over, but the body and the mind still need time to catch up. This is where a thoughtful gift can do more than most people realize. It is not about fixing anything. It is about letting someone know they are supported while they take the slow, quiet steps back to themselves.",
+            "At Utopia Wellness &amp; Gifts on Lonsdale Ave, we see this kind of gift often, and we have learned what actually helps. The best get-well gifts are not the biggest or the flashiest &mdash; they are the ones that bring a little calm into a hard day.",
+        ],
+        "body": [
+            ("h2", "What Are the Best Get-Well Gifts for Someone Recovering at Home?"),
+            ("h3", "Crystals for comfort and calm"),
+            ("p", "A stone you can hold is a strange kind of comfort, but it works. Rose quartz is our most requested pick for gentleness and emotional support, while amethyst is the one people reach for when they want calm on a restless day. A tumbled stone tucked next to a bedside lamp becomes something to hold onto, literally, when a day feels heavy."),
+            ("h3", "Candles and calming scents"),
+            ("p", "Recovery often means a lot of time in one room, so the smell of that room matters more than people expect. A softly scented intention candle can turn a bedroom or a couch corner into a place that feels cared for rather than clinical. We keep our get-well candles gentle on purpose, since strong scents are not always welcome during recovery."),
+            ("h3", "A gentle energy reset for the home"),
+            ("p", "Illness and hospital stays can leave a space feeling stale, and coming home to that same stagnant energy is not always comforting. A small sage or palo santo bundle, used lightly and with the windows cracked, is a simple way to freshen a room and mark the return home as a fresh start."),
+            ("h3", "Jewelry that carries a quiet message"),
+            ("p", "A small piece of gemstone jewelry, a rose quartz pendant or a calming bracelet, is something someone can wear every day as a small, physical reminder that they are thought of. Unlike flowers or food, it does not fade or run out. It just stays with them."),
+            ("h3", "A curated comfort gift set"),
+            ("p", "If you cannot decide on just one thing, our curated comfort sets pair a candle, a crystal, and a small card together, so the gift feels complete without you having to guess. These are some of our most popular get-well and sympathy picks for exactly that reason."),
+            ("h3", "A Clarity Session, when words are hard to find"),
+            ("p", "Sometimes the most caring gift is not an object at all. A Clarity Session, a short, gentle tarot or energy session booked for whenever they are ready, gives someone a quiet hour of reflection during a time that can otherwise feel like it is happening to them rather than with them."),
+            ("p", "Recovery is not a single moment, it is a slow return, and being present for it matters more than getting the gift exactly right. Whether you choose a stone, a candle, a small piece of jewelry, or a session booked for later, what you are really giving is the message that someone is not going through this alone. Stop by 1826 Lonsdale Ave and we will help you find the right one."),
+        ],
+        "faq": [
+            ("What is a good get-well gift that is not flowers or food?", "A calming crystal like rose quartz or amethyst, a gentle scented candle, or a small piece of gemstone jewelry are all popular alternatives that last longer than a bouquet and do not require any care."),
+            ("Are crystal gifts appropriate for someone who does not consider themselves spiritual?", "Yes. Many people give and receive crystals simply as calming, meaningful objects, no belief required. The stone still works as a physical thing to hold onto on a hard day."),
+            ("Can you help me build a gift if I am not sure what to pick?", "Yes, our curated comfort sets pair a candle, a crystal, and a small card together, and we can also build a custom set in store if you want something more personal."),
+            ("Is a Clarity Session an appropriate gift for someone recovering?", "Yes, many people gift a session as something to look forward to once they feel ready, rather than something to do right away. It can be booked for any date the recipient chooses."),
+            ("Do you wrap get-well gifts?", "Yes, gift wrapping is available at checkout on any purchase, so you can shop and go straight to visiting or sending it off."),
+        ],
+        "keywords": "get well gifts north vancouver, recovery gifts, comfort gifts north vancouver, sympathy gifts vancouver, crystal gifts, gift shop lonsdale",
+    },
 ]
 
 

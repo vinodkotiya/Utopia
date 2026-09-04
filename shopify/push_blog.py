@@ -16,6 +16,7 @@ USAGE (PowerShell):
 
 import json
 import os
+import html as _html
 import re
 import sys
 import urllib.request
@@ -205,10 +206,13 @@ def extract_meta(raw: str):
     m = re.search(r"<h1[^>]*>(.*?)</h1>", raw, re.S)
     if m:
         title = re.sub(r"<[^>]+>", "", m.group(1)).strip()
+        # Shopify's title is a plain-text field, so decode HTML entities
+        # (&amp; -> &, &mdash; -> —, &ldquo; -> ") to avoid showing raw codes.
+        title = _html.unescape(title)
     desc = ""
     m = re.search(r'<meta name="description" content="([^"]*)"', raw)
     if m:
-        desc = m.group(1).strip()
+        desc = _html.unescape(m.group(1).strip())
     return title, desc
 
 
