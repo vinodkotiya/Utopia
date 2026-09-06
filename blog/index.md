@@ -1,7 +1,7 @@
 ﻿# BLOG INDEX
 # Format: CATEGORY / TITLE / DESCRIPTION / FILE
 # Use this data to generate the blog index page cards.
-# Total entries: 519
+# Total entries: 523
 CATEGORY: TAROT
 TITLE: The 8-Card Tarot Spread: Your Guide to Deep, Meaningful Readings
 DESCRIPTION: Learn how to use the 8-card tarot spread for comprehensive insight. A step-by-step guide from Utopia Wellness & Gifts in North Vancouver.
@@ -2596,3 +2596,23 @@ CATEGORY: GIFTS
 TITLE: 10 Creative Gifts for Someone in Recovery, From Utopia Wellness & Gifts
 DESCRIPTION: 10 creative, meaningful gift ideas for someone in recovery: photo albums, movement passes, journals, jewelry, singing bowls, and shared experiences. Utopia on Lonsdale, North Vancouver.
 FILE: creative-gifts-for-someone-in-recovery.html
+
+CATEGORY: EVENTS
+TITLE: Readers for Corporate & Private Events
+DESCRIPTION: Book professional readers for corporate retreats, wellness nights, and private events across Metro Vancouver. Short on-site sessions, one invoice, North Shore based. Ask for a quote.
+FILE: readers-for-corporate-private-events.html
+
+CATEGORY: EVENTS
+TITLE: How to Hire a Tarot Reader for a Vancouver Corporate Event
+DESCRIPTION: How to hire a tarot reader for a Vancouver corporate event: guest math, format, corporate-safe language, and one clean invoice. Ask Utopia for a quote.
+FILE: hire-tarot-reader-vancouver-corporate-event.html
+
+CATEGORY: EVENTS
+TITLE: Wellness Retreat Reading Stations (Not Stage Psychics)
+DESCRIPTION: A wellness retreat reading station is quiet, private, and paced for reflection, not a stage act. Team Circle and Insight Station formats across Metro Vancouver. Ask for a quote.
+FILE: wellness-retreat-reading-stations.html
+
+CATEGORY: EVENTS
+TITLE: Meaningful Corporate Gifts and a Reader, Together
+DESCRIPTION: Pair meaningful corporate gifts with a reading station for a holiday party or client event in North Vancouver. One point of contact, one invoice. Ask Utopia for a quote.
+FILE: corporate-gifts-and-a-reader-together.html

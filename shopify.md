@@ -532,3 +532,7 @@ Target blog: **Utopia Wellness & Gifts** (id `125558882583`)
 | `gifts-for-someone-in-recovery-north-vancouver.html` | done | 754298913047 | 2026-09-04 13:43:49 |
 | `recovery-gifts-chosen-with-care-north-vancouver.html` | done | 754299011351 | 2026-09-04 13:49:16 |
 | `creative-gifts-for-someone-in-recovery.html` | done | 754299044119 | 2026-09-04 13:55:20 |
+| `corporate-gifts-and-a-reader-together.html` | done | 754313462039 | 2026-09-05 17:40:42 |
+| `hire-tarot-reader-vancouver-corporate-event.html` | done | 754313494807 | 2026-09-05 17:40:43 |
+| `readers-for-corporate-private-events.html` | done | 754313527575 | 2026-09-05 17:40:44 |
+| `wellness-retreat-reading-stations.html` | done | 754313560343 | 2026-09-05 17:40:45 |
