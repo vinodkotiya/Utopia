@@ -44,14 +44,8 @@
       <li><a href="#shop" class="nav-link" style="font-family:var(--font-body);font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:rgba(237,232,255,.75);text-decoration:none">Shop</a></li>
       <li class="relative group">
         <span class="nav-link cursor-pointer" style="font-family:var(--font-body);font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:rgba(237,232,255,.75)">Services ▾</span>
-        <ul class="absolute top-full left-0 mt-2 py-2 px-1 list-none opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all" style="background:var(--bg-dark);border:1px solid var(--border);border-radius:6px;min-width:200px">
+        <ul class="absolute top-full left-0 mt-2 py-2 px-1 list-none opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all" style="background:var(--bg-dark);border:1px solid var(--border);border-radius:6px;min-width:180px">
           <li><a href="energy-work.html" style="display:block;padding:.5rem 1rem;font-family:var(--font-body);font-size:.72rem;color:rgba(237,232,255,.75);text-decoration:none;white-space:nowrap">Clarity &amp; Guidance</a></li>
-          <li><a href="tarot-reading-vancouver.html" style="display:block;padding:.5rem 1rem;font-family:var(--font-body);font-size:.72rem;color:rgba(237,232,255,.75);text-decoration:none;white-space:nowrap">Tarot Reading</a></li>
-          <li><a href="psychic-mediums-vancouver.html" style="display:block;padding:.5rem 1rem;font-family:var(--font-body);font-size:.72rem;color:rgba(237,232,255,.75);text-decoration:none;white-space:nowrap">Psychics &amp; Mediums</a></li>
-          <li><a href="reiki-north-vancouver.html" style="display:block;padding:.5rem 1rem;font-family:var(--font-body);font-size:.72rem;color:rgba(237,232,255,.75);text-decoration:none;white-space:nowrap">Reiki</a></li>
-          <li><a href="energy-clearing-north-vancouver.html" style="display:block;padding:.5rem 1rem;font-family:var(--font-body);font-size:.72rem;color:rgba(237,232,255,.75);text-decoration:none;white-space:nowrap">Energy Clearing</a></li>
-          <li><a href="intuitive-listening-north-vancouver.html" style="display:block;padding:.5rem 1rem;font-family:var(--font-body);font-size:.72rem;color:rgba(237,232,255,.75);text-decoration:none;white-space:nowrap">Intuitive Listening</a></li>
-          <li><a href="feng-shui-vancouver.html" style="display:block;padding:.5rem 1rem;font-family:var(--font-body);font-size:.72rem;color:rgba(237,232,255,.75);text-decoration:none;white-space:nowrap">Feng Shui</a></li>
           <li><a href="meditations.html" style="display:block;padding:.5rem 1rem;font-family:var(--font-body);font-size:.72rem;color:rgba(237,232,255,.75);text-decoration:none;white-space:nowrap">Wellness</a></li>
           <li><a href="gatherings.html" style="display:block;padding:.5rem 1rem;font-family:var(--font-body);font-size:.72rem;color:rgba(237,232,255,.75);text-decoration:none;white-space:nowrap">Partner with Us</a></li>
           <li><a href="corporate-gifts.html" style="display:block;padding:.5rem 1rem;font-family:var(--font-body);font-size:.72rem;color:rgba(237,232,255,.75);text-decoration:none;white-space:nowrap">Corporate Gifts</a></li>
@@ -373,18 +367,18 @@
 
       // Build a fresh set: 1 fixed GIFTS post + 5 from distinct other categories.
       function choose(byCat, cats){
-        var chosen = [];
-        if (byCat['GIFTS'] && byCat['GIFTS'].length){ chosen.push(pick(byCat['GIFTS'])); }
+        var chosen = [], used = {};
+        function add(item){ if (item && !used[item.f]){ used[item.f] = 1; chosen.push(item); } }
+        if (byCat['GIFTS'] && byCat['GIFTS'].length){ add(pick(byCat['GIFTS'])); }
         var others = shuffle(cats.filter(function(c){ return c !== 'GIFTS'; }));
         for (var i = 0; i < others.length && chosen.length < CARDS; i++){
-          chosen.push(pick(byCat[others[i]]));
+          add(pick(byCat[others[i]]));
         }
         if (chosen.length < CARDS){
-          // top up if few categories exist
-          var used = {}; chosen.forEach(function(c){ used[c.f] = 1; });
+          // top up if few categories exist or picks collided
           var all = shuffle([].concat.apply([], cats.map(function(c){ return byCat[c]; })));
           for (var k = 0; k < all.length && chosen.length < CARDS; k++){
-            if (!used[all[k].f]){ used[all[k].f] = 1; chosen.push(all[k]); }
+            add(all[k]);
           }
         }
         return chosen;
@@ -424,9 +418,17 @@
       }
 
       fetch('blog/blogdata.json')
-        .then(function(r){ return r.json(); })
-        .then(function(data){ build(data); })
-        .catch(function(){ /* silent: section simply stays empty if fetch fails */ });
+        .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function(data){ if (data && data.length) build(data); else throw new Error('empty'); })
+        .catch(function(err){
+          var grid = document.getElementById('blogTeaseGrid');
+          if (grid){
+            grid.innerHTML = '<a href="blog/index.html" class="blog-tease-card" style="grid-column:1/-1;text-align:center">'
+              + '<span class="btc-cat">The Journal</span>'
+              + '<span class="btc-title">Read our latest articles on tarot, crystals, dreams, and rituals</span>'
+              + '<span class="btc-read">Explore the Blog &rarr;</span></a>';
+          }
+        });
     })();
   </script>
   <style>
@@ -746,7 +748,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://utopiastore.ca/"}]}
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@graph":[{"@type":["LocalBusiness","Store"],"@id":"https://utopiastore.ca/#business","additionalType":["https://schema.org/Store","https://schema.org/HealthAndBeautyBusiness"],"name":"Utopia Wellness & Gifts","alternateName":"Utopia","description":"North Vancouver's trusted crystal, sage & spiritual gift shop since 2004. Ethically sourced healing crystals, tarot readings, energy healing, sound baths & meditation on Lonsdale Avenue.","url":"https://utopiastore.ca","telephone":"+16049848782","email":"hello@utopiastore.ca","foundingDate":"2004","priceRange":"$$","currenciesAccepted":"CAD","paymentAccepted":"Cash, Credit Card, Debit Card, Apple Pay, Google Pay","image":"https://utopiastore.ca/assets/images/utopiashop.png","logo":"https://utopiastore.ca/assets/logo with name original.png","address":{"@type":"PostalAddress","streetAddress":"1826 Lonsdale Avenue","addressLocality":"North Vancouver","addressRegion":"BC","postalCode":"V7M 2J9","addressCountry":"CA"},"geo":{"@type":"GeoCoordinates","latitude":49.3256251,"longitude":-123.0719743},"areaServed":[{"@type":"City","name":"North Vancouver"},{"@type":"City","name":"Vancouver"},{"@type":"City","name":"West Vancouver"},{"@type":"City","name":"Burnaby"},{"@type":"AdministrativeArea","name":"British Columbia"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"11:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"00:00","closes":"00:00"}],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Crystals, Metaphysical Tools & Spiritual Gifts","itemListElement":[{"@type":"OfferCatalog","name":"Healing Crystals & Minerals","url":"https://shop.utopiastore.ca/collections/crystals-minerals"},{"@type":"OfferCatalog","name":"Sage & Smudging Tools","url":"https://shop.utopiastore.ca/collections/incense-smudge"},{"@type":"OfferCatalog","name":"Singing Bowls","url":"https://shop.utopiastore.ca/collections/singing-bowls"},{"@type":"OfferCatalog","name":"Chakra Jewelry","url":"https://shop.utopiastore.ca/collections/jewelry"},{"@type":"OfferCatalog","name":"Tarot & Oracle Cards","url":"https://shop.utopiastore.ca/collections/tarot-oracle"},{"@type":"OfferCatalog","name":"Intention Kits & Gift Boxes","url":"https://shop.utopiastore.ca/collections/bundles-intention-kits"}]},"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Tarot & Psychic Readings","url":"https://shop.utopiastore.ca/products/readings-energy-work-sessions-booking-fee"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Reiki & Energy Healing","url":"https://utopiastore.ca/energy-work.html"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Sound Bath Meditation","url":"https://utopiastore.ca/meditations.html"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Sacred Space Rental","url":"https://utopiastore.ca/gatherings.html"}}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"55","bestRating":"5"},"sameAs":["https://www.instagram.com/utopia_wellness_gifts/","https://www.facebook.com/utopiastore.ca","https://www.tiktok.com/@utopia_wellness_gifts","https://www.linkedin.com/company/utopiastore"]},{"@type":"WebSite","@id":"https://utopiastore.ca/#website","url":"https://utopiastore.ca","name":"Utopia Wellness & Gifts","publisher":{"@id":"https://utopiastore.ca/#business"},"potentialAction":{"@type":"SearchAction","target":"https://shop.utopiastore.ca/search?q={search_term_string}","query-input":"required name=search_term_string"}}]}
+  {"@context":"https://schema.org","@graph":[{"@type":["LocalBusiness","Store"],"@id":"https://utopiastore.ca/#business","additionalType":["https://schema.org/Store","https://schema.org/HealthAndBeautyBusiness"],"name":"Utopia Wellness & Gifts","alternateName":"Utopia","description":"North Vancouver's trusted crystal, sage & spiritual gift shop since 2004. Ethically sourced healing crystals, tarot readings, energy healing, sound baths & meditation on Lonsdale Avenue.","url":"https://utopiastore.ca","telephone":"+16049848782","email":"hello@utopiastore.ca","foundingDate":"2004","priceRange":"$$","currenciesAccepted":"CAD","paymentAccepted":"Cash, Credit Card, Debit Card, Apple Pay, Google Pay","image":"https://utopiastore.ca/assets/images/utopiashop.png","logo":"https://utopiastore.ca/assets/logo with name original.png","address":{"@type":"PostalAddress","streetAddress":"1826 Lonsdale Avenue","addressLocality":"North Vancouver","addressRegion":"BC","postalCode":"V7M 2J9","addressCountry":"CA"},"geo":{"@type":"GeoCoordinates","latitude":49.3256251,"longitude":-123.0719743},"areaServed":[{"@type":"City","name":"North Vancouver"},{"@type":"City","name":"Vancouver"},{"@type":"City","name":"West Vancouver"},{"@type":"City","name":"Burnaby"},{"@type":"AdministrativeArea","name":"British Columbia"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"11:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"00:00","closes":"00:00"}],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Crystals, Metaphysical Tools & Spiritual Gifts","itemListElement":[{"@type":"OfferCatalog","name":"Healing Crystals & Minerals","url":"https://shop.utopiastore.ca/collections/crystals-minerals"},{"@type":"OfferCatalog","name":"Sage & Smudging Tools","url":"https://shop.utopiastore.ca/collections/incense-smudge"},{"@type":"OfferCatalog","name":"Singing Bowls","url":"https://shop.utopiastore.ca/collections/singing-bowls"},{"@type":"OfferCatalog","name":"Chakra Jewelry","url":"https://shop.utopiastore.ca/collections/jewelry"},{"@type":"OfferCatalog","name":"Tarot & Oracle Cards","url":"https://shop.utopiastore.ca/collections/tarot-oracle"},{"@type":"OfferCatalog","name":"Intention Kits & Gift Boxes","url":"https://shop.utopiastore.ca/collections/bundles-intention-kits"}]},"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Tarot & Psychic Readings","url":"https://shop.utopiastore.ca/products/readings-energy-work-sessions-booking-fee"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Reiki & Energy Healing","url":"https://utopiastore.ca/energy-work.html"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Sound Bath Meditation","url":"https://utopiastore.ca/meditations.html"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Sacred Space Rental","url":"https://utopiastore.ca/gatherings.html"}}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","reviewCount":"105","bestRating":"5"},"sameAs":["https://www.instagram.com/utopia_wellness_gifts/","https://www.facebook.com/utopiastore.ca","https://www.tiktok.com/@utopia_wellness_gifts","https://www.linkedin.com/company/utopiastore"]},{"@type":"WebSite","@id":"https://utopiastore.ca/#website","url":"https://utopiastore.ca","name":"Utopia Wellness & Gifts","publisher":{"@id":"https://utopiastore.ca/#business"},"potentialAction":{"@type":"SearchAction","target":"https://shop.utopiastore.ca/search?q={search_term_string}","query-input":"required name=search_term_string"}}]}
   </script>
 </body>
 </html>
