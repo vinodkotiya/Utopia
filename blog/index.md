@@ -1,7 +1,7 @@
 ﻿# BLOG INDEX
 # Format: CATEGORY / TITLE / DESCRIPTION / FILE
 # Use this data to generate the blog index page cards.
-# Total entries: 523
+# Total entries: 532
 CATEGORY: TAROT
 TITLE: The 8-Card Tarot Spread: Your Guide to Deep, Meaningful Readings
 DESCRIPTION: Learn how to use the 8-card tarot spread for comprehensive insight. A step-by-step guide from Utopia Wellness & Gifts in North Vancouver.
@@ -2616,3 +2616,48 @@ CATEGORY: EVENTS
 TITLE: Meaningful Corporate Gifts and a Reader, Together
 DESCRIPTION: Pair meaningful corporate gifts with a reading station for a holiday party or client event in North Vancouver. One point of contact, one invoice. Ask Utopia for a quote.
 FILE: corporate-gifts-and-a-reader-together.html
+
+CATEGORY: ASTROLOGY
+TITLE: What Is a Venus Sign? What It Says About Love and Attraction
+DESCRIPTION: What is a Venus sign? It shows how you love, flirt, and what you value in relationships. Learn how to find your Venus sign and what each one means at Utopia, North Vancouver.
+FILE: what-is-a-venus-sign.html
+
+CATEGORY: PALMISTRY
+TITLE: Palmistry 101: How to Read Your Palm
+DESCRIPTION: Palmistry 101: how to read the heart, head, life, marriage, and health lines, which hand to read, and what a healer's mark means. A plain guide from Utopia, North Vancouver.
+FILE: palmistry-101-how-to-read-your-palm.html
+
+CATEGORY: ANIMAL SPIRITS
+TITLE: What Does It Mean When a Dragonfly Visits You? Complete Guide
+DESCRIPTION: What does it mean when a dragonfly visits you? A complete guide to dragonfly symbolism: visiting your home, by day, by color, seeing them repeatedly, and dragonfly vs butterfly.
+FILE: what-does-a-dragonfly-visit-mean.html
+
+CATEGORY: TAROT
+TITLE: Tarot Spreads Guide: 3, 8, and Monthly Layouts Explained
+DESCRIPTION: A guide to tarot spreads: the 3-card, 8-card, monthly, and career layouts explained, with what each position means and when to use them. From Utopia in North Vancouver.
+FILE: tarot-spreads-guide-3-8-monthly.html
+
+CATEGORY: TAROT
+TITLE: The Most Powerful Tarot Cards, Explained
+DESCRIPTION: The most powerful tarot cards explained: the Death, Tower, Wheel of Fortune, Sun, and Moon cards, and why they carry the biggest turning points in a reading. From Utopia, North Vancouver.
+FILE: most-powerful-tarot-cards-explained.html
+
+CATEGORY: TAROT
+TITLE: Best Tarot Decks for Beginners
+DESCRIPTION: The best tarot decks for beginners: Rider-Waite-Smith, the Thoth deck, and how to choose a deck that speaks to you. Browse decks in person at Utopia, North Vancouver.
+FILE: best-tarot-decks-for-beginners.html
+
+CATEGORY: CRYSTALS
+TITLE: Best Crystals for Protection
+DESCRIPTION: The best crystals for protection: black tourmaline, obsidian, hematite, smoky quartz, and how to use protective stones at home or on you. Shop crystals at Utopia, North Vancouver.
+FILE: best-crystals-for-protection.html
+
+CATEGORY: CRYSTALS
+TITLE: Crystals by Chakra: A Simple Guide
+DESCRIPTION: A simple guide to crystals by chakra: which stones pair with the root, sacral, solar plexus, heart, throat, third eye, and crown chakras. Shop crystals at Utopia, North Vancouver.
+FILE: crystals-by-chakra-simple-guide.html
+
+CATEGORY: ANGEL NUMBERS
+TITLE: Archangels and Angel Numbers: A Complete Guide
+DESCRIPTION: A complete guide to the archangels (Michael, Gabriel, Raphael, Uriel, Azrael and more) and the meaning of angel numbers like 111, 222, 757, 888, and 1234. From Utopia, North Vancouver.
+FILE: archangels-and-angel-numbers-guide.html

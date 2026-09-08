@@ -536,3 +536,12 @@ Target blog: **Utopia Wellness & Gifts** (id `125558882583`)
 | `hire-tarot-reader-vancouver-corporate-event.html` | done | 754313494807 | 2026-09-05 17:40:43 |
 | `readers-for-corporate-private-events.html` | done | 754313527575 | 2026-09-05 17:40:44 |
 | `wellness-retreat-reading-stations.html` | done | 754313560343 | 2026-09-05 17:40:45 |
+| `archangels-and-angel-numbers-guide.html` | done | 754347180311 | 2026-09-08 12:53:47 |
+| `best-crystals-for-protection.html` | done | 754347213079 | 2026-09-08 12:53:49 |
+| `best-tarot-decks-for-beginners.html` | done | 754347245847 | 2026-09-08 12:53:50 |
+| `crystals-by-chakra-simple-guide.html` | done | 754347278615 | 2026-09-08 12:53:51 |
+| `most-powerful-tarot-cards-explained.html` | done | 754347311383 | 2026-09-08 12:53:52 |
+| `palmistry-101-how-to-read-your-palm.html` | done | 754347344151 | 2026-09-08 12:53:53 |
+| `tarot-spreads-guide-3-8-monthly.html` | done | 754347376919 | 2026-09-08 12:53:55 |
+| `what-does-a-dragonfly-visit-mean.html` | done | 754347409687 | 2026-09-08 12:53:55 |
+| `what-is-a-venus-sign.html` | done | 754347442455 | 2026-09-08 12:54:06 |
