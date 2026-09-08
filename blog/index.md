@@ -1,7 +1,7 @@
 ﻿# BLOG INDEX
 # Format: CATEGORY / TITLE / DESCRIPTION / FILE
 # Use this data to generate the blog index page cards.
-# Total entries: 532
+# Total entries: 538
 CATEGORY: TAROT
 TITLE: The 8-Card Tarot Spread: Your Guide to Deep, Meaningful Readings
 DESCRIPTION: Learn how to use the 8-card tarot spread for comprehensive insight. A step-by-step guide from Utopia Wellness & Gifts in North Vancouver.
@@ -2661,3 +2661,33 @@ CATEGORY: ANGEL NUMBERS
 TITLE: Archangels and Angel Numbers: A Complete Guide
 DESCRIPTION: A complete guide to the archangels (Michael, Gabriel, Raphael, Uriel, Azrael and more) and the meaning of angel numbers like 111, 222, 757, 888, and 1234. From Utopia, North Vancouver.
 FILE: archangels-and-angel-numbers-guide.html
+
+CATEGORY: SPIRITUALITY
+TITLE: Why Do Bad Things Keep Happening to Me? A Gentle Perspective
+DESCRIPTION: Feeling like bad things keep happening to you? A gentle spiritual perspective on hard seasons, patterns, and finding clarity, from Utopia Wellness & Gifts in North Vancouver.
+FILE: why-do-bad-things-keep-happening-to-me.html
+
+CATEGORY: DREAMS
+TITLE: Common Dreams Explained: Teeth Falling Out, a Crush, and Nightmares
+DESCRIPTION: What common dreams mean: teeth falling out, dreaming about a crush, dreaming of the same person, and recurring nightmares. A grounded guide from Utopia in North Vancouver.
+FILE: common-dreams-explained-teeth-crush-nightmares.html
+
+CATEGORY: RITUALS
+TITLE: Can the Moon Be in Retrograde? Plus Simple New Moon Rituals
+DESCRIPTION: Can the moon be in retrograde? A clear answer, plus simple new moon rituals and what to do on a new moon. Join a New Moon Circle at Utopia in North Vancouver.
+FILE: moon-retrograde-and-new-moon-rituals.html
+
+CATEGORY: PSYCHIC GUIDANCE
+TITLE: Psychic Abilities and Clairvoyance, Explained
+DESCRIPTION: Psychic abilities and clairvoyance explained: what clairvoyance means, the difference between a psychic and a medium, and the types of intuitive ability. From Utopia, North Vancouver.
+FILE: psychic-abilities-and-clairvoyance-explained.html
+
+CATEGORY: LOVE & RELATIONSHIPS
+TITLE: Signs Someone Is Manifesting You & What a Karmic Relationship Is
+DESCRIPTION: Signs someone may be manifesting you and what a karmic relationship really means. A grounded look at intense connections, from Utopia Wellness & Gifts in North Vancouver.
+FILE: signs-someone-is-manifesting-you-karmic-relationships.html
+
+CATEGORY: ASTROLOGY
+TITLE: Year of the Snake: What the Chinese Zodiac Sign Means
+DESCRIPTION: What the Year of the Snake means in the Chinese zodiac: Snake traits, compatibility, and how zodiac years work. A clear guide from Utopia Wellness & Gifts, North Vancouver.
+FILE: year-of-the-snake-chinese-zodiac.html

@@ -545,3 +545,9 @@ Target blog: **Utopia Wellness & Gifts** (id `125558882583`)
 | `tarot-spreads-guide-3-8-monthly.html` | done | 754347376919 | 2026-09-08 12:53:55 |
 | `what-does-a-dragonfly-visit-mean.html` | done | 754347409687 | 2026-09-08 12:53:55 |
 | `what-is-a-venus-sign.html` | done | 754347442455 | 2026-09-08 12:54:06 |
+| `common-dreams-explained-teeth-crush-nightmares.html` | done | 754347507991 | 2026-09-08 13:00:18 |
+| `moon-retrograde-and-new-moon-rituals.html` | done | 754347540759 | 2026-09-08 13:00:19 |
+| `psychic-abilities-and-clairvoyance-explained.html` | done | 754347573527 | 2026-09-08 13:00:20 |
+| `signs-someone-is-manifesting-you-karmic-relationships.html` | done | 754347606295 | 2026-09-08 13:00:21 |
+| `why-do-bad-things-keep-happening-to-me.html` | done | 754347639063 | 2026-09-08 13:00:22 |
+| `year-of-the-snake-chinese-zodiac.html` | done | 754347671831 | 2026-09-08 13:00:29 |
