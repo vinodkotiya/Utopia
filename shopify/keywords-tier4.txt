@@ -1,0 +1,36 @@
+# TIER 4 glossary batch for mini-guide.html
+# Format: CATEGORY | keyword or phrase | entry text (2-4 sentences)
+# Categories: CRYSTALS, PALMISTRY, SIGNS, TAROT, ASTROLOGY, RITUALS
+
+# --- SIGNS (animal signs & symbols) ---
+SIGNS | What does it mean when you keep seeing a hawk | Noticing a hawk again and again is usually read as a nudge toward perspective and paying closer attention to something you have been rushing past. Rather than a fixed message, treat it as a prompt to slow down and look at the bigger picture of what is going on in your life right now.
+SIGNS | Ladybug spiritual meaning | Across many traditions a ladybug is associated with small strokes of luck and gentle reassurance. If one keeps landing near you, most people take it as a light-hearted prompt to trust that things are quietly moving in a good direction rather than proof of any single outcome.
+SIGNS | What does finding a feather mean | Coming across a feather in an unexpected spot is often taken as a soft sign of comfort or presence, especially after loss. It is best held loosely as a moment to pause and remember someone, not as evidence of anything you can verify.
+SIGNS | Why does a cardinal keep visiting | A cardinal that keeps appearing is commonly read as a reminder of connection and warmth, and many people link it to a loved one in spirit. Whether or not that resonates for you, it can simply be an invitation to notice beauty and feel less alone in a hard stretch.
+
+# --- RITUALS (smudging phrasing, spiritual bath) ---
+RITUALS | What to say when smudging your home | The words matter less than the intention behind them, so keep it simple and honest. Many people walk each room with sage or palo santo and say something like asking that stale or heavy energy leave and calm, settled energy remain. Speak in your own voice and move slowly through the space.
+RITUALS | How to take a spiritual bath | A spiritual bath is a slow, intentional soak meant to help you feel reset rather than just clean. People often add sea salt, a few drops of essential oil, or herbs, dim the lights, and set one clear intention before stepping in. Treat it as quiet time for yourself, not a fixed formula.
+RITUALS | What herbs to use in a spiritual bath | Common choices include lavender for calm, rosemary for clearing, and rose for gentleness, though the point is what feels right to you rather than a strict recipe. Sea salt is a simple base many people start with. Keep it easy and adjust to your own senses.
+RITUALS | Difference between sage and palo santo | Both are used to clear and freshen a space, but they carry a different feel. White sage tends to be sharper and more clearing, while palo santo is softer and sweeter. Many people cleanse with sage first, then bring in palo santo to invite a warmer, settled mood.
+
+# --- CRYSTALS (chakra basics) ---
+CRYSTALS | What crystals go with the root chakra | The root chakra sits at the base of the spine and is linked to feeling safe and grounded. Deep, earthy stones such as black tourmaline, hematite, and red jasper are the ones people most often reach for here. Hold one or keep it in your pocket when you want to feel steadier.
+CRYSTALS | What crystals go with the heart chakra | The heart chakra is associated with love, connection, and gentleness toward yourself. Soft green and pink stones like rose quartz, green aventurine, and rhodonite are the usual companions. Many people rest one over the heart during a quiet moment to soften a hard day.
+CRYSTALS | How do chakras and crystals work together | The idea is that each energy centre pairs with certain colours and stones, so people choose a crystal to gently support the area they want to focus on. It is a reflective practice rather than a medical one, and the best stone is often simply the one you feel drawn to.
+CRYSTALS | What is the third eye chakra crystal | The third eye sits between the brows and is tied to intuition and inner clarity. Deep indigo and purple stones such as amethyst, lapis lazuli, and sodalite are the ones most associated with it. People often hold one during quiet reflection or meditation.
+
+# --- PALMISTRY (healer's mark) ---
+PALMISTRY | What is a healer's mark on the palm | The healer's mark is a small cluster of short vertical lines found beneath the little finger. In traditional palmistry it is linked with people drawn to caring, teaching, or helping roles. Like all palm markings, it is read as a tendency to reflect on, not a fixed label.
+PALMISTRY | What does the letter M on your palm mean | An M shape forms when the major lines cross in a certain way on the palm. Folklore ties it to intuition and good judgement, and many people simply enjoy it as a distinctive personal marking. It is best taken as a fun prompt for reflection rather than a prediction.
+PALMISTRY | Which hand do you read in palmistry | A common approach is to treat one hand as what you were born with and the other as how you have shaped your life so far. Many readers glance at both and focus on the dominant hand. There is no single rule, so ask your reader how they like to work.
+
+# --- ASTROLOGY (zodiac traits) ---
+ASTROLOGY | What are the traits of a water sign | Cancer, Scorpio, and Pisces are the water signs, and they are usually described as emotional, intuitive, and deeply feeling. People often read water placements as a sign someone leads with the heart and picks up on unspoken moods. Traits are a starting point for reflection, never a box.
+ASTROLOGY | What does it mean to be a fire sign | Aries, Leo, and Sagittarius make up the fire signs, often described as spirited, warm, and quick to act. Many people read strong fire in a chart as a love of momentum and expression. As always, a sign is one layer of a much fuller picture.
+ASTROLOGY | What is a sun sign versus a moon sign | Your sun sign reflects your core identity and the way you shine, while your moon sign speaks to your inner emotional world and what helps you feel safe. Most people know their sun sign already, and adding the moon gives a warmer, more personal read.
+
+# --- TAROT (cartomancy, clairvoyant defs) ---
+TAROT | What is cartomancy | Cartomancy is the practice of reading ordinary playing cards for reflection and guidance. Long before tarot became widely available, people used a regular deck the same way, giving each suit and number its own meaning. It is a simple, accessible way to sit with a question.
+TAROT | What does clairvoyant mean | Clairvoyant means clear seeing, and it describes receiving intuitive impressions as images or inner pictures rather than through the ordinary senses. In a reading it often shows up as a quick mental image a reader then puts into words. It is one of several intuitive styles, not a guarantee of certainty.
+TAROT | What is the difference between a psychic and a clairvoyant | Psychic is the broad umbrella for intuitive insight, while clairvoyant points to one specific style within it based on inner seeing. So every clairvoyant is working psychically, but not every psychic works mainly through images. Ask a reader how they tend to receive.
