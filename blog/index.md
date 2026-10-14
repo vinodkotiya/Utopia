@@ -1,7 +1,7 @@
 ﻿# BLOG INDEX
 # Format: CATEGORY / TITLE / DESCRIPTION / FILE
 # Use this data to generate the blog index page cards.
-# Total entries: 538
+# Total entries: 560
 CATEGORY: TAROT
 TITLE: The 8-Card Tarot Spread: Your Guide to Deep, Meaningful Readings
 DESCRIPTION: Learn how to use the 8-card tarot spread for comprehensive insight. A step-by-step guide from Utopia Wellness & Gifts in North Vancouver.
@@ -2691,3 +2691,113 @@ CATEGORY: ASTROLOGY
 TITLE: Year of the Snake: What the Chinese Zodiac Sign Means
 DESCRIPTION: What the Year of the Snake means in the Chinese zodiac: Snake traits, compatibility, and how zodiac years work. A clear guide from Utopia Wellness & Gifts, North Vancouver.
 FILE: year-of-the-snake-chinese-zodiac.html
+
+CATEGORY: GIFTS
+TITLE: Tumbled Stones: A Small, Affordable Gift That Still Feels Meaningful
+DESCRIPTION: Tumbled stones are an easy, affordable gift that still feels personal. A guide to what they are, how to care for them, and why they make a great gift, from Utopia in North Vancouver.
+FILE: tumbled-stones-affordable-meaningful-gift.html
+
+CATEGORY: CRYSTALS
+TITLE: Black Obsidian: A Grounding, Protective Gift
+DESCRIPTION: Black obsidian is a grounding, protective stone and a striking gift for someone going through a stressful stretch. What it means and how to cleanse it, from Utopia in North Vancouver.
+FILE: black-obsidian-grounding-protective-gift.html
+
+CATEGORY: CRYSTALS
+TITLE: Herkimer Diamond: A Gift for the Spiritual Seeker
+DESCRIPTION: A Herkimer diamond is a special gift for someone further along in their crystal practice. What makes it different from quartz and how to use it, from Utopia in North Vancouver.
+FILE: herkimer-diamond-gift-spiritual-seeker.html
+
+CATEGORY: CRYSTALS
+TITLE: Clear Quartz: The Master Healer Gift That Works for Anyone
+DESCRIPTION: Clear quartz is the safest, most versatile crystal gift. Why it is called the master healer, what forms it comes in, and where to find it, from Utopia in North Vancouver.
+FILE: clear-quartz-master-healer-gift.html
+
+CATEGORY: CRYSTALS
+TITLE: Smoky Quartz: A Grounding Gift for Anyone Feeling Overwhelmed
+DESCRIPTION: Smoky quartz is a gentle grounding gift for someone anxious or overworked. What it is good for and how it differs from clear quartz, from Utopia in North Vancouver.
+FILE: smoky-quartz-grounding-gift.html
+
+CATEGORY: CRYSTALS
+TITLE: Citrine: A Golden Gift for Confidence and Fresh Starts
+DESCRIPTION: Citrine is a bright, uplifting gift for someone starting something new. What it symbolises and why it suits new jobs and milestones, from Utopia in North Vancouver.
+FILE: citrine-gift-confidence-fresh-starts.html
+
+CATEGORY: CRYSTALS
+TITLE: Pink Tourmaline: A Gentle Gift for the Heart
+DESCRIPTION: Pink tourmaline is a gentle, nurturing stone for emotional comfort. What it is associated with and why it suits sympathy gifts, from Utopia in North Vancouver.
+FILE: pink-tourmaline-gentle-gift-heart.html
+
+CATEGORY: CRYSTALS
+TITLE: Rose Quartz: The Love Stone, Always a Safe Gift
+DESCRIPTION: Rose quartz is the love stone and one of the safest crystal gifts for anyone. What it symbolises and the occasions it suits, from Utopia in North Vancouver.
+FILE: rose-quartz-love-stone-gift.html
+
+CATEGORY: CRYSTALS
+TITLE: Amazonite: A Calming Gift for Communication and Balance
+DESCRIPTION: Amazonite is a soothing green stone for communication and calm. What it is associated with and why it suits anxious or overworked people, from Utopia in North Vancouver.
+FILE: amazonite-calming-gift-communication.html
+
+CATEGORY: CRYSTALS
+TITLE: Labradorite: A Gift for the Dreamer and the Deep Thinker
+DESCRIPTION: Labradorite is a mesmerising stone of intuition and insight, with flashes of blue and green. What its colour-shift means and who it suits, from Utopia in North Vancouver.
+FILE: labradorite-gift-dreamer-deep-thinker.html
+
+CATEGORY: CRYSTALS
+TITLE: Amethyst: A Timeless, Always-Right Gift
+DESCRIPTION: Amethyst is a timeless crystal gift that suits almost any occasion. What it is known for and the forms it comes in, from Utopia Wellness & Gifts in North Vancouver.
+FILE: amethyst-timeless-gift.html
+
+CATEGORY: CRYSTALS
+TITLE: Tiger's Eye: A Confidence-Boosting Gift
+DESCRIPTION: Tiger's eye is the stone of confidence, a grounding gift for new jobs and big decisions. What it is associated with and who it suits, from Utopia in North Vancouver.
+FILE: tigers-eye-confidence-gift.html
+
+CATEGORY: CRYSTALS
+TITLE: Carnelian: A Gift of Energy and Motivation
+DESCRIPTION: Carnelian is a vibrant, energising stone for courage and creativity. What it is associated with and who it suits as a gift, from Utopia Wellness & Gifts in North Vancouver.
+FILE: carnelian-gift-energy-motivation.html
+
+CATEGORY: CRYSTALS
+TITLE: Sunstone: A Gift of Warmth and Vitality
+DESCRIPTION: Sunstone is a warm, glittering stone of optimism and vitality. What it is known for and how to care for it, from Utopia Wellness & Gifts in North Vancouver.
+FILE: sunstone-gift-warmth-vitality.html
+
+CATEGORY: GIFTS
+TITLE: The Ultimate Metaphysical Gift Guide, From Utopia Wellness & Gifts
+DESCRIPTION: A metaphysical gift guide beyond candles and gift cards: crystals, meditation essentials, tarot decks, sacred jewellery, and gift cards, from Utopia in North Vancouver.
+FILE: ultimate-metaphysical-gift-guide.html
+
+CATEGORY: GIFTS
+TITLE: 5 Meaningful Gemstones to Honor Your Mom
+DESCRIPTION: Five meaningful gemstones for Mother's Day: moonstone, pink tourmaline, chrysoprase, ruby zoisite, and malachite. A jewellery gift guide from Utopia in North Vancouver.
+FILE: gemstones-to-honor-your-mom.html
+
+CATEGORY: GIFTS
+TITLE: Crystal Healing Bracelets: Everything to Know Before You Gift One
+DESCRIPTION: A guide to gifting crystal healing bracelets: how to choose by meaning, how to cleanse them, and why they are a safe gift, from Utopia Wellness & Gifts in North Vancouver.
+FILE: crystal-healing-bracelets-gift-guide.html
+
+CATEGORY: CRYSTALS
+TITLE: Our Top 9 Healing Crystals for Men
+DESCRIPTION: Nine healing crystals that make great gifts for men: onyx, hematite, tiger's eye, quartz, pyrite, lapis, red jasper, carnelian, and selenite, from Utopia in North Vancouver.
+FILE: healing-crystals-for-men.html
+
+CATEGORY: CRYSTALS
+TITLE: Our Top 10 Healing Crystals for Beginners
+DESCRIPTION: Ten approachable crystals for beginners: clear quartz, amethyst, rose quartz, citrine, black tourmaline, selenite, carnelian, labradorite, aventurine, and lepidolite, from Utopia.
+FILE: healing-crystals-for-beginners.html
+
+CATEGORY: GIFTS
+TITLE: The Power of Candles as a Ritual Gift
+DESCRIPTION: Candles make a universally loved ritual gift. What candle colours mean and how to pair them with a crystal, from Utopia Wellness & Gifts in North Vancouver.
+FILE: candles-as-a-ritual-gift.html
+
+CATEGORY: ASTROLOGY
+TITLE: Best Crystals and Gifts for a Leo (July 23 to August 22)
+DESCRIPTION: The best crystals for a Leo: citrine, carnelian, sunstone, ruby, and labradorite. A zodiac-matched gift guide from Utopia Wellness & Gifts in North Vancouver.
+FILE: best-crystals-and-gifts-for-a-leo.html
+
+CATEGORY: ASTROLOGY
+TITLE: Best Crystals and Gifts for a Cancer (June 21 to July 22)
+DESCRIPTION: The best crystals for a Cancer: moonstone, rose quartz, carnelian, emerald, and aquamarine. A zodiac-matched gift guide from Utopia Wellness & Gifts in North Vancouver.
+FILE: best-crystals-and-gifts-for-a-cancer.html
