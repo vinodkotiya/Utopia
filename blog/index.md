@@ -1,7 +1,7 @@
 ﻿# BLOG INDEX
 # Format: CATEGORY / TITLE / DESCRIPTION / FILE
 # Use this data to generate the blog index page cards.
-# Total entries: 560
+# Total entries: 600
 CATEGORY: TAROT
 TITLE: The 8-Card Tarot Spread: Your Guide to Deep, Meaningful Readings
 DESCRIPTION: Learn how to use the 8-card tarot spread for comprehensive insight. A step-by-step guide from Utopia Wellness & Gifts in North Vancouver.
@@ -2801,3 +2801,203 @@ CATEGORY: ASTROLOGY
 TITLE: Best Crystals and Gifts for a Cancer (June 21 to July 22)
 DESCRIPTION: The best crystals for a Cancer: moonstone, rose quartz, carnelian, emerald, and aquamarine. A zodiac-matched gift guide from Utopia Wellness & Gifts in North Vancouver.
 FILE: best-crystals-and-gifts-for-a-cancer.html
+
+CATEGORY: GIFTS
+TITLE: Best Tarot Deck Gifts in North Vancouver for Meaningful Birthdays
+DESCRIPTION: A tarot deck is a personal, lasting birthday gift. Who it suits and how to choose one, with decks you can flip through in store at Utopia Wellness & Gifts, North Vancouver.
+FILE: tarot-deck-gifts-north-vancouver-birthdays.html
+
+CATEGORY: GIFTS
+TITLE: Crystal Jewelry Gift Ideas That Feel Personal in North Vancouver
+DESCRIPTION: Crystal jewelry makes a personal gift matched to a birthstone or intention. How to choose and what to look for, from Utopia Wellness & Gifts on Lonsdale Ave, North Vancouver.
+FILE: crystal-jewelry-gift-ideas-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Thoughtful Candle Gifts for Creating Calm at Home
+DESCRIPTION: Candle gifts that work for almost anyone, built around ritual and intention. Best calming scents and pairings, from Utopia Wellness & Gifts on Lonsdale Ave, North Vancouver.
+FILE: candle-gifts-calm-home-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Best Oracle Card Gifts for Someone Starting Their Spiritual Journey
+DESCRIPTION: Oracle cards are a beginner-friendly first gift for someone curious about tarot. How they differ and which to choose, from Utopia Wellness & Gifts, North Vancouver.
+FILE: oracle-card-gifts-starting-spiritual-journey.html
+
+CATEGORY: GIFTS
+TITLE: Meaningful Incense Gifts for New Homes in North Vancouver
+DESCRIPTION: Incense and smudge tools make a practical, meaningful housewarming gift. What to include and how to use it, from Utopia Wellness & Gifts on Lonsdale Ave, North Vancouver.
+FILE: incense-gifts-new-homes-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Crystal Gifts for Clarity and Calm
+DESCRIPTION: Crystal gifts chosen by intention for someone stressed or scattered. The most reliable picks for clarity and calm, from Utopia Wellness & Gifts, North Vancouver.
+FILE: crystal-gifts-clarity-calm-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Best Books as Gifts for Self-Growth in North Vancouver
+DESCRIPTION: Books on spiritual growth, tarot, astrology, and mindfulness make lasting gifts. What to pair them with, from Utopia Wellness & Gifts on Lonsdale Ave, North Vancouver.
+FILE: books-as-gifts-self-growth-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Unique Gift Ideas for Anniversaries in North Vancouver
+DESCRIPTION: Anniversary gifts that last longer than flowers: crystal jewelry, a couple's tarot ritual, or a candle set, from Utopia Wellness & Gifts on Lonsdale Ave, North Vancouver.
+FILE: unique-anniversary-gift-ideas-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Tarot Decks as Gifts for New Beginnings
+DESCRIPTION: A tarot deck is a thoughtful gift for a new job, move, or fresh start. How to match the deck to the moment, from Utopia Wellness & Gifts, North Vancouver.
+FILE: tarot-deck-gifts-new-beginnings-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Best Small Gifts Under $50 at Utopia Wellness & Gifts
+DESCRIPTION: Affordable, meaningful gifts under $50: tumbled crystals, incense, small jewelry, and candles, from Utopia Wellness & Gifts on Lonsdale Ave, North Vancouver.
+FILE: best-small-gifts-under-50-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Crystal Jewelry Gift Ideas for Everyday Wear
+DESCRIPTION: Simple crystal jewelry for everyday wear makes a gift that gets used daily. Best stones and pieces, from Utopia Wellness & Gifts on Lonsdale Ave, North Vancouver.
+FILE: crystal-jewelry-everyday-wear-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: How to Choose a Thoughtful Gift for Someone Who Has Everything
+DESCRIPTION: How to choose a gift for someone who has everything: intention-based crystals, decks, and ritual tools, from Utopia Wellness & Gifts on Lonsdale Ave, North Vancouver.
+FILE: gift-for-someone-who-has-everything.html
+
+CATEGORY: GIFTS
+TITLE: Incense and Smudge Gifts for Creating Sacred Space at Home
+DESCRIPTION: Incense, sage, and palo santo make a practical gift for a calmer home. A simple sacred-space starter kit, from Utopia Wellness & Gifts, North Vancouver.
+FILE: incense-smudge-gifts-sacred-space-home.html
+
+CATEGORY: GIFTS
+TITLE: Oracle Cards vs Tarot: Which Makes a Better Gift?
+DESCRIPTION: Oracle cards vs tarot as a gift: which suits a beginner and which suits deeper study. A clear comparison from Utopia Wellness & Gifts, North Vancouver.
+FILE: oracle-cards-vs-tarot-which-better-gift.html
+
+CATEGORY: GIFTS
+TITLE: Best Housewarming Gifts in North Vancouver That Feel Personal
+DESCRIPTION: Housewarming gifts that help a new place feel like home: candles, incense, small crystals, and statues, from Utopia Wellness & Gifts on Lonsdale Ave, North Vancouver.
+FILE: best-housewarming-gifts-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Crystal Gifts for Stress Relief and Better Sleep
+DESCRIPTION: Crystals chosen for calm and better sleep make a gentle gift for someone burned out. The most-requested picks, from Utopia Wellness & Gifts, North Vancouver.
+FILE: crystal-gifts-stress-relief-better-sleep.html
+
+CATEGORY: GIFTS
+TITLE: Meaningful Birthday Gifts in North Vancouver (That Aren't Generic)
+DESCRIPTION: Birthday gifts that beat a gift card: tarot decks, crystal jewelry, books, and candles matched to the person, from Utopia Wellness & Gifts, North Vancouver.
+FILE: meaningful-birthday-gifts-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: How to Gift a Tarot Deck the Right Way
+DESCRIPTION: How to gift a tarot deck well: match the artwork, include a guidebook, and add a note. Plus the tradition about first decks, from Utopia Wellness & Gifts, North Vancouver.
+FILE: how-to-gift-a-tarot-deck.html
+
+CATEGORY: GIFTS
+TITLE: Small Ritual Tools That Make Beautiful Gifts
+DESCRIPTION: Small ritual tools make beautiful, low-pressure gifts: holders, dishes, statues, and tumbled crystals, from Utopia Wellness & Gifts on Lonsdale Ave, North Vancouver.
+FILE: small-ritual-tools-beautiful-gifts.html
+
+CATEGORY: GIFTS
+TITLE: Why Local Gift Shopping in North Vancouver Feels Better
+DESCRIPTION: Why shopping local for gifts beats ordering online sight unseen: see, touch, and smell before buying, from Utopia Wellness & Gifts on Lonsdale Ave, North Vancouver.
+FILE: why-local-gift-shopping-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Meaningful Halloween Gifts Beyond Candy in North Vancouver
+DESCRIPTION: Halloween gifts beyond candy: tarot decks, crystals, candles, and incense that fit the season and last, from Utopia Wellness & Gifts on Lonsdale Ave, North Vancouver.
+FILE: halloween-gifts-beyond-candy-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Crystal and Tarot Gifts for a Mindful Halloween
+DESCRIPTION: A quieter Halloween gift: obsidian and smoky quartz for grounding, plus a tarot deck for seasonal reflection, from Utopia Wellness & Gifts, North Vancouver.
+FILE: crystal-tarot-gifts-mindful-halloween.html
+
+CATEGORY: GIFTS
+TITLE: Best Christmas Gifts in North Vancouver That Feel Personal
+DESCRIPTION: Christmas gifts that feel personal, not generic: crystal jewelry, decks, candles, and crystals matched to the person, from Utopia Wellness & Gifts, North Vancouver.
+FILE: best-christmas-gifts-north-vancouver-personal.html
+
+CATEGORY: GIFTS
+TITLE: Unique Stocking Stuffers from Utopia Wellness & Gifts
+DESCRIPTION: Stocking stuffers that feel like real gifts: small crystals, incense, mini candles, and simple jewelry under $40, from Utopia Wellness & Gifts, North Vancouver.
+FILE: unique-stocking-stuffers-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Thoughtful Last-Minute Christmas Gifts in North Vancouver
+DESCRIPTION: Last-minute Christmas gifts you can pick up same-day that still feel thoughtful: candles, crystals, and jewelry, from Utopia Wellness & Gifts, North Vancouver.
+FILE: last-minute-christmas-gifts-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Crystal Jewelry as a Christmas Gift
+DESCRIPTION: Crystal jewelry makes a premium Christmas gift without sizing guesswork. Best picks and how to avoid sizing issues, from Utopia Wellness & Gifts, North Vancouver.
+FILE: crystal-jewelry-christmas-gift-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Tarot and Oracle Decks as Memorable Christmas Gifts
+DESCRIPTION: Tarot and oracle decks make Christmas gifts that last all year. Picks for beginners and collectors, from Utopia Wellness & Gifts on Lonsdale Ave, North Vancouver.
+FILE: tarot-oracle-decks-christmas-gifts.html
+
+CATEGORY: GIFTS
+TITLE: Best Boxing Day Gift Ideas in North Vancouver
+DESCRIPTION: Boxing Day is a good moment for a late gift or a small self-treat: crystals, candles, jewelry, and decks, from Utopia Wellness & Gifts, North Vancouver.
+FILE: best-boxing-day-gift-ideas-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Thoughtful Gifts to Give Yourself After Christmas
+DESCRIPTION: A small self-care reset after the holidays: a crystal, candle, book, or jewelry piece for the year ahead, from Utopia Wellness & Gifts, North Vancouver.
+FILE: gifts-to-give-yourself-after-christmas.html
+
+CATEGORY: GIFTS
+TITLE: Meaningful Valentine's Day Gifts in North Vancouver
+DESCRIPTION: Valentine's gifts that last past February 14: rose quartz jewelry, candles, and couples' tarot, from Utopia Wellness & Gifts on Lonsdale Ave, North Vancouver.
+FILE: valentines-day-gifts-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Best Mother's Day Gifts in North Vancouver (That Aren't Flowers)
+DESCRIPTION: Mother's Day gifts that last beyond flowers: birthstone jewelry, candles, books, and crystals, from Utopia Wellness & Gifts on Lonsdale Ave, North Vancouver.
+FILE: mothers-day-gifts-north-vancouver-not-flowers.html
+
+CATEGORY: GIFTS
+TITLE: Father's Day Gift Ideas from Utopia Wellness & Gifts
+DESCRIPTION: Father's Day gifts beyond tools and golf: grounding crystals, books, candles, and incense, from Utopia Wellness & Gifts on Lonsdale Ave, North Vancouver.
+FILE: fathers-day-gift-ideas-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Thoughtful New Year Gifts and Intentions in North Vancouver
+DESCRIPTION: New Year gifts that nudge a fresh start: tarot decks, crystals, journals, and candles for setting intentions, from Utopia Wellness & Gifts, North Vancouver.
+FILE: new-year-gifts-intentions-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Unique Easter Gifts in North Vancouver Beyond Chocolate
+DESCRIPTION: Easter gifts beyond chocolate: small crystals, spring candles, and books for a basket, from Utopia Wellness & Gifts on Lonsdale Ave, North Vancouver.
+FILE: unique-easter-gifts-north-vancouver-beyond-chocolate.html
+
+CATEGORY: GIFTS
+TITLE: Diwali Gift Ideas in North Vancouver from Utopia
+DESCRIPTION: Diwali gifts that fit the festival of light: candles, prosperity crystals like citrine, and incense, from Utopia Wellness & Gifts on Lonsdale Ave, North Vancouver.
+FILE: diwali-gift-ideas-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Hanukkah Gift Ideas That Feel Personal in North Vancouver
+DESCRIPTION: Hanukkah gifts suited to a nightly tradition: candles, small crystals, books, and jewelry, from Utopia Wellness & Gifts on Lonsdale Ave, North Vancouver.
+FILE: hanukkah-gift-ideas-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Lunar New Year Gift Ideas in North Vancouver
+DESCRIPTION: Lunar New Year gifts in lucky red and gold: prosperity crystals like citrine, incense, and festive pieces, from Utopia Wellness & Gifts, North Vancouver.
+FILE: lunar-new-year-gift-ideas-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Best Gifts for Canadian Thanksgiving in North Vancouver
+DESCRIPTION: Canadian Thanksgiving host gifts nicer than wine: seasonal candles, small crystals, and incense, from Utopia Wellness & Gifts on Lonsdale Ave, North Vancouver.
+FILE: canadian-thanksgiving-gifts-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Remembrance Day Thoughtful Gifts and Tokens in North Vancouver
+DESCRIPTION: Quiet, respectful Remembrance Day tokens: a simple candle, a keepsake, or a grounding stone, from Utopia Wellness & Gifts on Lonsdale Ave, North Vancouver.
+FILE: remembrance-day-thoughtful-tokens-north-vancouver.html
+
+CATEGORY: GIFTS
+TITLE: Holiday Gift Guide: Meaningful Presents from Utopia Wellness & Gifts
+DESCRIPTION: A holiday gift guide covering Christmas, Hanukkah, and the season: decks, crystal jewelry, candles, crystals, incense, and books, from Utopia Wellness & Gifts, North Vancouver.
+FILE: holiday-gift-guide-utopia-wellness-gifts.html
